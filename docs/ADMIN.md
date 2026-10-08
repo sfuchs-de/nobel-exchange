@@ -24,6 +24,7 @@ Duplicate display names are allowed: identity is the Google account, not the vis
 
 ## Support
 
+- Grey Save button: read its inline explanation. Allocate exactly 100 whole credits across 1–10 picks; “Back” initially adds only 10 credits. “Split evenly across my picks” fills the 100-credit budget without adding candidates. A signed-in player also needs a two-character display name. Loading, paused/closed market, an in-progress save, or an unchanged saved portfolio each has a distinct message. Never allocate or submit on a participant's behalf to conceal a validation issue.
 - “Changed in another tab”: preserve the user's draft, then use **load latest saved version**. Never bypass version checks.
 - “Sign-in expired”: sign in again. Drafts are in-memory and can be lost on refresh; saved entries are server-persistent.
 - “Reconnecting”: the app retries and polls. A failed save is not a saved portfolio; retry the same save to receive its original receipt if it had already succeeded.

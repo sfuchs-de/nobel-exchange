@@ -11,6 +11,8 @@ Big ideas. Bragging rights. A friendly, imaginary-credit prediction game: one Go
 3. Sign in, choose a public display name, and save. Only the saved portfolio counts.
 4. Change it any time before closing. The draft shows conditional payouts before saving. Everyone may back the same economists.
 
+If Save is grey, read the explanation directly beneath it. Most often some of the 100 credits remain unallocated; use **Split evenly across my picks** or adjust the amounts. A signed-in player also needs a display name of at least two characters. **All changes saved** plus a saved-version receipt means the server has accepted the portfolio; an unchanged saved portfolio does not need saving again.
+
 Open **Crowd** to see the most-backed economists, their share of saved credits, supporter counts and changes since the previous portfolio update. It shows the top ten by default, with the full ranking available on demand. **Market pulse** adds concentration, backing-band and field-share charts, plus a conditional-payout playground. Backing history stays available below. Individual portfolios remain private until closing; player scores appear in Results after settlement.
 
 **Featured** now puts mature prize cases first, rather than sorting by award year. Use the contender filter for **Established**, **Broad watchlist**, **Future**, or **Outsiders**. These are editorial judgments, not odds. Each row has dated inclusion evidence; its profile separates awards, annual predictions, public previews, market listings and broad future longlists.

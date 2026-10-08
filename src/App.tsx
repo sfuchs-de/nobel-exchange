@@ -35,6 +35,7 @@ import type {
 } from "../shared/types";
 import { projectedPayout, score } from "../shared/rules";
 import { crowdRanking } from "../shared/market";
+import { portfolioSaveState } from "../shared/portfolio";
 import { MarketPulse } from "./MarketPulse";
 import { catalogCandidates, contenderGroups, groupOrder, evidenceKinds, leadEvidence } from "../shared/catalog";
 
@@ -377,6 +378,7 @@ function App() {
   const closed =
     ["closed", "settled"].includes(market.phase) ||
     clock + serverOffset.current >= Date.parse(market.closesAt);
+  const saveState = portfolioSaveState({busy,closed,loaded,phase:market.phase,total,picks,signedIn:Boolean(session),displayName:name,dirty});
   const seconds = Math.max(
     0,
     Math.floor(
@@ -609,16 +611,8 @@ function App() {
       </label>
       <button
         className="primary save-button"
-        disabled={
-          busy ||
-          closed ||
-          !loaded ||
-          total !== 100 ||
-          picks < 1 ||
-          picks > 10 ||
-          (Boolean(session) && (name.trim().length < 2 || !dirty)) ||
-          market.phase !== "open"
-        }
+        disabled={saveState.disabled}
+        aria-describedby={full ? "portfolio-save-help-full" : "portfolio-save-help"}
         onClick={save}
       >
         {busy
@@ -632,6 +626,9 @@ function App() {
                 : "Save portfolio"}
         {!busy && <ArrowRight size={16} />}
       </button>
+      <p className="save-guidance" id={full ? "portfolio-save-help-full" : "portfolio-save-help"} aria-live="polite">
+        {saveState.message}
+      </p>
       <p className="save-note">
         {entry ? (
           <>

@@ -28,6 +28,8 @@ The public Pages release has succeeded, and Simon's actual Google sign-in and ad
 
 For an authorized update, open the repository's **Actions → Release Nobel Exchange (manual) → Run workflow**. Leave `deploy_backend` off for frontend-only changes; enable it for a reviewed backend update once the restricted secret is verified. A push alone does not publish a release. Neither choice seeds or replaces the persistent market database.
 
+The restricted replacement token was tested successfully in [release 37827456182](https://github.com/sfuchs-de/nobel-exchange/actions/runs/37827456182), including a real Worker deployment. Subsequent checks confirmed that the open market and both encrypted secrets survived. No broader permissions or paid upgrade were necessary.
+
 ## Configuration and quotas
 
 `wrangler.jsonc` preserves API routes `/api/config`, `/api/market`, `/api/live`, `/api/auth/google`, `/api/me`, `/api/portfolio`, and `/api/admin/*`. Browser writes require an allowed Origin plus a verified session. Every portfolio save validates IDs, integers, budget and version on the server. Retries reuse a request ID. Google subject identifiers remain private.

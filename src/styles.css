@@ -999,6 +999,12 @@ nav button[aria-current="page"] {
   gap: 4px;
   align-items: center;
 }
+.save-guidance {
+  font-size: 11px;
+  color: var(--ink);
+  line-height: 1.55;
+  margin: 9px 0 0;
+}
 .payout-note {
   border-top: 1px solid #d7d5c7;
   margin-top: 22px;
