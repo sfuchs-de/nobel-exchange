@@ -2,7 +2,7 @@
 
 Big ideas. Bragging rights. A friendly, imaginary-credit prediction game: one Google account, 100 credits, up to ten economists, and a continuously updating shared market.
 
-**Status: approved release being configured.** The Cloudflare backend is deployed in setup mode; the reviewed 99-person candidate roster passes its release checks. Public Google sign-in and GitHub Pages are being verified before the market opens. See [data review](docs/DATA-REVIEW.md), [deployment](docs/DEPLOYMENT.md) and [status](docs/STATUS.md).
+**Status: public beta open.** Visit [The Nobel Exchange](https://sfuchs-de.github.io/nobel-exchange/). Google sign-in and Simon's administrator access are verified; the reviewed 99-person roster is frozen for this edition. Entries close Sunday, October 11, at 8 p.m. Eastern. See [data review](docs/DATA-REVIEW.md), [deployment](docs/DEPLOYMENT.md) and [status](docs/STATUS.md) for checks and remaining acceptance work.
 
 ## Play in under five minutes
 
@@ -53,7 +53,7 @@ Keep test data separate from production. Do not deploy `.wrangler`, raw research
 - Server-side Google ID-token verification and short-lived app sessions; one saved entry per Google subject. Public IDs are random, not Google IDs.
 - A SQLite-backed Durable Object: atomic replacements, optimistic versions, retry receipts, final locked portfolios, audit history and official-share scoring.
 - Admin open/pause/close, result preview, settlement/corrections, and portable JSON export. No paid APIs, autonomous agents or integrations with any planner.
-- 99 reviewed draft profiles: all original 90 candidates plus Bresnahan, Kortum, Newey, Fudenberg, Jackson, Mas-Colell, Chernozhukov, Zingales and Haltiwanger. Two checked publication examples each; citation totals and selected-work trends only where identity was matched. No scraped portraits or invented metrics.
+- 99 reviewed profiles: all original 90 candidates plus Bresnahan, Kortum, Newey, Fudenberg, Jackson, Mas-Colell, Chernozhukov, Zingales and Haltiwanger. Two checked publication examples each; citation totals and selected-work trends only where identity was matched. No scraped portraits or invented metrics.
 
 ## Checks
 
@@ -66,7 +66,7 @@ npm run check:data
 npm run check:release
 ```
 
-Integration tests start an isolated local Worker on 8797 and do not alter preview or production records. `check:release` intentionally fails while the editorial checklist is incomplete. There are no automatic CI runs on pushes. A manual Pages workflow is included for a later authorized launch.
+Integration tests start an isolated local Worker on 8797 and do not alter preview or production records. `check:release` refuses an incomplete editorial checklist. There are no automatic CI runs on pushes. The manual release workflow publishes Pages and can optionally update the Worker without replacing participant data.
 
 To reproduce the current editorial draft, run `npm run review:editorial` then `npm run check:data`. This deterministic migration reads the preserved [candidate audit](research/candidate-review-2026-10-08.md) and reviewed [additions](research/roster-additions.json). It retains original IDs, publications and metrics, and refuses a launch-ready roster. Never use preparation scripts to change a live game's frozen roster.
 

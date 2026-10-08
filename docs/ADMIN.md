@@ -2,7 +2,7 @@
 
 ## Before opening
 
-Sign in as Simon, open the account menu, and choose **Administrator**. Verify the edition, roster, closing time, official announcement time, privacy notice and authentication. Opening freezes candidate IDs/names/eligibility. The deadline freezes after the first submitted entry. Data/configuration must be reviewed before production opening.
+Sign in as Simon, open the account menu, and choose **Administrator desk**. Verify the edition, roster, closing time, official announcement time, privacy notice and authentication. Opening freezes candidate IDs/names/eligibility. The deadline freezes after the first submitted entry. Data/configuration must be reviewed before production opening.
 
 **Pause** temporarily rejects new saves without deleting anything. Existing portfolios still count. **Close** is final: it makes individual portfolios public and rejects future changes. A closed market cannot be reopened, including by pausing first. A state change is audited. The deadline closes the market even if nobody has the admin page open.
 

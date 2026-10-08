@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       deploy_backend:
-        description: Also deploy the Worker (requires the scoped Cloudflare environment secret)
+        description: Also deploy the Worker (requires the scoped Cloudflare repository secret)
         type: boolean
         default: false
 permissions:

@@ -1,6 +1,22 @@
 # Implementation and verification status
 
-Updated 8 October 2026. **Local working preview; no public launch.**
+Updated 8 October 2026. **Public beta open.**
+
+## Current deployment — supersedes the historical setup notes below
+
+- Public interface: [The Nobel Exchange](https://sfuchs-de.github.io/nobel-exchange/). Code and reviewed public data: [GitHub](https://github.com/sfuchs-de/nobel-exchange). Participant records remain in the Cloudflare SQLite Durable Object, not GitHub or either planner.
+- Production API: `https://nobel-exchange-api.sfuchs-de.workers.dev`. HTTPS, allowed-origin enforcement, rejection of invalid/unauthenticated writes, and absence of public individual portfolios are verified. Development identities are disabled. Production currently has no submitted participants; no fictional records were imported.
+- Google identity-only sign-in is in production in its separate, no-billing project. Simon's real sign-in and administrator desk are verified. Session signing and administrator identity are encrypted Cloudflare secrets.
+- All 99 candidate checks and 198 landmark publication checks are complete. Fresh comparison with the official economics-laureate inventory found no prior winner in the roster. `launchReady` is true; roster version is `economics-2026.3`. Missing citation matches remain visibly unavailable.
+- Current suite: **46 unit tests and 46 isolated integration checks pass**, along with build, Worker typecheck, data/release and production configuration checks. Production dependency audit found no known vulnerabilities. The existing build-size advisory remains non-blocking. The first manual Pages release passed its independent checks.
+- Simon's verified administrator session opened the market. The 99 candidate identities are frozen, and closing remains October 11 at 8 p.m. Eastern. No personal portfolio was submitted by the setup assistant.
+- The replacement deployment token is encrypted in GitHub's repository secrets, with only Workers scripts write/account read and January 10, 2027 expiry. The exposed predecessor was revoked and verified absent; it must not be reused. Future releases use the manual workflow, not automatic push triggers.
+- Not yet verified: an actual new participant's production save/reload, two real Google accounts updating simultaneously, actual iPhone/Safari, the timed five-minute trial, or Cloudflare-native recovery. Local synthetic versions of save/concurrency/results are verified; these are not substitutes for those checks.
+- Official Cloudflare skills are installed. The agent MCP is configured but **not authenticated** because its OAuth callback failed issuer validation. Wrangler is authenticated separately through encrypted Keychain-backed storage and works; no validation bypass or scope expansion was used.
+
+## Historical implementation ledger
+
+The sections below describe successive local review stages. Their test counts and statements about unpublished state are historical, not the current deployment status.
 
 Preview: http://127.0.0.1:4196/nobel-exchange/
 
