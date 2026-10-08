@@ -2,7 +2,7 @@
 
 Big ideas. Bragging rights. A friendly, imaginary-credit prediction game: one Google account, 100 credits, up to ten economists, and a continuously updating shared market.
 
-**Status: public beta open.** Visit [The Nobel Exchange](https://sfuchs-de.github.io/nobel-exchange/). Google sign-in and Simon's administrator access are verified; the reviewed 99-person roster is frozen for this edition. Entries close Sunday, October 11, at 8 p.m. Eastern. See [data review](docs/DATA-REVIEW.md), [deployment](docs/DEPLOYMENT.md) and [status](docs/STATUS.md) for checks and remaining acceptance work.
+**Status: public beta open.** Visit [The Nobel Exchange](https://sfuchs-de.github.io/nobel-exchange/). Google sign-in and Simon's administrator access are verified. The reviewed roster contains 102 candidates following the explicitly approved October 8 addition of Stephen Redding, Esteban Rossi-Hansberg and Costas Arkolakis. A public notice records this narrow additive update; existing portfolios and the closing deadline are unchanged. The roster freeze still prevents unapproved changes. Entries close Sunday, October 11, at 8 p.m. Eastern. See [data review](docs/DATA-REVIEW.md), [deployment](docs/DEPLOYMENT.md) and [status](docs/STATUS.md) for checks and remaining acceptance work.
 
 ## Play in under five minutes
 

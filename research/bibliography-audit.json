@@ -3093,5 +3093,65 @@
     "status": "manual source reviewed",
     "retrieved": "2026-10-08",
     "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "stephen-redding",
+    "title": "The Economics of Density: Evidence From the Berlin Wall",
+    "url": "https://doi.org/10.3982/ECTA10876",
+    "reviewedUrl": "https://doi.org/10.3982/ECTA10876",
+    "reviewedYear": 2015,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref DOI metadata independently verified for title, listed authors and print-publication year; corrected Geography of Development DOI is 10.1086/697084."
+  },
+  {
+    "candidate": "stephen-redding",
+    "title": "Quantitative Spatial Economics",
+    "url": "https://doi.org/10.1146/annurev-economics-063016-103713",
+    "reviewedUrl": "https://doi.org/10.1146/annurev-economics-063016-103713",
+    "reviewedYear": 2017,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref DOI metadata independently verified for title, listed authors and print-publication year; corrected Geography of Development DOI is 10.1086/697084."
+  },
+  {
+    "candidate": "esteban-rossi-hansberg",
+    "title": "Trading Tasks: A Simple Theory of Offshoring",
+    "url": "https://doi.org/10.1257/aer.98.5.1978",
+    "reviewedUrl": "https://doi.org/10.1257/aer.98.5.1978",
+    "reviewedYear": 2008,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref DOI metadata independently verified for title, listed authors and print-publication year; corrected Geography of Development DOI is 10.1086/697084."
+  },
+  {
+    "candidate": "esteban-rossi-hansberg",
+    "title": "The Geography of Development",
+    "url": "https://doi.org/10.1086/697084",
+    "reviewedUrl": "https://doi.org/10.1086/697084",
+    "reviewedYear": 2018,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref DOI metadata independently verified for title, listed authors and print-publication year; corrected Geography of Development DOI is 10.1086/697084."
+  },
+  {
+    "candidate": "costas-arkolakis",
+    "title": "New Trade Models, Same Old Gains?",
+    "url": "https://doi.org/10.1257/aer.102.1.94",
+    "reviewedUrl": "https://doi.org/10.1257/aer.102.1.94",
+    "reviewedYear": 2012,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref DOI metadata independently verified for title, listed authors and print-publication year; corrected Geography of Development DOI is 10.1086/697084."
+  },
+  {
+    "candidate": "costas-arkolakis",
+    "title": "Trade and the Topography of the Spatial Economy",
+    "url": "https://doi.org/10.1093/qje/qju016",
+    "reviewedUrl": "https://doi.org/10.1093/qje/qju016",
+    "reviewedYear": 2014,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref DOI metadata independently verified for title, listed authors and print-publication year; corrected Geography of Development DOI is 10.1086/697084."
   }
 ]

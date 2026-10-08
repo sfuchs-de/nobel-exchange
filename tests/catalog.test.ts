@@ -10,14 +10,14 @@ describe("reviewed candidate catalog", () => {
   it("finds names using ASCII spellings of non-decomposing letters", () => {
     expect(catalogCandidates(candidates, { query: "Soren Johansen" }).map(c => c.name)).toContain("Søren Johansen");
   });
-  it("classifies all 99 candidates, without removing any of the audited 90 identities", () => {
-    expect(candidates).toHaveLength(99);
+  it("classifies all 102 candidates, without removing any of the audited 90 identities", () => {
+    expect(candidates).toHaveLength(102);
     const review = fs.readFileSync("research/candidate-review-2026-10-08.md", "utf8").split("## Missing candidates")[0];
     const names = [...review.matchAll(/^\| ([^|]+) \| [^|]+ \| \*\*(Core|Plausible|Future|Speculative)\.\*\*/gm)].map((m) => m[1]);
     expect(names).toHaveLength(90);
     expect(names.every((name) => candidates.some((c) => c.name === name || c.aliases?.includes(name)))).toBe(true);
-    expect(new Set(candidates.map((c) => c.id)).size).toBe(99);
-    expect(Object.keys(contenderGroups).map((g) => candidates.filter((c) => c.editorial.group === g).length)).toEqual([46, 35, 11, 7]);
+    expect(new Set(candidates.map((c) => c.id)).size).toBe(102);
+    expect(Object.keys(contenderGroups).map((g) => candidates.filter((c) => c.editorial.group === g).length)).toEqual([46, 38, 11, 7]);
   });
   it("features established cases rather than the latest award year", () => {
     const sorted = catalogCandidates([...candidates].reverse());
@@ -81,5 +81,18 @@ describe("reviewed candidate catalog", () => {
     expect(advocacy.dateLabel).toBe("Oct 8, 2024");
     expect(advocacy.targetYear).toBeUndefined();
     expect(advocacy.note).toContain("Not a 2026 forecast");
+  });
+  it("adds three sourced spatial/trade watchlist profiles without inventing citations or annual favorites", () => {
+    for (const id of ["stephen-redding", "esteban-rossi-hansberg", "costas-arkolakis"]) {
+      const c = candidate(id);
+      expect(c.editorial.group).toBe("broad");
+      expect(c.citations).toBeNull();
+      expect(c.mostCitedArticles?.status).toBe("unavailable");
+      expect(c.papers).toHaveLength(2);
+      expect(c.editorial.evidence.every(e=>!e.targetYear)).toBe(true);
+      expect(catalogCandidates(candidates,{query:c.name}).map(x=>x.id)).toContain(id);
+    }
+    expect(candidate("stephen-redding").institution).toBe("Stanford University");
+    expect(candidate("esteban-rossi-hansberg").papers[1].url).toBe("https://doi.org/10.1086/697084");
   });
 });

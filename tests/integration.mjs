@@ -5,12 +5,13 @@ import os from "node:os";
 import path from "node:path";
 let state = fs.mkdtempSync(path.join(os.tmpdir(), "nobel-test-"));
 let server;
-const start = async () => {
+const start = async (config) => {
   server = spawn(
     process.execPath,
     [
       "node_modules/wrangler/bin/wrangler.js",
       "dev",
+      ...(config ? ["--config", config] : []),
       "--ip",
       "127.0.0.1",
       "--port",
@@ -83,6 +84,33 @@ const check = (name, truth) => {
   checks.push(name);
 };
 try {
+  // Reproduce an already-open 99-person market without touching the preview.
+  const fixture = path.resolve("worker/.migration-fixture.ts");
+  const legacy = JSON.parse(fs.readFileSync("public/candidates.json", "utf8"));
+  const additions = new Set(["stephen-redding", "esteban-rossi-hansberg", "costas-arkolakis"]);
+  legacy.candidates = legacy.candidates.filter(c => !additions.has(c.id));
+  legacy.version = "economics-2026.3";
+  fs.writeFileSync(fixture, fs.readFileSync("worker/index.ts", "utf8").replace('import roster from "../public/candidates.json";', `const roster = ${JSON.stringify(legacy)};`));
+  const config = path.join(state, "legacy.json");
+  fs.writeFileSync(config, JSON.stringify({ ...JSON.parse(fs.readFileSync("wrangler.jsonc", "utf8")), main: fixture }));
+  await start(config);
+  await request("/admin/state", "POST", { phase: "open" }, "admin");
+  const original = await save("alice", { "ariel-pakes": 100 });
+  check("Legacy market accepts a saved portfolio", original.status === 200);
+  const oldMarket = (await request("/market")).body;
+  await stop();
+  fs.unlinkSync(fixture);
+  await start();
+  const migrated = (await request("/market")).body;
+  check("Open legacy market records exactly three approved additions", migrated.rosterUpdates?.length === 1 && migrated.rosterUpdates[0].additions.length === 3);
+  check("Migration preserves the complete saved entry", JSON.stringify((await request("/me", "GET", undefined, "alice")).body.entry) === JSON.stringify(original.body.entry));
+  check("Migration preserves pool, deadline and participant count", migrated.pool === oldMarket.pool && migrated.closeAt === oldMarket.closeAt && migrated.participants === oldMarket.participants);
+  await stop();
+  await start();
+  check("Restart does not repeat roster migration", (await request("/market")).body.rosterUpdates.length === 1);
+  await stop();
+  fs.rmSync(state, { recursive: true, force: true });
+  state = fs.mkdtempSync(path.join(os.tmpdir(), "nobel-test-"));
   await start();
   check(
     "Unauthenticated portfolio rejected",
@@ -187,7 +215,7 @@ try {
   );
   const prior = (await request("/me", "GET", undefined, "alice")).body.entry;
   let nextVersion = prior.version;
-  for (const candidateId of ["timothy-bresnahan", "samuel-kortum", "whitney-newey", "drew-fudenberg", "matthew-jackson", "andreu-mas-colell", "victor-chernozhukov", "luigi-zingales", "john-haltiwanger"]) {
+  for (const candidateId of ["timothy-bresnahan", "samuel-kortum", "whitney-newey", "drew-fudenberg", "matthew-jackson", "andreu-mas-colell", "victor-chernozhukov", "luigi-zingales", "john-haltiwanger", "stephen-redding", "esteban-rossi-hansberg", "costas-arkolakis"]) {
     // Exercise normal saves without bypassing the server's 600ms anti-spam interval.
     await new Promise((r) => setTimeout(r, 650));
     const saved = await save("alice", { [candidateId]: 100 }, nextVersion);
@@ -404,4 +432,5 @@ try {
   console.log(JSON.stringify({ passed: checks.length, checks }, null, 2));
 } finally {
   await stop();
+  fs.rmSync(path.resolve("worker/.migration-fixture.ts"), { force: true });
 }

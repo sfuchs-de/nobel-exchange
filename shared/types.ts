@@ -85,6 +85,8 @@ export type Snapshot = {
   serverTime: string;
   revision: number;
   participants: number;
+  rosterVersion?: string;
+  rosterUpdates?: {version:string; approvedOn:string; reason:string; at:string; additions:{id:string;name:string}[]}[];
   pool: number;
   totals: Allocation;
   supporters: Allocation;

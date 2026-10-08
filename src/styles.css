@@ -1735,6 +1735,17 @@ summary {
   gap: 28px;
   padding: 28px 0;
 }
+.roster-update {
+  display: grid;
+  gap: 4px;
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  border-left: 3px solid #52735f;
+  background: #52735f0d;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.roster-update strong { color: #52735f; font-size: 11px; }
 .market-intro h1 {
   font-size: clamp(30px, 3.2vw, 45px);
   letter-spacing: -0.8px;

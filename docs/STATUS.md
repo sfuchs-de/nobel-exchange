@@ -2,6 +2,14 @@
 
 Updated 8 October 2026. **Public beta open.**
 
+## October 8 spatial additions — reviewed release
+
+- Roster `economics-2026.4` contains 102 candidates, including Stephen Redding, Esteban Rossi-Hansberg and Costas Arkolakis. All three are broader trade/spatial contenders, not asserted 2026 favorites. Their primary profiles and six landmark papers are checked; unmatched citation metrics remain unavailable.
+- Simon explicitly approved deploying these three additions to the open market. The narrowly scoped release migration accepts only the exact original 99 identities plus these three. It preserves entries, portfolio versions, receipts, history and closing time; records an audit event; and displays a public update notice. All other roster changes retain the freeze safeguard.
+- Verification: 62 unit tests and 54 isolated Worker checks pass, including an existing 99-person market upgraded to 102 without changing its saved entry, pool or deadline, restart idempotence, and successful saves for each addition. Build, Worker typecheck, release-data and production configuration checks pass. The pre-existing bundle-size advisory remains.
+- Public production entries exist. Earlier zero-participant statements below are historical. Actual signed-in save/reload has been verified; two real Google accounts, actual iPhone/Safari and a timed first-user trial remain separate unverified checks.
+- Rollback must retain the 102-person roster and its approved migration. Do not redeploy 99-person code after migration: its freeze guard would reject future saves. Export current records before recovery; never replace participant storage with preview data.
+
 ## Current deployment — supersedes the historical setup notes below
 
 - Public interface: [The Nobel Exchange](https://sfuchs-de.github.io/nobel-exchange/). Code and reviewed public data: [GitHub](https://github.com/sfuchs-de/nobel-exchange). Participant records remain in the Cloudflare SQLite Durable Object, not GitHub or either planner.

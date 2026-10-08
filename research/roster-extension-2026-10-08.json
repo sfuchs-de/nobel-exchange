@@ -1,0 +1,12 @@
+{
+  "fromVersion": "economics-2026.3",
+  "toVersion": "economics-2026.4",
+  "fromCount": 99,
+  "approvedOn": "2026-10-08",
+  "reason": "Simon approved adding three trade/spatial economists while entries remain open. Existing picks and the closing deadline are unchanged; everyone may revise their portfolio before closing.",
+  "additions": [
+    {"id": "stephen-redding", "name": "Stephen Redding", "eligible": true},
+    {"id": "esteban-rossi-hansberg", "name": "Esteban Rossi-Hansberg", "eligible": true},
+    {"id": "costas-arkolakis", "name": "Costas Arkolakis", "eligible": true}
+  ]
+}

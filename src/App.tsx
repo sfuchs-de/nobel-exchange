@@ -886,6 +886,12 @@ function App() {
                 </button>
               </div>
             </section>
+            {(market.rosterUpdates || []).map(update => (
+              <aside className="roster-update" key={update.version} aria-label="Candidate list update">
+                <strong>Candidate update · {new Date(update.at).toLocaleDateString("en-US", {month:"short",day:"numeric",timeZone:"America/New_York"})}</strong>
+                <span>Added {update.additions.map(c=>c.name).join(", ")}. Existing picks are unchanged; you can revise yours until closing.</span>
+              </aside>
+            ))}
             <div className="market-layout">
               <div className="candidate-area">
                 <div className="search-sort">

@@ -11,6 +11,8 @@ import {
 } from "../shared/rules";
 import type { Entry, Settlement, Snapshot, Winner } from "../shared/types";
 import roster from "../public/candidates.json";
+import extensionApproval from "../research/roster-extension-2026-10-08.json";
+import { rosterIdentity as identityOfRoster, planRosterExtension } from "../shared/roster-extension";
 
 interface Env extends ProductionBindings {
   ADMIN_SUB: string;
@@ -24,11 +26,7 @@ const keys = createRemoteJWKSet(
 const ids = new Set(
   roster.candidates.filter((c) => c.eligible).map((c) => c.id),
 );
-const rosterIdentity = JSON.stringify(
-  roster.candidates
-    .map((c) => ({ id: c.id, name: c.name, eligible: c.eligible }))
-    .sort((a, b) => a.id.localeCompare(b.id)),
-);
+const rosterIdentity = identityOfRoster(roster.candidates);
 const reply = (body: unknown, status = 200) =>
   Response.json(body, { status, headers: { "Cache-Control": "no-store" } });
 function local(req: Request, env: Env) {
@@ -264,6 +262,24 @@ export class Market extends DurableObject<Env> {
     ctx.storage.sql.exec(
       "CREATE TABLE IF NOT EXISTS audit (id INTEGER PRIMARY KEY AUTOINCREMENT, at TEXT NOT NULL, actor TEXT NOT NULL, action TEXT NOT NULL, data TEXT NOT NULL)",
     );
+    // Explicitly approved release migration, not a generic roster-unfreeze switch.
+    // Pure identity comparison and all writes are synchronous/atomic. Entries,
+    // save receipts, history, deadline and settlement are never changed here.
+    const phase = this.meta("phase", "setup");
+    const plan = planRosterExtension(this.meta("roster", ""), roster.candidates, roster.version, extensionApproval);
+    if (plan && ["open", "paused"].includes(phase) && !this.meta("settlement", "") &&
+        Date.now() < Date.parse(this.meta("close", this.env.MARKET_CLOSE))) {
+      this.ctx.storage.transactionSync(() => {
+        const notice = {...plan, at:new Date().toISOString()};
+        this.put("roster", rosterIdentity);
+        this.put("roster_version", roster.version);
+        const notices = JSON.parse(this.meta("roster_updates", "[]"));
+        this.put("roster_updates", JSON.stringify([...notices,notice]));
+        this.audit("approved-release", "roster-additions", notice);
+        this.put("revision", String(Number(this.meta("revision", "0")) + 1));
+      });
+      this.ctx.waitUntil(this.broadcast());
+    }
   }
   async execute(
     method: string,
@@ -376,6 +392,8 @@ export class Market extends DurableObject<Env> {
       announcement: this.env.ANNOUNCEMENT,
       serverTime: new Date().toISOString(),
       revision: Number(this.meta("revision", "0")),
+      rosterVersion: this.meta("roster_version", roster.version),
+      rosterUpdates: JSON.parse(this.meta("roster_updates", "[]")),
       history,
       ...(["closed", "settled"].includes(phase) ? { entries } : {}),
       ...(settlement ? { settlement } : {}),

@@ -1,0 +1,80 @@
+{
+  "reviewedOn": "2026-10-08",
+  "version": "economics-2026.4",
+  "candidates": [
+    {
+      "id": "stephen-redding",
+      "name": "Stephen Redding",
+      "aliases": ["Stephen J. Redding", "Stephen James Redding"],
+      "field": "Trade & geography",
+      "institution": "Stanford University",
+      "summary": "Made trade and economic geography measurable in models of market access, agglomeration and commuting, including evidence from the division and reunification of Berlin.",
+      "year": 2018,
+      "honors": ["Frisch Medal · 2018", "Bhagwati Prize · 2017"],
+      "profileUrl": "https://economics.stanford.edu/people/stephen-redding",
+      "sources": [
+        {"label": "Stanford faculty profile", "url": "https://economics.stanford.edu/people/stephen-redding"},
+        {"label": "Stanford biography and honors", "url": "https://profiles.stanford.edu/stephen-redding"},
+        {"label": "Decker's broad future longlist", "url": "https://nicholasdecker.substack.com/p/berry-hausman-pakes-should-win-the"}
+      ],
+      "papers": [
+        {"title": "The Economics of Density: Evidence From the Berlin Wall", "year": 2015, "url": "https://doi.org/10.3982/ECTA10876"},
+        {"title": "Quantitative Spatial Economics", "year": 2017, "url": "https://doi.org/10.1146/annurev-economics-063016-103713"}
+      ],
+      "tags": ["Spatial economics", "Economic geography", "Market access", "Commuting", "Agglomeration", "Trade"],
+      "editorial": {
+        "group": "broad", "reason": "A substantial quantitative trade and spatial-economics record, with Frisch Medal recognition and inclusion in a broad future longlist. This supports the watchlist, not a claim that he is a verified 2026 favorite.", "reviewedOn": "2026-10-08",
+        "evidence": [
+          {"kind": "award", "label": "Frisch Medal", "url": "https://profiles.stanford.edu/stephen-redding", "dateLabel": "2018", "retrievedOn": "2026-10-08", "note": "Research recognition for the Berlin Wall paper, not a prediction of this year's Nobel winner."},
+          {"kind": "longlist", "label": "Decker longlist", "url": "https://nicholasdecker.substack.com/p/berry-hausman-pakes-should-win-the", "dateLabel": "2025", "retrievedOn": "2026-10-08", "note": "An exceptionally broad future longlist, not an annual shortlist or a leading 2026 prediction."}
+        ]
+      }
+    },
+    {
+      "id": "esteban-rossi-hansberg", "name": "Esteban Rossi-Hansberg", "aliases": ["Esteban Rossi Hansberg"],
+      "field": "Urban & spatial", "institution": "University of Chicago",
+      "summary": "Built models of how trade, migration, organizations and growth shape economic activity across space, including trade in tasks and the geography of development.",
+      "year": null, "honors": ["Fellow of the Econometric Society", "Fellow of the American Academy of Arts and Sciences"],
+      "profileUrl": "https://economics.uchicago.edu/directory/esteban-rossi-hansberg",
+      "sources": [
+        {"label": "Chicago faculty profile and honors", "url": "https://economics.uchicago.edu/directory/esteban-rossi-hansberg"},
+        {"label": "Author research by topic", "url": "https://rossihansberg.economics.uchicago.edu/research_bytopic.html"}
+      ],
+      "papers": [
+        {"title": "Trading Tasks: A Simple Theory of Offshoring", "year": 2008, "url": "https://doi.org/10.1257/aer.98.5.1978"},
+        {"title": "The Geography of Development", "year": 2018, "url": "https://doi.org/10.1086/697084"}
+      ],
+      "tags": ["Spatial economics", "Economic geography", "Offshoring", "Trade in tasks", "Migration", "Growth", "Organization"],
+      "editorial": {
+        "group": "broad", "reason": "An influential spatial, organizational and trade-theory record supports the broader watchlist. The verified evidence here is his research and professional recognition, not an independently verified 2026 expert shortlist.", "reviewedOn": "2026-10-08",
+        "evidence": [
+          {"kind": "award", "label": "Research fellowships", "url": "https://economics.uchicago.edu/directory/esteban-rossi-hansberg", "dateLabel": "profile checked Oct 8, 2026", "retrievedOn": "2026-10-08", "note": "Econometric Society and American Academy fellowships support inclusion; the check date is not the award year, and this is not a Nobel prediction."}
+        ]
+      }
+    },
+    {
+      "id": "costas-arkolakis", "name": "Costas Arkolakis", "field": "Trade & geography", "institution": "Yale University",
+      "summary": "Connected firm export decisions to aggregate gains from trade and developed quantitative spatial models for studying geography and transportation infrastructure.",
+      "year": null, "honors": ["Fellow of the Econometric Society", "Bodossaki Foundation Prize in Social Sciences"],
+      "profileUrl": "https://economics.yale.edu/people/costas-arkolakis",
+      "sources": [
+        {"label": "Yale faculty profile and honors", "url": "https://economics.yale.edu/people/costas-arkolakis"},
+        {"label": "Author publication list", "url": "https://arkolakis.com/research/"},
+        {"label": "NBER fellowship announcement", "url": "https://www.nber.org/news/annual-report-awards-nber-affiliates-spring-2025"},
+        {"label": "Decker's broad future longlist", "url": "https://nicholasdecker.substack.com/p/berry-hausman-pakes-should-win-the"}
+      ],
+      "papers": [
+        {"title": "New Trade Models, Same Old Gains?", "year": 2012, "url": "https://doi.org/10.1257/aer.102.1.94"},
+        {"title": "Trade and the Topography of the Spatial Economy", "year": 2014, "url": "https://doi.org/10.1093/qje/qju016"}
+      ],
+      "tags": ["Spatial economics", "Gains from trade", "Trade elasticity", "Firm heterogeneity", "Transport infrastructure", "Economic geography"],
+      "editorial": {
+        "group": "broad", "reason": "A strong gains-from-trade and quantitative spatial-economics case, included in a broad future longlist. This is a wider-watchlist inclusion, not evidence that he is a current annual favorite.", "reviewedOn": "2026-10-08",
+        "evidence": [
+          {"kind": "longlist", "label": "Decker longlist", "url": "https://nicholasdecker.substack.com/p/berry-hausman-pakes-should-win-the", "dateLabel": "2025", "retrievedOn": "2026-10-08", "note": "A broad future longlist, not an annual shortlist or a verified leading 2026 prediction."},
+          {"kind": "award", "label": "Research recognition", "url": "https://economics.yale.edu/people/costas-arkolakis", "dateLabel": "profile checked Oct 8, 2026", "retrievedOn": "2026-10-08", "note": "Yale documents the Bodossaki Foundation prize. The profile-check date is not the award year or a Nobel forecast."}
+        ]
+      }
+    }
+  ]
+}

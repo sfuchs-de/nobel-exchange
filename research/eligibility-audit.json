@@ -949,5 +949,38 @@
     "retrieved": "2026-10-08",
     "evidence": "Compared all available economics laureate names in the official Nobel API with these nine names; no match. Primary institutional profiles reviewed for identity and living-status indicators. Recheck immediately before opening.",
     "priorWinnerSource": "https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeCategory=eco&limit=100"
+  },
+  {
+    "id": "stephen-redding",
+    "name": "Stephen Redding",
+    "source": "https://economics.stanford.edu/people/stephen-redding",
+    "title": "Primary institutional profile",
+    "death": [],
+    "status": "primary source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Current institutional profile reviewed; compared against all 99 laureate records in the official economics Nobel API inventory (58 prizes), no matching prior winner.",
+    "priorWinnerSource": "https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeCategory=eco&limit=100"
+  },
+  {
+    "id": "esteban-rossi-hansberg",
+    "name": "Esteban Rossi-Hansberg",
+    "source": "https://economics.uchicago.edu/directory/esteban-rossi-hansberg",
+    "title": "Primary institutional profile",
+    "death": [],
+    "status": "primary source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Current institutional profile reviewed; compared against all 99 laureate records in the official economics Nobel API inventory (58 prizes), no matching prior winner.",
+    "priorWinnerSource": "https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeCategory=eco&limit=100"
+  },
+  {
+    "id": "costas-arkolakis",
+    "name": "Costas Arkolakis",
+    "source": "https://economics.yale.edu/people/costas-arkolakis",
+    "title": "Primary institutional profile",
+    "death": [],
+    "status": "primary source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Current institutional profile reviewed; compared against all 99 laureate records in the official economics Nobel API inventory (58 prizes), no matching prior winner.",
+    "priorWinnerSource": "https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeCategory=eco&limit=100"
   }
 ]
