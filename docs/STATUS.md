@@ -2,6 +2,14 @@
 
 Updated 8 October 2026. **Public beta open.**
 
+## October 8 separate public user group
+
+- Implemented `/nobel-exchange/public/` with the same 102 candidates, rules and October 11 closing time. Simon explicitly approved publishing and opening it. The original URL and persistent object name remain unchanged.
+- Public portfolios, versions, retry receipts, totals, point pool, history, live feeds, exports and settlement use a separate named Durable Object. The same Google account can enter both. The header, sign-in text, admin desk, results links and export filenames identify the group. This is data separation, not invitation-only access.
+- Local verification: 75 unit tests and 78 isolated Worker checks pass, including independent same-account saves/receipts, original full-export preservation, WebSocket separation, restart persistence, paused/closed bootstrap protection, concurrent edit rejection and separate settlement. Build/Worker typecheck/release/config checks pass. Build emits a real secondary Pages entry file. No roster or OAuth changes.
+- Local desktop and 390px phone inspection verified the public label, initially empty crowd and no horizontal overflow. A fictional Alice saved 100 credits in the public preview and recovered the entry after reload; production was not used for test picks. Original preview entries are unchanged. The existing build-size advisory remains non-blocking.
+- Release through the existing manual full workflow; verify both HTTPS pages and market labels before distributing the new link. Actual Google sign-in/save in the new group remains a separate acceptance check; the existing identity client is reused without new scopes. Provider-native restore and other historical beta acceptance caveats below remain open. The completed workflow run provides the release record.
+
 ## October 8 spatial additions — reviewed release
 
 - Roster `economics-2026.4` contains 102 candidates, including Stephen Redding, Esteban Rossi-Hansberg and Costas Arkolakis. All three are broader trade/spatial contenders, not asserted 2026 favorites. Their primary profiles and six landmark papers are checked; unmatched citation metrics remain unavailable.

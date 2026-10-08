@@ -6,6 +6,13 @@ Big ideas. Bragging rights. A friendly, imaginary-credit prediction game: one Go
 
 ## Play in under five minutes
 
+Two independent groups use the same 102 candidates and rules:
+
+- [Original group](https://sfuchs-de.github.io/nobel-exchange/) — existing entries stay here.
+- [Public group](https://sfuchs-de.github.io/nobel-exchange/public/) — a separate, initially empty market for wider circulation.
+
+Each has its own portfolios, aggregate backing, point pool, history and leaderboard. One Google account can enter both, with a separate 100-credit portfolio in each; nothing is copied automatically. The header identifies the current group. Both close October 11 at 8 p.m. Eastern. Neither URL is membership-restricted: the separate paths separate the data, not access permissions.
+
 1. Browse the compact market list or search a name/field. Tap a name to see research and sources.
 2. Back 1–10 people. Split exactly 100 whole credits between them; “Split evenly” is a shortcut.
 3. Sign in, choose a public display name, and save. Only the saved portfolio counts.
@@ -52,10 +59,10 @@ Keep test data separate from production. Do not deploy `.wrangler`, raw research
 - A hypothetical new-player payout playground: choose an economist, 1–100 credits and a sole/half/third prize share. It includes the new player's 100-point contribution and own dilution, with a curve and scenario table. Remaining credits are assumed to go elsewhere. It does not save a portfolio or imply winning probabilities; your actual draft remains in My portfolio.
 - Expandable backing history and changes since the first retained snapshot. No private individual portfolios are used by the new visuals.
 - Live aggregate WebSocket updates with reconnect and polling fallback. An update never silently overwrites an unsaved draft.
-- Server-side Google ID-token verification and short-lived app sessions; one saved entry per Google subject. Public IDs are random, not Google IDs.
+- Server-side Google ID-token verification and short-lived app sessions; one saved entry per Google subject per group. Public IDs are random, not Google IDs. Sign-in storage and results-sharing links are group-specific.
 - A SQLite-backed Durable Object: atomic replacements, optimistic versions, retry receipts, final locked portfolios, audit history and official-share scoring.
 - Admin open/pause/close, result preview, settlement/corrections, and portable JSON export. No paid APIs, autonomous agents or integrations with any planner.
-- 99 reviewed profiles: all original 90 candidates plus Bresnahan, Kortum, Newey, Fudenberg, Jackson, Mas-Colell, Chernozhukov, Zingales and Haltiwanger. Two checked publication examples each; citation totals and selected-work trends only where identity was matched. No scraped portraits or invented metrics.
+- 102 reviewed profiles: the original 90 plus Bresnahan, Kortum, Newey, Fudenberg, Jackson, Mas-Colell, Chernozhukov, Zingales, Haltiwanger, Redding, Rossi-Hansberg and Arkolakis. Two checked publication examples each; citation totals and selected-work trends only where identity was matched. No scraped portraits or invented metrics.
 
 ## Checks
 

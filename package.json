@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 4196",
     "dev:api": "wrangler dev --ip 127.0.0.1 --port 8796 --inspector-port 9296 --persist-to .wrangler/preview-2026.3 --var DEV_AUTH:local-only",
-    "build": "tsc -p tsconfig.json && vite build",
+    "build": "tsc -p tsconfig.json && vite build && node scripts/build-routes.mjs",
     "typecheck:worker": "tsc -p tsconfig.worker.json",
     "test": "vitest run",
     "check:data": "node --import tsx scripts/check-data.ts",

@@ -4,7 +4,24 @@ Deployment was explicitly authorized on October 8, 2026. Future releases remain 
 
 ## Architecture
 
-GitHub Pages serves the React build and public candidate JSON. It cannot store live participant records. A separate Cloudflare Worker routes to one SQLite-backed Durable Object (`economics-2026`), which serializes saves and broadcasts public aggregates. Participant records never go into GitHub. No Framework or planner service is used.
+GitHub Pages serves the React build and public candidate JSON. It cannot store live participant records. A separate Cloudflare Worker routes to two independently named SQLite-backed Durable Objects, which serialize saves and broadcast public aggregates within their own group. Participant records never go into GitHub. No Framework or planner service is used.
+
+## Independent user groups — October 8
+
+| Group | Page | API prefix | Persistent object |
+|---|---|---|---|
+| Original | `/nobel-exchange/` | `/api` | `economics-2026` (unchanged) |
+| Public | `/nobel-exchange/public/` | `/api/public` | `economics-2026-public` |
+
+Simon explicitly authorized publication and opening of the separate public group. A fixed server-side allowlist routes all reads, saves, live feeds and admin actions; arbitrary URLs cannot create rooms. The shared Google identity verifies the same account in both groups, but portfolio records, versions, save receipts, audit, history and settlement are separate. No new OAuth scopes, credentials, services or billing plan are needed.
+
+The public object initializes once, only when empty and authentication/data checks pass. Initialization freezes the reviewed roster and original closing date, records its approval, and opens the market (or leaves it closed if that date has passed). Later requests/restarts never reopen paused, closed or settled markets. The original object is not initialized or renamed. The new frontend uses a distinct session-storage key and validates market labels on responses/live feeds. Existing original sessions remain valid.
+
+`npm run build` writes both `dist/index.html` and `dist/public/index.html`, using the same absolute asset paths. Publish both via the existing manual full release (`deploy_backend=true`); a development SPA fallback is not proof the secondary Pages URL works. Confirm the actual HTTPS URL and both API market labels after publication.
+
+Admin actions are intentionally per group: export both privately before future backend releases, and publish the official result separately in each administrator desk. Exports have distinct filenames. Closing one group does not close the other. Both URLs remain open to anyone with the link—separation is not invitation-only access.
+
+Rollback after public entries exist must retain both routing names and the 102-candidate roster. Reverting to pre-public code would make the new market inaccessible even though its storage survives. Prefer a forward repair or the latest dual-market release; never copy one group's entries into the other or replace storage with preview data. Provider-native account-linked restoration remains unverified.
 
 ## Required one-time setup
 

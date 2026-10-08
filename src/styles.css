@@ -187,6 +187,11 @@ header {
   place-content: center;
   color: var(--gold);
 }
+.brand small .market-label {
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  margin-left: 7px;
+}
 .brand-mark > span {
   position: absolute;
   right: -6px;

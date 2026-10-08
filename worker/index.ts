@@ -13,6 +13,7 @@ import type { Entry, Settlement, Snapshot, Winner } from "../shared/types";
 import roster from "../public/candidates.json";
 import extensionApproval from "../research/roster-extension-2026-10-08.json";
 import { rosterIdentity as identityOfRoster, planRosterExtension } from "../shared/roster-extension";
+import { marketApiRoute } from "../shared/markets";
 
 interface Env extends ProductionBindings {
   ADMIN_SUB: string;
@@ -101,9 +102,11 @@ function checkOrigin(req: Request, env: Env) {
 export default {
   async fetch(req: Request, env: Env): Promise<Response> {
     const url = new URL(req.url);
-    const path = url.pathname;
+    const route = marketApiRoute(url.pathname);
     const origin = req.headers.get("Origin");
     try {
+      if (!route) throw new RuleError("Not found.", 404);
+      const {market, path} = route;
       if (req.method === "OPTIONS") {
         checkOrigin(req, env);
         return new Response(null, {
@@ -119,13 +122,18 @@ export default {
       }
       if (req.method !== "GET") checkOrigin(req, env);
       let res: Response;
-      const room = env.MARKET.get(env.MARKET.idFromName("economics-2026"));
+      const room = env.MARKET.get(env.MARKET.idFromName(market.objectName));
+      // Simon explicitly approved launching this separate empty edition. This
+      // idempotent bootstrap cannot reopen it or touch the original object.
+      if (market.id === "public") await room.initializePublicMarket();
       if (path === "/api/config")
         res = reply({
           googleClientId: env.GOOGLE_CLIENT_ID || null,
           authReady: Boolean(env.GOOGLE_CLIENT_ID && env.SESSION_SECRET),
           development: local(req, env),
           rosterVersion: roster.version,
+          marketId: market.id,
+          marketLabel: market.label,
         });
       else if (path === "/api/auth/google" && req.method === "POST") {
         if (!env.GOOGLE_CLIENT_ID || !env.SESSION_SECRET)
@@ -216,9 +224,11 @@ export default {
         } else throw new RuleError("Not found.", 404);
       } else throw new RuleError("Not found.", 404);
       const headers = new Headers(res.headers);
+      headers.set("X-Nobel-Market", market.id);
       if (origin && env.ALLOWED_ORIGINS.split(",").includes(origin)) {
         headers.set("Access-Control-Allow-Origin", origin);
         headers.set("Vary", "Origin");
+        headers.set("Access-Control-Expose-Headers", "X-Nobel-Market");
       }
       headers.set("X-Content-Type-Options", "nosniff");
       return new Response(res.body, { status: res.status, headers });
@@ -228,6 +238,8 @@ export default {
       const headers: Record<string, string> = {};
       if (origin && env.ALLOWED_ORIGINS.split(",").includes(origin))
         headers["Access-Control-Allow-Origin"] = origin;
+      if (route) headers["X-Nobel-Market"] = route.market.id;
+      headers["Access-Control-Expose-Headers"] = "X-Nobel-Market";
       return Response.json(
         {
           error:
@@ -280,6 +292,30 @@ export class Market extends DurableObject<Env> {
       });
       this.ctx.waitUntil(this.broadcast());
     }
+  }
+  async initializePublicMarket(): Promise<void> {
+    if (this.meta("market_id", "") === "public") return;
+    if (this.meta("market_id", "") || this.meta("phase", "setup") !== "setup" ||
+        this.meta("roster", "") || this.all().length || Number(this.meta("revision", "0")))
+      throw new RuleError("Public market initialization requires an empty, unused object.", 409);
+    if (this.env.DEV_AUTH !== "local-only" && (!roster.launchReady ||
+        !this.env.GOOGLE_CLIENT_ID || !this.env.SESSION_SECRET || !this.env.ADMIN_SUB))
+      throw new RuleError("Public opening requires reviewed data and completed sign-in configuration.", 503);
+    const close = this.env.MARKET_CLOSE;
+    const phase = Date.now() < Date.parse(close) ? "open" : "closed";
+    this.ctx.storage.transactionSync(() => {
+      this.put("market_id", "public");
+      this.put("phase", phase);
+      this.put("close", close);
+      this.put("roster", rosterIdentity);
+      this.put("roster_version", roster.version);
+      this.put("revision", "1");
+      this.audit("approved-release", "public-market-created", {
+        marketId: "public", phase, closesAt: close, rosterVersion: roster.version,
+        reason: "Separate public user group approved by Simon on October 8, 2026.",
+      });
+    });
+    if (phase === "open") await this.ctx.storage.setAlarm(Date.parse(close));
   }
   async execute(
     method: string,
@@ -387,6 +423,7 @@ export class Market extends DurableObject<Env> {
       .map((r) => ({ at: r.at, ...JSON.parse(r.data) }));
     return {
       ...aggregate(entries),
+      marketId: this.meta("market_id", "original") as "original" | "public",
       phase,
       closesAt,
       announcement: this.env.ANNOUNCEMENT,

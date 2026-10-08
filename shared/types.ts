@@ -79,6 +79,7 @@ export type Settlement = {
   revision: number;
 };
 export type Snapshot = {
+  marketId?: "original" | "public";
   phase: "setup" | "open" | "paused" | "closed" | "settled";
   closesAt: string;
   announcement: string;

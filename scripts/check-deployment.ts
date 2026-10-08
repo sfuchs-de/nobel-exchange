@@ -19,5 +19,16 @@ if (process.argv.includes("--live")) {
   assert.equal(market.announcement, c.vars.ANNOUNCEMENT);
   assert(["setup", "open", "paused", "closed", "settled"].includes(market.phase));
   if (["setup", "open", "paused"].includes(market.phase)) assert(!market.entries, "Private portfolios leaked");
+  assert.equal(config.marketId, "original");
+  assert.equal(market.marketId, "original");
+  const publicConfig = await fetch(api + "/api/public/config").then(r => {assert(r.ok); return r.json();});
+  const publicMarket = await fetch(api + "/api/public/market").then(r => {assert(r.ok); return r.json();});
+  assert.equal(publicConfig.marketId, "public");
+  assert(publicConfig.authReady && !publicConfig.development);
+  assert.equal(publicMarket.marketId, "public");
+  assert.equal(publicMarket.rosterVersion, market.rosterVersion);
+  assert.equal(publicMarket.closesAt, market.closesAt);
+  assert.equal(publicMarket.announcement, market.announcement);
+  if (["setup", "open", "paused"].includes(publicMarket.phase)) assert(!publicMarket.entries, "Public-group portfolios leaked before closing");
 }
 console.log("Production configuration checks passed" + (process.argv.includes("--live") ? "; HTTPS API and sign-in ready." : "; live service not checked."));

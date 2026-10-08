@@ -3,6 +3,8 @@ import { spawn } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import http from "node:http";
+import { randomBytes } from "node:crypto";
 let state = fs.mkdtempSync(path.join(os.tmpdir(), "nobel-test-"));
 let server;
 const start = async (config) => {
@@ -83,6 +85,37 @@ const check = (name, truth) => {
   assert.ok(truth, name);
   checks.push(name);
 };
+// A small read-only WebSocket probe: no credentials or third-party dependency.
+// Read server frames (unmasked); the test never sends commands to the feed.
+const feed = (prefix) => new Promise((resolve, reject) => {
+  const messages = [];
+  const req = http.request("http://127.0.0.1:8797/api" + prefix + "/live", {
+    headers: { Origin: "http://127.0.0.1:4196", Upgrade: "websocket", Connection: "Upgrade",
+      "Sec-WebSocket-Key": randomBytes(16).toString("base64"), "Sec-WebSocket-Version": "13" },
+  });
+  const timer = setTimeout(() => { req.destroy(); reject(Error("WebSocket probe timed out")); }, 4000);
+  req.on("error", reject);
+  req.on("response", r => { clearTimeout(timer); reject(Error("Expected WebSocket upgrade, got " + r.statusCode)); });
+  req.on("upgrade", (_r, socket, head) => {
+    let buffer = Buffer.alloc(0);
+    const parse = chunk => {
+      buffer = Buffer.concat([buffer, chunk]);
+      while (buffer.length >= 2) {
+        let size = buffer[1] & 127, offset = 2;
+        if (size === 126) { if (buffer.length < 4) return; size = buffer.readUInt16BE(2); offset = 4; }
+        else if (size === 127) { if (buffer.length < 10) return; size = Number(buffer.readBigUInt64BE(2)); offset = 10; }
+        if (buffer.length < offset + size) return;
+        const opcode = buffer[0] & 15, data = buffer.subarray(offset, offset + size);
+        buffer = buffer.subarray(offset + size);
+        if (opcode === 1) messages.push(JSON.parse(data.toString()));
+        if (messages.length === 1) { clearTimeout(timer); resolve({messages, close: () => socket.destroy()}); }
+      }
+    };
+    socket.on("data", parse);
+    if (head.length) parse(head);
+  });
+  req.end();
+});
 try {
   // Reproduce an already-open 99-person market without touching the preview.
   const fixture = path.resolve("worker/.migration-fixture.ts");
@@ -374,6 +407,66 @@ try {
     "Export omits Google identity fields",
     !JSON.stringify(exported).includes("dev-alice"),
   );
+  // Second user base: deliberately reuse Alice's identity, version and receipt
+  // identifiers. These must be independent, not aliases of the existing room.
+  const originalExport = JSON.stringify(exported);
+  const pubConfig = (await request("/public/config")).body;
+  const originalConfig = (await request("/config")).body;
+  check("Config identifies the selected original/public group", pubConfig.marketId === "public" && originalConfig.marketId === "original");
+  let publicMarket = (await request("/public/market")).body;
+  check("Public market starts empty and open with the same roster/deadline", publicMarket.marketId === "public" && publicMarket.phase === "open" && publicMarket.participants === 0 && publicMarket.pool === 0 && publicMarket.closesAt === market.closesAt && publicMarket.rosterVersion === market.rosterVersion);
+  check("Public creation leaves the original export unchanged", JSON.stringify((await request("/admin/export", "GET", undefined, "admin")).body, (key, value) => key === "serverTime" ? undefined : value) === JSON.stringify(JSON.parse(originalExport), (key, value) => key === "serverTime" ? undefined : value));
+  check("Public rejects unsigned saves", (await request("/public/portfolio", "PUT", {})).status === 401);
+  check("Public rejects non-admin control", (await request("/public/admin/state", "POST", {phase:"closed"}, "alice")).status === 403);
+  check("Public rejects untrusted origins", (await request("/public/portfolio", "PUT", {}, "alice", "https://untrusted.example")).status === 403);
+  check("Same account initially has no public portfolio", (await request("/public/me", "GET", undefined, "alice")).body.entry === null);
+  const originalFeed = await feed("");
+  const publicFeed = await feed("/public");
+  try {
+    const originalMessages = originalFeed.messages.length;
+    const publicSave = await request("/public/portfolio", "PUT", {
+      allocation: {"ariel-pakes":100}, version:0, requestId:id, displayName:"Public Alice",
+      marketId: "original", objectName:"economics-2026", // ignored: routing is server-owned
+    }, "alice");
+    check("Same Google identity can save an independent public portfolio", publicSave.status === 200 && publicSave.body.entry.version === 1 && publicSave.body.entry.id !== before.id);
+    const publicRetry = await request("/public/portfolio", "PUT", {
+      allocation:{"ariel-pakes":100},version:0,requestId:id,displayName:"Public Alice",
+    }, "alice");
+    check("Same request ID has an independent public save receipt", publicRetry.status === 200 && JSON.stringify(publicRetry.body) === JSON.stringify(publicSave.body));
+    await new Promise(r => setTimeout(r, 200));
+    check("Public live feed updates only its own group", publicFeed.messages.some(m => m.pool === 100) && publicFeed.messages.every(m => m.marketId === "public") && originalFeed.messages.length === originalMessages && originalFeed.messages.every(m => m.marketId === "original"));
+    publicMarket = (await request("/public/market")).body;
+    check("Public aggregates are independent and portfolios private", publicMarket.pool === 100 && publicMarket.participants === 1 && publicMarket.totals["ariel-pakes"] === 100 && !publicMarket.entries);
+    check("Original saved portfolio and full audit remain unchanged", JSON.stringify((await request("/me", "GET", undefined, "alice")).body.entry) === JSON.stringify(after) && JSON.stringify((await request("/admin/export", "GET", undefined, "admin")).body, (key,value) => key === "serverTime" ? undefined : value) === JSON.stringify(JSON.parse(originalExport), (key,value) => key === "serverTime" ? undefined : value));
+  } finally {
+    originalFeed.close(); publicFeed.close();
+  }
+  const publicBeforeRestart = (await request("/public/me", "GET", undefined, "alice")).body.entry;
+  await stop(); await start();
+  check("Restart preserves both independent portfolios", JSON.stringify((await request("/public/me", "GET", undefined, "alice")).body.entry) === JSON.stringify(publicBeforeRestart) && JSON.stringify((await request("/me", "GET", undefined, "alice")).body.entry) === JSON.stringify(after));
+  const publicExport = (await request("/public/admin/export", "GET", undefined, "admin")).body;
+  check("Bootstrap is audited exactly once and export stays within public group", publicExport.entries.length === 1 && publicExport.entries[0].displayName === "Public Alice" && publicExport.audit.filter(e => e.action === "public-market-created").length === 1 && publicExport.snapshot.marketId === "public");
+  await request("/public/admin/state", "POST", {phase:"paused"}, "admin");
+  check("Public pauses without auto-reopening on refresh", (await request("/public/market")).body.phase === "paused");
+  check("Public paused save rejected", (await request("/public/portfolio", "PUT", {allocation:{"ariel-pakes":100},version:1,requestId:crypto.randomUUID(),displayName:"Public Alice"}, "alice")).status === 409);
+  await stop(); await start();
+  check("Public pause persists across restart", (await request("/public/market")).body.phase === "paused");
+  await request("/public/admin/state", "POST", {phase:"open"}, "admin");
+  const parallelPublic = await Promise.all([1,2].map(() => request("/public/portfolio", "PUT", {allocation:{"hal-varian":100},version:1,requestId:crypto.randomUUID(),displayName:"Public Alice"}, "alice")));
+  check("Public concurrent same-version writes cannot lose or multiply credits", parallelPublic.filter(r => r.status === 200).length === 1 && parallelPublic.filter(r => r.status === 409).length === 1 && (await request("/public/market")).body.pool === 100);
+  check("Public deadline frozen after entry", (await request("/public/admin/state", "POST", {phase:"open",closesAt:"2026-10-13T00:00:00Z"}, "admin")).status === 409);
+  await request("/public/admin/state", "POST", {phase:"closed"}, "admin");
+  publicMarket = (await request("/public/market")).body;
+  check("Public closing exposes only public final entries", publicMarket.entries.length === 1 && publicMarket.entries[0].displayName === "Public Alice");
+  check("Public close cannot be undone by bootstrap or admin", (await request("/public/admin/state", "POST", {phase:"open"}, "admin")).status === 409 && (await request("/public/market")).body.phase === "closed");
+  const publicPreview = (await request("/public/admin/settlement-preview", "POST", {winners:[{candidateId:"hal-varian",share:1}]}, "admin")).body;
+  check("Public settlement uses only its own 100-point pool", publicPreview.rows.length === 1 && publicPreview.rows[0].points === 100);
+  const publicSettled = await request("/public/admin/settle", "POST", {
+    winners:[{candidateId:"hal-varian",share:1}],source:"https://www.nobelprize.org/prizes/economic-sciences/2026/summary/",
+    reason:"Separate synthetic public settlement",expectedRevision:publicPreview.revision,
+  }, "admin");
+  check("Public settlement is independent of original settlement", publicSettled.status === 200 && publicSettled.body.settlement.revision === 1 && (await request("/market")).body.settlement.revision === 2);
+  check("Unknown markets cannot create arbitrary objects", (await request("/other/market")).status === 404 && (await request("/publicity/market")).status === 404);
   await stop();
   state = fs.mkdtempSync(path.join(os.tmpdir(), "nobel-deadline-test-"));
   await start();

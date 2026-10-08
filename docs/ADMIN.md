@@ -2,6 +2,8 @@
 
 ## Before opening
 
+Check the header: **Original group** or **Public group**. The same administrator account manages both, but every control, export and settlement applies only to the current URL. The public group at `/nobel-exchange/public/` starts independently; existing original entries are not transferred. Public initialization was explicitly approved on October 8 and is one-time, not an auto-reopen rule.
+
 Sign in as Simon, open the account menu, and choose **Administrator desk**. Verify the edition, roster, closing time, official announcement time, privacy notice and authentication. Opening freezes candidate IDs/names/eligibility. The deadline freezes after the first submitted entry. Data/configuration must be reviewed before production opening.
 
 **Pause** temporarily rejects new saves without deleting anything. Existing portfolios still count. **Close** is final: it makes individual portfolios public and rejects future changes. A closed market cannot be reopened, including by pausing first. A state change is audited. The deadline closes the market even if nobody has the admin page open.
@@ -32,3 +34,5 @@ Duplicate display names are allowed: identity is the Google account, not the vis
 - Unexpected quota or service failure: pause if possible, explain availability honestly, and do not secretly extend a frozen deadline.
 
 Export the administrator JSON for an audit and retain it privately. See deployment instructions for full-data recovery limitations.
+
+Export **both groups** before future releases; filenames include `original` or `public`. On prize-announcement day, preview and publish the same verified laureates/shares separately in both administrator desks. Different backing and participant counts produce separate point pools and leaderboards. Neither settlement modifies the other group.

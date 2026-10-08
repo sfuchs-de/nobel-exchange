@@ -36,6 +36,7 @@ import type {
 import { projectedPayout, score } from "../shared/rules";
 import { crowdRanking } from "../shared/market";
 import { portfolioSaveState } from "../shared/portfolio";
+import { belongsToMarket, marketForPage } from "../shared/markets";
 import { MarketPulse } from "./MarketPulse";
 import { catalogCandidates, contenderGroups, groupOrder, evidenceKinds, leadEvidence } from "../shared/catalog";
 
@@ -57,6 +58,9 @@ const colors: Record<string, string> = {
   "Political economy": "#886359",
 };
 const apiBase = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
+const selectedMarket = marketForPage(location.pathname);
+if (!selectedMarket) throw new Error("Unknown Nobel Exchange market address.");
+const activeMarket = selectedMarket;
 const fmt = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 });
 const compact = new Intl.NumberFormat("en-US", {
   notation: "compact",
@@ -81,6 +85,7 @@ const same = (a: Allocation, b: Allocation) =>
   JSON.stringify(Object.entries(a).sort()) ===
   JSON.stringify(Object.entries(b).sort());
 const empty: Snapshot = {
+  marketId: activeMarket.id,
   phase: "setup",
   closesAt: "2026-10-12T00:00:00Z",
   announcement: "2026-10-12T09:45:00Z",
@@ -97,7 +102,7 @@ async function request(
   options: RequestInit = {},
   token?: string,
 ) {
-  const response = await fetch(apiBase + "/api" + path, {
+  const response = await fetch(apiBase + activeMarket.apiPrefix + path, {
     ...options,
     headers: {
       ...(options.body ? { "Content-Type": "application/json" } : {}),
@@ -106,6 +111,9 @@ async function request(
     },
   });
   const body = await response.json();
+  const responseMarket = response.headers.get("X-Nobel-Market");
+  if (responseMarket !== activeMarket.id && !(responseMarket === null && activeMarket.id === "original"))
+    throw new Error("The server returned a different market. Please refresh before saving.");
   if (!response.ok)
     throw Object.assign(
       new Error(body.error || "This request could not be completed."),
@@ -211,7 +219,7 @@ function App() {
     [config, setConfig] = useState<any>({});
   const [session, setSession] = useState<Session | null>(() => {
     try {
-      return JSON.parse(sessionStorage.getItem("nobel-session") || "null");
+      return JSON.parse(sessionStorage.getItem(activeMarket.sessionKey) || "null");
     } catch {
       return null;
     }
@@ -236,6 +244,8 @@ function App() {
     lastRevision = useRef(-1),
     serverOffset = useRef(0);
   const receive = (data: Snapshot) => {
+    if (!belongsToMarket(data, activeMarket))
+      throw new Error("The live feed belongs to a different market.");
     if (data.revision < lastRevision.current) return;
     lastRevision.current = data.revision;
     serverOffset.current = Date.parse(data.serverTime) - Date.now();
@@ -263,7 +273,7 @@ function App() {
     load();
     const connect = () => {
       if (stopped) return;
-      const url = new URL(apiBase + "/api/live", location.origin);
+      const url = new URL(apiBase + activeMarket.apiPrefix + "/live", location.origin);
       url.protocol = url.protocol === "https:" ? "wss:" : "ws:";
       ws = new WebSocket(url);
       ws.onopen = () => {
@@ -308,7 +318,7 @@ function App() {
       setLoaded(true);
       return;
     }
-    sessionStorage.setItem("nobel-session", JSON.stringify(session));
+    sessionStorage.setItem(activeMarket.sessionKey, JSON.stringify(session));
     request("/me", {}, session.token)
       .then(({ entry: e, admin }) => {
         setEntry(e);
@@ -321,7 +331,7 @@ function App() {
         setError(e.message);
         setLoaded(true);
         if (e.status === 401) {
-          sessionStorage.removeItem("nobel-session");
+          sessionStorage.removeItem(activeMarket.sessionKey);
           setSession(null);
         }
       });
@@ -772,7 +782,7 @@ function App() {
               N<span>✳</span>
             </span>
             <span>
-              The Nobel Exchange<small>ECONOMICS · 2026</small>
+              The Nobel Exchange<small>ECONOMICS · 2026 <span className="market-label">{activeMarket.label}</span></small>
             </span>
           </a>
           <nav aria-label="Main navigation">
@@ -818,7 +828,7 @@ function App() {
       <main id="content">
         <div className="market-strip">
           <span className="edition-label">
-            A LITTLE KNOWLEDGE. A LOT OF CONVICTION.
+            {activeMarket.label.toUpperCase()} · INDEPENDENT PICKS & PRIZE POOL
           </span>
           <span
             className={
@@ -1294,7 +1304,7 @@ function App() {
                         onClick={async () => {
                           try {
                             await navigator.clipboard.writeText(
-                              `${location.origin}${import.meta.env.BASE_URL}#results`,
+                              `${location.origin}${activeMarket.path}#results`,
                             );
                             setNotice("Results link copied.");
                           } catch {
@@ -1366,9 +1376,9 @@ function App() {
         {view === "Admin" && session?.admin && (
           <>
             <PageHeading
-              eyebrow="ADMINISTRATOR"
+              eyebrow={"ADMINISTRATOR · " + activeMarket.label.toUpperCase()}
               title="The referee’s desk."
-              text="Every state change and settlement correction is recorded. Always preview before publishing."
+              text={"Controls and results apply only to the " + activeMarket.label.toLowerCase() + ". Every change is recorded; always preview before publishing."}
             />
             <div className="explore-grid">
               <section className="panel">
@@ -1415,7 +1425,7 @@ function App() {
                           type: "application/json",
                         }),
                       );
-                      a.download = "nobel-exchange-export.json";
+                      a.download = `nobel-exchange-${activeMarket.id}-export.json`;
                       a.click();
                       URL.revokeObjectURL(a.href);
                     } catch (e: any) {
@@ -1858,7 +1868,7 @@ function App() {
                 <b>Split 100 whole credits.</b>
                 <span>
                   Join with Google, choose a display name, and save. One
-                  portfolio per Google account.
+                  portfolio per Google account in this group.
                 </span>
               </li>
               <li>
@@ -1876,6 +1886,11 @@ function App() {
                 </span>
               </li>
             </ol>
+            <p>
+              You’re in the <b>{activeMarket.label.toLowerCase()}</b>. Each group
+              has its own portfolios, backing, prize pool and leaderboard. You
+              may join both with the same Google account; entries do not carry over.
+            </p>
             <div className="example">
               <span>100 players → 10,000 points</span>
               <strong>10% of a sole winner’s backing = 1,000 points.</strong>
@@ -2034,9 +2049,9 @@ function App() {
               <Coins size={34} />
             </div>
             <p>
-              One Google account. One 100-credit portfolio.
+              One Google account. One 100-credit portfolio in this group.
               <br />
-              Your display name is up to you.
+              Joining the {activeMarket.label.toLowerCase()}. Your display name is up to you.
             </p>
             <div ref={googleMount} />
             {!config.authReady && (
@@ -2080,7 +2095,7 @@ function App() {
         </Modal>
       )}
       {modal === "account" && (
-        <Modal title="Your account" onClose={() => setModal("")}>
+        <Modal title={"Your account · " + activeMarket.label} onClose={() => setModal("")}>
           <div className="rules-content">
             <p>
               Signed in as <b>{name || session?.displayName}</b>.
@@ -2104,7 +2119,7 @@ function App() {
             <button
               className="text-button"
               onClick={() => {
-                sessionStorage.removeItem("nobel-session");
+                sessionStorage.removeItem(activeMarket.sessionKey);
                 setSession(null);
                 setDraft({});
                 setName("");
@@ -2119,11 +2134,11 @@ function App() {
         </Modal>
       )}
       {modal === "close-market" && (
-        <Modal title="Close the market?" onClose={() => setModal("")}>
+        <Modal title={"Close the " + activeMarket.label.toLowerCase() + "?"} onClose={() => setModal("")}>
           <div className="rules-content">
             <p>
-              This locks every portfolio and makes display names and allocations
-              public. A closed market cannot be reopened.
+              This locks every portfolio in the {activeMarket.label.toLowerCase()} and makes its display names and allocations
+              public. The other group is unchanged. A closed market cannot be reopened.
             </p>
             <div className="button-row">
               <button onClick={() => setModal("")}>Keep it open</button>
