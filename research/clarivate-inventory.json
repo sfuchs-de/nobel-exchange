@@ -1,0 +1,943 @@
+{
+  "retrieved": "2026-10-08",
+  "index": "https://en.wikipedia.org/wiki/List_of_Clarivate_Citation_laureates_in_Economic_Sciences",
+  "primaryArchive": "https://clarivate.com/citation-laureates/hall-of-citation-laureates/",
+  "entries": [
+    {
+      "name": "Robert F. Engle",
+      "year": "2002–2005",
+      "institution_at_award": "University of California, San Diego",
+      "profile": "https://en.wikipedia.org/wiki/Robert_F._Engle",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Clive Granger",
+      "year": "2002–2005",
+      "institution_at_award": "University of California, San Diego",
+      "profile": "https://en.wikipedia.org/wiki/Clive_Granger",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Daniel Kahneman",
+      "year": "2002–2005",
+      "institution_at_award": "Princeton University University of British Columbia",
+      "profile": "https://en.wikipedia.org/wiki/Daniel_Kahneman",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Robert Barro",
+      "year": "2002–2005",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Robert_Barro",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Eugene Fama",
+      "year": "2002–2005",
+      "institution_at_award": "University of Chicago",
+      "profile": "https://en.wikipedia.org/wiki/Eugene_Fama",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Kenneth French",
+      "year": "2002–2005",
+      "institution_at_award": "Dartmouth College",
+      "profile": "https://en.wikipedia.org/wiki/Kenneth_French",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Paul Romer",
+      "year": "2002–2005",
+      "institution_at_award": "New York University",
+      "profile": "https://en.wikipedia.org/wiki/Paul_Romer",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Richard Thaler",
+      "year": "2002–2005",
+      "institution_at_award": "Cornell University University of Chicago",
+      "profile": "https://en.wikipedia.org/wiki/Richard_Thaler",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Paul Krugman",
+      "year": "2006",
+      "institution_at_award": "Princeton University",
+      "profile": "https://en.wikipedia.org/wiki/Paul_Krugman",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Jagdish Bhagwati",
+      "year": "2006",
+      "institution_at_award": "Columbia University",
+      "profile": "https://en.wikipedia.org/wiki/Jagdish_Bhagwati",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Avinash Dixit",
+      "year": "2006",
+      "institution_at_award": "Princeton University",
+      "profile": "https://en.wikipedia.org/wiki/Avinash_Dixit",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Dale W. Jorgenson",
+      "year": "2006",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Dale_W._Jorgenson",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Oliver Hart",
+      "year": "2006",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Oliver_Hart_(economist)",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Bengt Holmström",
+      "year": "2006",
+      "institution_at_award": "Massachusetts Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/Bengt_Holmström",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Oliver E. Williamson",
+      "year": "2006",
+      "institution_at_award": "University of Pennsylvania University of California, Berkeley",
+      "profile": "https://en.wikipedia.org/wiki/Oliver_E._Williamson",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Elhanan Helpman",
+      "year": "2007",
+      "institution_at_award": "Harvard University Tel Aviv University",
+      "profile": "https://en.wikipedia.org/wiki/Elhanan_Helpman",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Gene Grossman",
+      "year": "2007",
+      "institution_at_award": "Princeton University",
+      "profile": "https://en.wikipedia.org/wiki/Gene_Grossman",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Jean Tirole",
+      "year": "2007",
+      "institution_at_award": "Massachusetts Institute of Technology Toulouse School of Economics",
+      "profile": "https://en.wikipedia.org/wiki/Jean_Tirole",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Robert B. Wilson",
+      "year": "2007",
+      "institution_at_award": "Stanford University",
+      "profile": "https://en.wikipedia.org/wiki/Robert_B._Wilson",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Paul Milgrom",
+      "year": "2007",
+      "institution_at_award": "Stanford University",
+      "profile": "https://en.wikipedia.org/wiki/Paul_Milgrom",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Lars Peter Hansen",
+      "year": "2008",
+      "institution_at_award": "University of Chicago",
+      "profile": "https://en.wikipedia.org/wiki/Lars_Peter_Hansen",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Thomas J. Sargent",
+      "year": "2008",
+      "institution_at_award": ".mw-parser-output .plainlist ol,.mw-parser-output .plainlist ul{line-height:inherit;list-style:none;margin:0;padding:0}.mw-parser-output .plainlist ol li,.mw-parser-output .plainlist ul li{margin-bottom:0} New York University Hoover Institution",
+      "profile": "https://en.wikipedia.org/wiki/Thomas_J._Sargent",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Christopher A. Sims",
+      "year": "2008",
+      "institution_at_award": "Princeton University",
+      "profile": "https://en.wikipedia.org/wiki/Christopher_A._Sims",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Armen Alchian",
+      "year": "2008",
+      "institution_at_award": "University of California, Los Angeles",
+      "profile": "https://en.wikipedia.org/wiki/Armen_Alchian",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Harold Demsetz",
+      "year": "2008",
+      "institution_at_award": "University of California, Los Angeles",
+      "profile": "https://en.wikipedia.org/wiki/Harold_Demsetz",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Martin Feldstein",
+      "year": "2008",
+      "institution_at_award": "Harvard University National Bureau of Economic Research",
+      "profile": "https://en.wikipedia.org/wiki/Martin_Feldstein",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Ernst Fehr",
+      "year": "2009",
+      "institution_at_award": "University of Zürich",
+      "profile": "https://en.wikipedia.org/wiki/Ernst_Fehr",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Matthew Rabin",
+      "year": "2009",
+      "institution_at_award": "Harvard Business School",
+      "profile": "https://en.wikipedia.org/wiki/Matthew_Rabin",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "William Nordhaus",
+      "year": "2009",
+      "institution_at_award": "Yale University",
+      "profile": "https://en.wikipedia.org/wiki/William_Nordhaus",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Martin Weitzman",
+      "year": "2009",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Martin_Weitzman",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "John B. Taylor",
+      "year": "2009",
+      "institution_at_award": "Stanford University Hoover Institution",
+      "profile": "https://en.wikipedia.org/wiki/John_B._Taylor",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Jordi Galí",
+      "year": "2009",
+      "institution_at_award": "Pompeu Fabra University Barcelona School of Economics",
+      "profile": "https://en.wikipedia.org/wiki/Jordi_Galí",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Mark Gertler",
+      "year": "2009",
+      "institution_at_award": "New York University",
+      "profile": "https://en.wikipedia.org/wiki/Mark_Gertler_(economist)",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Alberto Alesina",
+      "year": "2010",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Alberto_Alesina",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Nobuhiro Kiyotaki",
+      "year": "2010",
+      "institution_at_award": "Princeton University",
+      "profile": "https://en.wikipedia.org/wiki/Nobuhiro_Kiyotaki",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "John H. Moore",
+      "year": "2010",
+      "institution_at_award": "University of Edinburgh London School of Economics",
+      "profile": "https://en.wikipedia.org/wiki/John_Moore_(economist)",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Kevin M. Murphy",
+      "year": "2010",
+      "institution_at_award": "Hoover Institution University of Chicago",
+      "profile": "https://en.wikipedia.org/wiki/Kevin_M._Murphy",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Douglas Diamond",
+      "year": "2011",
+      "institution_at_award": "University of Chicago",
+      "profile": "https://en.wikipedia.org/wiki/Douglas_Diamond",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Anne Osborn Krueger",
+      "year": "2011",
+      "institution_at_award": "Johns Hopkins University",
+      "profile": "https://en.wikipedia.org/wiki/Anne_Osborn_Krueger",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Gordon Tullock",
+      "year": "2011",
+      "institution_at_award": "George Mason University School of Law",
+      "profile": "https://en.wikipedia.org/wiki/Gordon_Tullock",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Jerry A. Hausman",
+      "year": "2011",
+      "institution_at_award": "Massachusetts Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/Jerry_A._Hausman",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Halbert White",
+      "year": "2011",
+      "institution_at_award": "University of California, San Diego",
+      "profile": "https://en.wikipedia.org/wiki/Halbert_White",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Tony Atkinson",
+      "year": "2012",
+      "institution_at_award": "Oxford University",
+      "profile": "https://en.wikipedia.org/wiki/Tony_Atkinson",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Angus Deaton",
+      "year": "2012",
+      "institution_at_award": "Princeton University",
+      "profile": "https://en.wikipedia.org/wiki/Angus_Deaton",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Stephen Ross",
+      "year": "2012",
+      "institution_at_award": "Massachusetts Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/Stephen_Ross_(economist)",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Robert J. Shiller",
+      "year": "2012",
+      "institution_at_award": "Yale University",
+      "profile": "https://en.wikipedia.org/wiki/Robert_J._Shiller",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Joshua Angrist",
+      "year": "2013",
+      "institution_at_award": "Massachusetts Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/Joshua_Angrist",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "David Card",
+      "year": "2013",
+      "institution_at_award": "University of California, Berkeley",
+      "profile": "https://en.wikipedia.org/wiki/David_Card",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Alan Krueger",
+      "year": "2013",
+      "institution_at_award": "Princeton University",
+      "profile": "https://en.wikipedia.org/wiki/Alan_Krueger",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "David Forbes Hendry",
+      "year": "2013",
+      "institution_at_award": "University of Oxford",
+      "profile": "https://en.wikipedia.org/wiki/David_Forbes_Hendry",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "M. Hashem Pesaran",
+      "year": "2013",
+      "institution_at_award": "University of Cambridge University of Southern California",
+      "profile": "https://en.wikipedia.org/wiki/M._Hashem_Pesaran",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Peter C. B. Phillips",
+      "year": "2013",
+      "institution_at_award": "Yale University",
+      "profile": "https://en.wikipedia.org/wiki/Peter_C._B._Phillips",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Sam Peltzman",
+      "year": "2013",
+      "institution_at_award": "University of Chicago Booth School of Business",
+      "profile": "https://en.wikipedia.org/wiki/Sam_Peltzman",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Richard Posner",
+      "year": "2013",
+      "institution_at_award": "University of Chicago Law School",
+      "profile": "https://en.wikipedia.org/wiki/Richard_Posner",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Philippe Aghion",
+      "year": "2014",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Philippe_Aghion",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Peter Howitt",
+      "year": "2014",
+      "institution_at_award": "Brown University",
+      "profile": "https://en.wikipedia.org/wiki/Peter_Howitt_(economist)",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "William Baumol",
+      "year": "2014",
+      "institution_at_award": "New York University",
+      "profile": "https://en.wikipedia.org/wiki/William_Baumol",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Israel M. Kirzner",
+      "year": "2014",
+      "institution_at_award": "New York University",
+      "profile": "https://en.wikipedia.org/wiki/Israel_M._Kirzner",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Mark Granovetter",
+      "year": "2014",
+      "institution_at_award": "Stanford University",
+      "profile": "https://en.wikipedia.org/wiki/Mark_Granovetter",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Richard Blundell",
+      "year": "2015",
+      "institution_at_award": "University College London Institute for Fiscal Studies",
+      "profile": "https://en.wikipedia.org/wiki/Richard_Blundell",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "John A. List",
+      "year": "2015",
+      "institution_at_award": "University of Chicago",
+      "profile": "https://en.wikipedia.org/wiki/John_A._List",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Charles F. Manski",
+      "year": "2015",
+      "institution_at_award": "Northwestern University",
+      "profile": "https://en.wikipedia.org/wiki/Charles_F._Manski",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Olivier Blanchard",
+      "year": "2016",
+      "institution_at_award": "Massachusetts Institute of Technology Peterson Institute for International Economics",
+      "profile": "https://en.wikipedia.org/wiki/Olivier_Blanchard",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Edward Lazear",
+      "year": "2016",
+      "institution_at_award": "Hoover Institution Stanford Graduate School of Business",
+      "profile": "https://en.wikipedia.org/wiki/Edward_Lazear",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Marc Melitz",
+      "year": "2016",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Marc_Melitz",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Colin Camerer",
+      "year": "2017",
+      "institution_at_award": "California Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/Colin_Camerer",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "George Loewenstein",
+      "year": "2017",
+      "institution_at_award": "Carnegie Mellon University",
+      "profile": "https://en.wikipedia.org/wiki/George_Loewenstein",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Robert Hall",
+      "year": "2017",
+      "institution_at_award": "Stanford University",
+      "profile": "https://en.wikipedia.org/wiki/Robert_Hall_(economist)",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Michael C. Jensen",
+      "year": "2017",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Michael_C._Jensen",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Stewart Myers",
+      "year": "2017",
+      "institution_at_award": "Massachusetts Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/Stewart_Myers",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Raghuram Rajan",
+      "year": "2017",
+      "institution_at_award": "University of Chicago",
+      "profile": "https://en.wikipedia.org/wiki/Raghuram_Rajan",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Manuel Arellano",
+      "year": "2018",
+      "institution_at_award": "Center for Monetary and Financial Studies",
+      "profile": "https://en.wikipedia.org/wiki/Manuel_Arellano",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Steve Bond",
+      "year": "2018",
+      "institution_at_award": "Oxford University",
+      "profile": "https://en.wikipedia.org/wiki/Steve_Bond_(economist)",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Wesley M. Cohen",
+      "year": "2018",
+      "institution_at_award": "Duke University",
+      "profile": "",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Daniel A. Levinthal",
+      "year": "2018",
+      "institution_at_award": "University of Pennsylvania",
+      "profile": "https://en.wikipedia.org/wiki/Daniel_A._Levinthal",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "David M. Kreps",
+      "year": "2018",
+      "institution_at_award": "Stanford University",
+      "profile": "https://en.wikipedia.org/wiki/David_M._Kreps",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "W. Brian Arthur",
+      "year": "2019",
+      "institution_at_award": "Stanford University Santa Fe Institute",
+      "profile": "https://en.wikipedia.org/wiki/W._Brian_Arthur",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Ariel Rubinstein",
+      "year": "2019",
+      "institution_at_award": "New York University",
+      "profile": "https://en.wikipedia.org/wiki/Ariel_Rubinstein",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Søren Johansen",
+      "year": "2019",
+      "institution_at_award": "University of Copenhagen",
+      "profile": "https://en.wikipedia.org/wiki/Søren_Johansen",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Katarina Juselius-Johansen",
+      "year": "2019",
+      "institution_at_award": "University of Copenhagen",
+      "profile": "https://en.wikipedia.org/wiki/Katarina_Juselius",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "David Dickey",
+      "year": "2020",
+      "institution_at_award": "North Carolina State University",
+      "profile": "https://en.wikipedia.org/wiki/David_Dickey",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Wayne Fuller",
+      "year": "2020",
+      "institution_at_award": "Iowa State University",
+      "profile": "https://en.wikipedia.org/wiki/Wayne_Fuller",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Pierre Perron",
+      "year": "2020",
+      "institution_at_award": "Boston University",
+      "profile": "https://en.wikipedia.org/wiki/Pierre_Perron",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Claudia Goldin",
+      "year": "2020",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Claudia_Goldin",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Steven T. Berry",
+      "year": "2020",
+      "institution_at_award": "Yale University",
+      "profile": "https://en.wikipedia.org/wiki/Steven_T._Berry",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "James A. Levinsohn",
+      "year": "2020",
+      "institution_at_award": "Yale University",
+      "profile": "",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Ariél Pakes",
+      "year": "2020",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Ariél_Pakes",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "David B. Audretsch",
+      "year": "2021",
+      "institution_at_award": "Indiana University",
+      "profile": "https://en.wikipedia.org/wiki/David_B._Audretsch",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "David Teece",
+      "year": "2021",
+      "institution_at_award": "University of California, Berkeley",
+      "profile": "https://en.wikipedia.org/wiki/David_Teece",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Joel Mokyr",
+      "year": "2021",
+      "institution_at_award": "Northwestern University",
+      "profile": "https://en.wikipedia.org/wiki/Joel_Mokyr",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Carmen Reinhart",
+      "year": "2021",
+      "institution_at_award": "Harvard Kennedy School",
+      "profile": "https://en.wikipedia.org/wiki/Carmen_Reinhart",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Kenneth Rogoff",
+      "year": "2021",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Kenneth_Rogoff",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Daron Acemoglu",
+      "year": "2022",
+      "institution_at_award": "Massachusetts Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/Daron_Acemoglu",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Simon Johnson",
+      "year": "2022",
+      "institution_at_award": "Massachusetts Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/Simon_Johnson_(economist)",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "James A. Robinson",
+      "year": "2022",
+      "institution_at_award": "University of Chicago",
+      "profile": "https://en.wikipedia.org/wiki/James_A._Robinson",
+      "eligible": false,
+      "exclusion": "previous Nobel laureate"
+    },
+    {
+      "name": "Samuel Bowles",
+      "year": "2022",
+      "institution_at_award": "Santa Fe Institute University of Massachusetts",
+      "profile": "https://en.wikipedia.org/wiki/Samuel_Bowles_(economist)",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Herbert Gintis",
+      "year": "2022",
+      "institution_at_award": "Santa Fe Institute University of Massachusetts",
+      "profile": "https://en.wikipedia.org/wiki/Herbert_Gintis",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Richard Easterlin",
+      "year": "2022",
+      "institution_at_award": "University of Southern California",
+      "profile": "https://en.wikipedia.org/wiki/Richard_Easterlin",
+      "eligible": false,
+      "exclusion": "deceased"
+    },
+    {
+      "name": "Richard Layard",
+      "year": "2022",
+      "institution_at_award": "London School of Economics",
+      "profile": "https://en.wikipedia.org/wiki/Richard_Layard,_Baron_Layard",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Andrew Oswald",
+      "year": "2022",
+      "institution_at_award": "University of Warwick",
+      "profile": "https://en.wikipedia.org/wiki/Andrew_Oswald",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Raj Chetty",
+      "year": "2023",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Raj_Chetty",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Edward Glaeser",
+      "year": "2023",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Edward_Glaeser",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Thomas Piketty",
+      "year": "2023",
+      "institution_at_award": "Paris School of Economics",
+      "profile": "https://en.wikipedia.org/wiki/Thomas_Piketty",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Emmanuel Saez",
+      "year": "2023",
+      "institution_at_award": "University of California, Berkeley",
+      "profile": "https://en.wikipedia.org/wiki/Emmanuel_Saez",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Gabriel Zucman",
+      "year": "2023",
+      "institution_at_award": "Paris School of Economics École Normale Supérieure",
+      "profile": "https://en.wikipedia.org/wiki/Gabriel_Zucman",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Janet Currie",
+      "year": "2024",
+      "institution_at_award": "Princeton University",
+      "profile": "https://en.wikipedia.org/wiki/Janet_Currie",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Partha Dasgupta",
+      "year": "2024",
+      "institution_at_award": "University of Cambridge",
+      "profile": "https://en.wikipedia.org/wiki/Partha_Dasgupta",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Paolo Mauro",
+      "year": "2024",
+      "institution_at_award": "International Finance Corporation",
+      "profile": "https://de.wikipedia.org/wiki/Paolo%20Mauro",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "David Autor",
+      "year": "2025",
+      "institution_at_award": "Massachusetts Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/David_Autor",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Lawrence F. Katz",
+      "year": "2025",
+      "institution_at_award": "Harvard University",
+      "profile": "https://en.wikipedia.org/wiki/Lawrence_F._Katz",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Marianne Bertrand",
+      "year": "2025",
+      "institution_at_award": "University of Chicago Booth School of Business",
+      "profile": "https://en.wikipedia.org/wiki/Marianne_Bertrand",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Sendhil Mullainathan",
+      "year": "2025",
+      "institution_at_award": "Massachusetts Institute of Technology",
+      "profile": "https://en.wikipedia.org/wiki/Sendhil_Mullainathan",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Nicholas Bloom",
+      "year": "2025",
+      "institution_at_award": "Stanford University",
+      "profile": "https://en.wikipedia.org/wiki/Nicholas_Bloom",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Susan Athey",
+      "year": "2026",
+      "institution_at_award": "Stanford University",
+      "profile": "https://en.wikipedia.org/wiki/Susan_Athey",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Hal Varian",
+      "year": "2026",
+      "institution_at_award": "University of California, Berkeley",
+      "profile": "https://en.wikipedia.org/wiki/Hal_Varian",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Michael Dean Woodford",
+      "year": "2026",
+      "institution_at_award": "Columbia University",
+      "profile": "https://en.wikipedia.org/wiki/Michael_Dean_Woodford",
+      "eligible": true,
+      "exclusion": null
+    },
+    {
+      "name": "Sidney G. Winter",
+      "year": "2026",
+      "institution_at_award": "University of Pennsylvania",
+      "profile": "https://en.wikipedia.org/wiki/Sidney_G._Winter",
+      "eligible": true,
+      "exclusion": null
+    }
+  ]
+}

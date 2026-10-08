@@ -1,0 +1,57 @@
+# Implementation and verification status
+
+Updated 8 October 2026. **Local working preview; no public launch.**
+
+Preview: http://127.0.0.1:4196/nobel-exchange/
+
+## Implemented
+
+- Citation-ranked article lists in compact profile rows: 413 articles across 89 matched economists, 69 complete five-article lists, 20 partial lists and 10 unavailable author matches. Citation counts and publication links are sourced, misleading book reviews excluded, original landmarks preserved separately. Publisher metadata matches 372 articles; 41 clearly labelled indexed dates use OpenAlex authorship only. See [methodology](ARTICLE-RANKINGS.md). The public OpenAlex quota prevented the full 60-record refresh, so completion remains open.
+
+- Four responsive participant views and an administrator interface, in cream, ink and gold. Initials are intentional portrait fallbacks.
+- Market redesigned as a compact list: trimmed introduction and statistics, one search/filter/sort toolbar, small field accents, crowd backing and inline credit controls. Research, publication links, honors and citation plots remain in the candidate dialog. Scoring is unchanged.
+- Featured now uses the reviewed contender groups, not award year. The opening sequence starts Pakes, Athey and Barro. All 99 names have a disposition, dated evidence and a profile explanation; awards, previews, predictions, possible partners, historical mentions, future longlists and market listings are distinguished. Research-field corrections and old-name aliases preserve discoverability and original IDs.
+- Crowd replaces Explore as the public overview: top-ten saved-credit ranking (expandable to all backed economists), tied ranks, credit shares, backer counts and changes since the previous portfolio update. Names open the existing research profiles. Individual portfolios remain private until closing; player scores remain in Results after settlement. No storage, API or privacy changes.
+- Market pulse shows cumulative concentration with an equal-backing reference, effective equally-backed picks, backing bands including zero, field shares and a hypothetical new-player payout curve. Fields use common 0–100% scales and click through to Market. The calculator supports whole credits and sole/half/third shares, includes the added 100-point pool and own dilution, and never saves. Backing history and changing minds remain under a disclosure. No chart is labelled a winning probability.
+- Search, field filters, detail dialogs, exactly-100-credit editing, 1–10 picks, conditional payout preview, save state and conflict recovery.
+- Worker/SQLite Durable Object, atomic saves, request receipts, optimistic versions, live WebSocket aggregates, reconnect/poll fallback, server-clock close and roster freeze.
+- Google ID-token verification and short-lived sessions. Local preview accounts are clearly labelled and unavailable on public hosts.
+- Official-share scoring, shared ranks, unawarded portions, outside-roster winners, settlement preview and versioned correction history.
+- 99 candidate profiles, 198 checked publication examples, 99 individual eligibility-source checks, 89 author citation totals and 86 explicitly labelled selected-work citation trends. All previous 98 profiles are preserved. The nine additions' OpenAlex metrics remain unavailable pending identity matching. Original institutions are labelled as award-time affiliations; additions label checked primary profiles. Haltiwanger is an established firm-dynamics case, with dated 2024 podcast advocacy rather than an asserted 2026 forecast.
+- Manual Pages release workflow and deployment, privacy, data-review and administration guides. No automatic push workflow or paid API dependency.
+
+## Verification
+
+- Article-list update: 43 unit cases and 45 isolated integration checks pass, along with build/Worker typecheck/data checks. All original profile fields reproduce their pre-enrichment SHA-256 after removing the new article-ranking field. Desktop 1440px and phone 390px/320px layouts, count alignment and disclosure states were checked. Main preview still has two fictional participants, a 200-point pool and revision 3. No commits, push or deployment.
+
+- Unit suite: 37 cases—12 scoring, six aggregate-ranking, nine editorial catalog and ten market-insight cases. Catalog checks cover 90-person retention, all 99 classifications, mature-first ordering, aliases/accents, combined filters, unavailable metrics and evidence distinctions. Market-insight checks cover empty/uniform/concentrated aggregates, band boundaries, field weighting, privacy/nonmutation, new-player dilution, official-share scoring agreement and invalid inputs.
+- Local Worker integration suite: 45 checks, including successful saves for each of the nine additions, the 100-credit invariant, concurrent version rejection, idempotent retries, restart persistence, origin/authentication rejection, close/deadline enforcement, settlement corrections and malformed/oversized requests.
+- Frontend production build, Worker typecheck and structural candidate validation pass.
+- Desktop and responsive 390px/320px layouts inspected; candidate modal, portfolio editing, Explore/table alternatives, admin preview and synthetic settled results exercised.
+- Compact-list refresh rechecked at 1440px and 1024px desktop/tablet widths and 390px/320px phone widths. No horizontal page overflow; name and field search, combined filters, sorting, no-results recovery, research dialogs, direct credit entry, increment/decrement, removal and the phone portfolio tray were exercised. UI test allocations were cleared without saving or changing shared portfolios. All 12 unit tests and 35 isolated integration checks passed again, as did build/typecheck/data validation.
+- Crowd refresh visually checked at 1440px desktop and 390px/320px phone widths, without horizontal page overflow. Market shortcut, candidate dialog, chart disclosure and Results link worked. A ten-credit unsaved draft left aggregate backing unchanged and was cleared without saving. All 18 unit tests and 35 isolated integration checks passed, along with build, Worker typecheck and candidate validation. The visible two-player market remains fictional preview data.
+- Editorial refresh checked at 1440px desktop and 390px/320px phone widths: group filters, all eight added profiles, publication/evidence links, unavailable metrics, aliases, search, no-results recovery and compact-row dates. A truncated phone filter was corrected. The draft migration is deterministic; original IDs, bibliographies and metrics are unchanged. All 70 automated checks (26 unit + 44 integration), build/typecheck and candidate validation passed. The eight additions can each receive a saved valid allocation. The test harness reports early server exit instead of hiding it in shutdown and respects the existing save throttle; integration tests require loopback-listener permission in the sandbox.
+- Haltiwanger follow-up: all previous 98 profiles are unchanged; two new papers verified via Crossref and primary records; official Nobel API has no matching laureate. His search result, evidence badges and complete profile were visually inspected. All 72 automated checks (27 unit + 45 integration), build/typecheck and data validation pass. A separate local 99-person fixture preserves both earlier frozen test stores. No real participants or production roster were changed. The existing build-size advisory remains non-blocking.
+- Market pulse refresh: all 82 automated checks (37 unit + 45 isolated integration), build, Worker typecheck and data validation pass. Desktop 1440px and phones 390px/320px were visually inspected, including expanded tables, all-field disclosure, filtered Market navigation and the actual-draft link. Half/third shares and an unbacked pick match the scenario table; phone units were aligned and SVG axis spacing/contrast improved. Calculator and drilldown use left the two-player main preview unchanged (200-point pool, revision 3, Varian 150/Athey 50; no public individual entries). No roster/backend/API edits, commits or publication. The pre-existing build-size advisory remains.
+- Two independent browser tabs saved different portfolios; public aggregates and conditional returns updated live without overwriting either player's saved choices.
+- A separate disposable test market was closed and settled with explicitly fictional winners to check leaderboard ties and mobile rendering. These are not Nobel predictions or actual results. It is not the main preview market.
+- No uncontrolled timed user study has been run. The join/select/even-split/save path is short, but the under-five-minute acceptance target still needs a first-time human trial with real Google sign-in.
+
+## Launch gates — not completed
+
+October 8 comprehensive diagnostic review: see [launch-readiness report](LAUNCH-READINESS-2026-10-08.md). All 82 existing checks, build/type/data checks passed again. A separate 40-entry parallel stress probe preserved 4,000 credits and rejected competing versions; 12 additional diagnostic checks passed. Two-tab browser saves, refresh recovery, stale-edit recovery, pause/close/settlement/correction, tied ranks and phone results were verified in disposable fixtures. Main preview stayed unchanged. Production dependency audit reported no known production-package vulnerabilities. Confirmed prelaunch fixes: normalized-name saved-state feedback, malformed/canonical administrator winner validation, Søren/Soren search and stale source/zero-unawarded copy. Real Google login, provider recovery, actual phone/browser download and production capacity remain unverified. Review only: application/roster unchanged; no commits or remote actions.
+
+1. Obtain explicit permission to publish the repository and deploy the Worker/Pages site.
+2. Authenticate the Cloudflare account; confirm free-plan quotas without upgrading automatically.
+3. Create/configure this app's Google identity client and private session/admin settings. Real Google sign-in is implemented but not authenticated or tested end to end.
+4. Decide the support/deletion contact and retention period, then update the in-app privacy notice.
+5. Approve the editorial roster, recheck last-minute eligibility, set `launchReady: true`, run `check:release`, and freeze it when opening. This gate currently fails intentionally.
+6. Verify deployed Google login with two accounts, HTTPS/CORS, live cross-browser behavior, a new-participant five-minute trial and backup/recovery before invitations.
+
+## State and safety
+
+The main local preview contains two fictional participants and no real household or research records. The updated 99-person preview uses ignored `.wrangler/preview-2026.3/`; earlier 90- and 98-person states remain untouched under `.wrangler/state/` and `.wrangler/preview-2026.2/`. No open market's frozen roster was migrated or bypassed. The application has no connection to either planner or Framework.
+
+GitHub and Cloudflare publication have not occurred. There are no commits, pushes, merges, remote CI runs or deployments from this task. Do not treat the presence of configuration files as authenticated access.
+
+Use README's two local commands to resume preview. Use `npm run test:integration` for an isolated test Worker; it does not edit the main preview. Keep exports and credentials outside the repository.

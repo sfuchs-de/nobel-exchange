@@ -1,0 +1,4278 @@
+[
+  {
+    "id": "robert-barro",
+    "status": "matched",
+    "author": "https://openalex.org/A5064323899",
+    "name": "Robert J. Barro",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of Minnesota",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Johns Hopkins University",
+      "University of Liverpool",
+      "City University of Hong Kong",
+      "Universitat Pompeu Fabra",
+      "Korea University",
+      "Peking University",
+      "Brown University",
+      "University of Minnesota System",
+      "Yale University",
+      "University of Chicago",
+      "Departamento Nacional de Planeación",
+      "Asian Development Bank",
+      "Korea University",
+      "Federal Reserve Bank of Boston",
+      "Bank of England",
+      "University of Rochester",
+      "University at Buffalo, State University of New York",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "Renmin University of China",
+      "Analysis Group (United States)",
+      "University of Pennsylvania",
+      "Clemson University",
+      "University of Hong Kong",
+      "Tsinghua University"
+    ],
+    "works": [
+      {
+        "title": "Economic Growth in a Cross Section of Countries",
+        "url": "https://doi.org/10.2307/2937943",
+        "year": 1991
+      },
+      {
+        "title": "Government Spending in a Simple Model of Endogeneous Growth",
+        "url": "https://doi.org/10.1086/261726",
+        "year": 1990
+      }
+    ]
+  },
+  {
+    "id": "kenneth-french",
+    "status": "matched",
+    "author": "https://openalex.org/A5041631912",
+    "name": "Kenneth R. French",
+    "institutions": [
+      "Dartmouth College",
+      "Dartmouth College",
+      "National Bureau of Economic Research",
+      "University of California, Los Angeles",
+      "Lehigh University",
+      "Kansas State University",
+      "University of Michigan",
+      "Yale University",
+      "University of Chicago",
+      "Goldman Sachs (United States)",
+      "University of Rochester",
+      "New York University",
+      "Indiana University",
+      "Massachusetts Institute of Technology",
+      "Columbia University"
+    ],
+    "works": [
+      {
+        "title": "Common risk factors in the returns on stocks and bonds",
+        "url": "https://doi.org/10.1016/0304-405x(93)90023-5",
+        "year": 1993
+      },
+      {
+        "title": "The Cross‐Section of Expected Stock Returns",
+        "url": "https://doi.org/10.1111/j.1540-6261.1992.tb04398.x",
+        "year": 1992
+      }
+    ]
+  },
+  {
+    "id": "jagdish-bhagwati",
+    "status": "matched",
+    "author": "https://openalex.org/A5075328004",
+    "name": "Jagdish N. Bhagwati",
+    "institutions": [
+      "University of Delhi",
+      "World Trade Organization",
+      "Council on Foreign Relations",
+      "Université Libre de Bruxelles",
+      "World Bank",
+      "Stockholm School of Economics",
+      "Washington University in St. Louis",
+      "Royal Society of Arts",
+      "Yale University",
+      "University of Oxford",
+      "University of Chicago",
+      "United Nations Conference on Trade and Development",
+      "Indian Statistical Institute, Delhi Centre",
+      "Massachusetts Institute of Technology",
+      "Indian Statistical Institute",
+      "The University of Tokyo",
+      "Columbia University"
+    ],
+    "works": [
+      {
+        "title": "The international operations of national firms: A study of direct foreign investment",
+        "url": "https://doi.org/10.1016/0304-3878(77)90016-5",
+        "year": 1977
+      },
+      {
+        "title": "Directly Unproductive, Profit-Seeking (DUP) Activities",
+        "url": "https://doi.org/10.1086/261104",
+        "year": 1982
+      }
+    ]
+  },
+  {
+    "id": "avinash-dixit",
+    "status": "matched",
+    "author": "https://openalex.org/A5047082746",
+    "name": "Avinash K. Dixit",
+    "institutions": [
+      "International Monetary Fund",
+      "World Bank",
+      "Ifo Institute for Economic Research",
+      "Lingnan University",
+      "Princeton University",
+      "University of Warwick",
+      "University of Oxford",
+      "University of Chicago",
+      "World Bank Group",
+      "Massachusetts Institute of Technology",
+      "University of Pennsylvania",
+      "University of California, Berkeley"
+    ],
+    "works": [
+      {
+        "title": "Entry and Exit Decisions under Uncertainty",
+        "url": "https://doi.org/10.1086/261619",
+        "year": 1989
+      },
+      {
+        "title": "The Determinants of Success of Special Interests in Redistributive Politics",
+        "url": "https://doi.org/10.2307/2960152",
+        "year": 1996
+      }
+    ]
+  },
+  {
+    "id": "elhanan-helpman",
+    "status": "matched",
+    "author": "https://openalex.org/A5113776429",
+    "name": "Elhanan Helpman",
+    "institutions": [
+      "Harvard University",
+      "Boston College",
+      "Canadian Institute for Advanced Research",
+      "Center for Economic and Policy Research",
+      "Pennsylvania State University",
+      "International Monetary Fund",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Harvard University",
+      "University of Illinois Urbana-Champaign",
+      "University of California, Los Angeles",
+      "Tel Aviv University",
+      "Princeton University",
+      "Brown University",
+      "British Academy",
+      "Yale University",
+      "University of Chicago",
+      "Centre for Economic Policy Research",
+      "Bank of Israel",
+      "University of Rochester",
+      "World Bank Group",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Bocconi University",
+      "Columbia University",
+      "University of Pennsylvania",
+      "Ludwig-Maximilians-Universität München",
+      "London School of Economics and Political Science"
+    ],
+    "works": [
+      {
+        "title": "Innovation and Growth in the Global Economy.",
+        "url": "https://doi.org/10.2307/2554862",
+        "year": 1993
+      },
+      {
+        "title": "International R&D spillovers",
+        "url": "https://doi.org/10.1016/0014-2921(94)00100-e",
+        "year": 1995
+      }
+    ]
+  },
+  {
+    "id": "gene-grossman",
+    "status": "matched",
+    "author": "https://openalex.org/A5103503282",
+    "name": "Gene M. Grossman",
+    "institutions": [
+      "Princeton University",
+      "Canadian Institute for Advanced Research",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Ifo Institute for Economic Research",
+      "Harvard University",
+      "University of California, Los Angeles",
+      "Tel Aviv University",
+      "City University of Hong Kong",
+      "Princeton University",
+      "Yale University",
+      "Centre for Economic Policy Research",
+      "World Bank Group",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "The University of Tokyo",
+      "London School of Economics and Political Science"
+    ],
+    "works": [
+      {
+        "title": "Economic Growth and the Environment",
+        "url": "https://doi.org/10.2307/2118443",
+        "year": 1994
+      },
+      {
+        "title": "Environmental Impacts of a North American Free Trade Agreement",
+        "url": "https://doi.org/10.3386/w3914",
+        "year": 1991
+      }
+    ]
+  },
+  {
+    "id": "ernst-fehr",
+    "status": "matched",
+    "author": "https://openalex.org/A5023874785",
+    "name": "Ernst Fehr",
+    "institutions": [
+      "University of Zurich",
+      "Goethe University Frankfurt",
+      "California Institute of Technology",
+      "University of Copenhagen",
+      "Center for Economic and Policy Research",
+      "John D. and Catherine T. MacArthur Foundation",
+      "Santa Fe Institute",
+      "Union Bank of Switzerland",
+      "Beth Israel Deaconess Medical Center",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Ifo Institute for Economic Research",
+      "University of Bonn",
+      "Harvard University",
+      "TU Wien",
+      "University of California, Santa Barbara",
+      "The University of Texas at Dallas",
+      "Wellcome Centre for Human Neuroimaging",
+      "Stockholm School of Economics",
+      "Georgetown University",
+      "George Washington University",
+      "Johannes Gutenberg University Mainz",
+      "IZA - Institute of Labor Economics",
+      "University of Zurich",
+      "University of St.Gallen",
+      "Cornell University",
+      "Federal Ministry of Labour and Social Affairs",
+      "FWF Austrian Science Fund",
+      "ETH Zurich",
+      "University Hospital Zurich",
+      "Laboratory for Social and Neural Systems Research",
+      "Collegium Helveticum",
+      "Berenson Allen Center for Noninvasive Brain Stimulation",
+      "Centre for Economic Policy Research",
+      "Universität Koblenz",
+      "Psychiatrische Universitätsklinik Zürich",
+      "University College London",
+      "Federal Reserve Bank of Boston",
+      "Hanken School of Economics",
+      "Ludwig-Maximilians-Universität München",
+      "University of Lausanne"
+    ],
+    "works": [
+      {
+        "title": "A Theory of Fairness, Competition, and Cooperation",
+        "url": "https://doi.org/10.1162/003355399556151",
+        "year": 1999
+      },
+      {
+        "title": "Altruistic punishment in humans",
+        "url": "https://doi.org/10.1038/415137a",
+        "year": 2002
+      }
+    ]
+  },
+  {
+    "id": "matthew-rabin",
+    "status": "matched",
+    "author": "https://openalex.org/A5112459695",
+    "name": "Matthew Rabin",
+    "institutions": [
+      "Harvard University",
+      "University of Essex",
+      "Northwestern University",
+      "University of Southern California",
+      "German Institute for Economic Research",
+      "University of Vienna",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of California, Los Angeles",
+      "Tel Aviv University",
+      "Hebrew University of Jerusalem",
+      "Cornell University",
+      "University of Utah",
+      "University of Michigan",
+      "Federal Reserve Board of Governors",
+      "Columbia University",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Incorporating Fairness into Game Theory and Economics",
+        "url": "https://doi.org/10.2307/j.ctvcm4j8j.15",
+        "year": 2011
+      },
+      {
+        "title": "Understanding Social Preferences with Simple Tests",
+        "url": "https://doi.org/10.1162/003355302760193904",
+        "year": 2002
+      }
+    ]
+  },
+  {
+    "id": "john-b-taylor",
+    "status": "matched",
+    "author": "https://openalex.org/A5101666528",
+    "name": "John B. Taylor",
+    "institutions": [
+      "Lyon 1 Université",
+      "Goethe University Frankfurt",
+      "Council of Economic Advisers",
+      "University of North Texas",
+      "Hoover Institution",
+      "Centre National de la Recherche Scientifique",
+      "University of Alicante",
+      "Georgia Institute of Technology",
+      "Pennsylvania State University",
+      "Executive Office of the President",
+      "National Bureau of Economic Research",
+      "Texas Parks and Wildlife Department",
+      "Harvard University",
+      "University of the West Indies System",
+      "Santa Clara University",
+      "Federal Reserve Bank of San Francisco",
+      "Princeton University",
+      "Washington College",
+      "UNSW Sydney",
+      "Massachusetts General Hospital",
+      "University of the West Indies",
+      "Federal Reserve Bank of St. Louis",
+      "Columbia University",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Discretion versus policy rules in practice",
+        "url": "https://doi.org/10.1016/0167-2231(93)90009-l",
+        "year": 1993
+      },
+      {
+        "title": "Aggregate Dynamics and Staggered Contracts",
+        "url": "https://doi.org/10.1086/260845",
+        "year": 1980
+      }
+    ]
+  },
+  {
+    "id": "jordi-gali",
+    "status": "unresolved",
+    "options": [
+      {
+        "id": "https://openalex.org/A5076507287",
+        "name": "Jordi Gaĺı",
+        "institutions": [
+          {
+            "id": "https://openalex.org/I1321305853",
+            "ror": "https://ror.org/04grmx538",
+            "display_name": "National Bureau of Economic Research",
+            "country_code": "US",
+            "type": "nonprofit",
+            "lineage": [
+              "https://openalex.org/I1321305853"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I170486558",
+            "ror": "https://ror.org/04n0g0b29",
+            "display_name": "Universitat Pompeu Fabra",
+            "country_code": "ES",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I170486558"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210115615",
+            "ror": "https://ror.org/0241avf06",
+            "display_name": "Centre de Recerca en Economia Internacional",
+            "country_code": "ES",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I4210115615",
+              "https://openalex.org/I4387153040"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I4210140326",
+            "ror": "https://ror.org/04jzmdh37",
+            "display_name": "Centre for Economic Policy Research",
+            "country_code": "GB",
+            "type": "nonprofit",
+            "lineage": [
+              "https://openalex.org/I4210140326"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I42134832",
+            "ror": "https://ror.org/02k09n368",
+            "display_name": "Barcelona School of Economics",
+            "country_code": "ES",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I42134832"
+            ]
+          },
+          {
+            "id": "https://openalex.org/I63966007",
+            "ror": "https://ror.org/042nb2s44",
+            "display_name": "Massachusetts Institute of Technology",
+            "country_code": "US",
+            "type": "education",
+            "lineage": [
+              "https://openalex.org/I63966007"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "https://openalex.org/A5029506129",
+        "name": "Jordi Galí Garreta",
+        "institutions": null
+      },
+      {
+        "id": "https://openalex.org/A5023188448",
+        "name": "Jordi Galí i Herrera",
+        "institutions": null
+      },
+      {
+        "id": "https://openalex.org/A5037000309",
+        "name": "Jordi Galí i Gimeno",
+        "institutions": null
+      },
+      {
+        "id": "https://openalex.org/A5122121897",
+        "name": "Jordi Galí",
+        "institutions": [
+          {
+            "id": "https://openalex.org/I4210115615",
+            "ror": "https://ror.org/0241avf06",
+            "display_name": "Centre de Recerca en Economia Internacional",
+            "country_code": "ES",
+            "type": "facility",
+            "lineage": [
+              "https://openalex.org/I4210115615",
+              "https://openalex.org/I4387153040"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mark-gertler",
+    "status": "matched",
+    "author": "https://openalex.org/A5003301823",
+    "name": "Mark L. Gertler",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "New York University",
+      "Dartmouth College",
+      "Boston University",
+      "Center for Economic and Policy Research",
+      "University of Minnesota",
+      "University of Wisconsin System",
+      "Swedish National Bank",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "Federal Reserve Bank of Minneapolis",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "Universitat de València",
+      "Universitat Pompeu Fabra",
+      "Princeton University",
+      "Cornell University",
+      "Federal Reserve Board of Governors",
+      "Swiss National Bank",
+      "Yale University",
+      "Centre de Recerca en Economia Internacional",
+      "Federal Reserve Bank of New York",
+      "University of Houston",
+      "Federal Reserve Bank of Boston",
+      "New York University",
+      "Federal Reserve Bank of Philadelphia",
+      "Bocconi University",
+      "Columbia University",
+      "University of Pennsylvania",
+      "Stanford University",
+      "National Bank of Belgium"
+    ],
+    "works": [
+      {
+        "title": "The Science of Monetary Policy: A New Keynesian Perspective",
+        "url": "https://doi.org/10.1257/jel.37.4.1661",
+        "year": 1999
+      },
+      {
+        "title": "Monetary Policy Rules and Macroeconomic Stability: Evidence and Some Theory*",
+        "url": "https://doi.org/10.1162/003355300554692",
+        "year": 2000
+      }
+    ]
+  },
+  {
+    "id": "nobuhiro-kiyotaki",
+    "status": "matched",
+    "author": "https://openalex.org/A5086180955",
+    "name": "Nobuhiro Kiyotaki",
+    "institutions": [
+      "Princeton University",
+      "University of Minnesota",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "Federal Reserve Bank of Minneapolis",
+      "University of Wisconsin–Madison",
+      "Princeton University",
+      "Brown University",
+      "Federal Reserve Board of Governors",
+      "Centre for Economic Policy Research",
+      "Federal Reserve Bank of New York",
+      "New York University",
+      "University of Pennsylvania",
+      "London School of Economics and Political Science",
+      "University of Edinburgh"
+    ],
+    "works": [
+      {
+        "title": "Credit Cycles",
+        "url": "https://doi.org/10.1086/262072",
+        "year": 1997
+      },
+      {
+        "title": "Financial Intermediation and Credit Policy in Business Cycle Analysis",
+        "url": "https://doi.org/10.1016/b978-0-444-53238-1.00011-9",
+        "year": 2010
+      }
+    ]
+  },
+  {
+    "id": "john-h-moore",
+    "status": "matched",
+    "author": "https://openalex.org/A5103444001",
+    "name": "John Hardman Moore",
+    "institutions": [
+      "Polaroid (United States)",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Johns Hopkins University",
+      "University of Miami",
+      "University of St Andrews",
+      "Stockholm School of Economics",
+      "Copenhagen Business School",
+      "Princeton University",
+      "University of Zurich",
+      "Cornell University",
+      "Heriot-Watt University",
+      "Yale University",
+      "European Bank for Reconstruction and Development",
+      "University of Maryland, College Park",
+      "Columbia University",
+      "London School of Economics and Political Science",
+      "University of Edinburgh"
+    ],
+    "works": [
+      {
+        "title": "Property Rights and the Nature of the Firm",
+        "url": "https://doi.org/10.1086/261729",
+        "year": 1990
+      },
+      {
+        "title": "Credit Cycles",
+        "url": "https://doi.org/10.1086/262072",
+        "year": 1997
+      }
+    ]
+  },
+  {
+    "id": "kevin-m-murphy",
+    "status": "matched",
+    "author": "https://openalex.org/A5044098731",
+    "name": "Kevin Murphy",
+    "institutions": [
+      "Washington State University",
+      "Boston University",
+      "The Graduate Center, CUNY",
+      "University of Wyoming",
+      "Hoover Institution",
+      "Google (United States)",
+      "University of Minnesota",
+      "United States Army Corps of Engineers",
+      "U.S. National Science Foundation",
+      "National Bureau of Economic Research",
+      "Children's Hospital of Philadelphia",
+      "Teagasc - The Irish Agriculture and Food Development Authority",
+      "University of British Columbia",
+      "University of Louisville",
+      "University of Illinois Urbana-Champaign",
+      "The University of Melbourne",
+      "City University of New York",
+      "American University",
+      "Williams College",
+      "University of Cambridge",
+      "Malcolm Grow Medical Clinic",
+      "University of Florida",
+      "University of Oxford",
+      "University of Chicago",
+      "Google DeepMind (United Kingdom)",
+      "National Aeronautics and Space Administration",
+      "Organic Farming Research Foundation",
+      "Jacobs (United States)",
+      "Dairy Processing Technology Centre",
+      "Joint Pathology Center",
+      "Washington State University",
+      "University of Missouri",
+      "Columbia University",
+      "University of Glasgow",
+      "Cardiff University",
+      "Clemson University",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Changes in Relative Wages, 1963-1987: Supply and Demand Factors",
+        "url": "https://doi.org/10.2307/2118323",
+        "year": 1992
+      },
+      {
+        "title": "A Theory of Rational Addiction",
+        "url": "https://doi.org/10.1086/261558",
+        "year": 1988
+      }
+    ]
+  },
+  {
+    "id": "anne-osborn-krueger",
+    "status": "matched",
+    "author": "https://openalex.org/A5111433291",
+    "name": "Anne O. Krueger",
+    "institutions": [
+      "Humboldt-Universität zu Berlin",
+      "Versiti Blood Center of Wisconsin",
+      "Freie Universität Berlin",
+      "Charité - Universitätsmedizin Berlin",
+      "University of Minnesota",
+      "International Monetary Fund",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Johns Hopkins University",
+      "International Food Policy Research Institute",
+      "Duke University",
+      "Humboldt-Universität zu Berlin",
+      "Versiti Blood Center of Wisconsin",
+      "Johns Hopkins University School of Advanced International Studies",
+      "Freie Universität Berlin",
+      "Charité - Universitätsmedizin Berlin",
+      "London School of Economics and Political Science",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "The Political Economy of the Rent-Seeking Society",
+        "url": "https://doi.org/10.1007/978-3-540-79247-5_8",
+        "year": 2008
+      },
+      {
+        "title": "The Stages of Economic Growth: A Non-Communist Manifesto.",
+        "url": "https://doi.org/10.2307/2281618",
+        "year": 1960
+      }
+    ]
+  },
+  {
+    "id": "jerry-a-hausman",
+    "status": "matched",
+    "author": "https://openalex.org/A5108206606",
+    "name": "Jerry A. Hausman",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Massachusetts Institute of Technology",
+      "Rutgers, The State University of New Jersey",
+      "Environmental Protection Agency",
+      "National Bureau of Economic Research",
+      "Economic Research Service",
+      "United States Department of Agriculture",
+      "Harvard University",
+      "University of Arizona",
+      "Institute for Fiscal Studies",
+      "Johns Hopkins University",
+      "Tilburg University",
+      "University of Cambridge",
+      "Brown University",
+      "University of Chicago",
+      "University College London",
+      "University of Virginia",
+      "Massachusetts Institute of Technology",
+      "University of Maryland, College Park",
+      "University of Tennessee at Knoxville",
+      "The University of Texas at Austin",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Specification Tests in Econometrics",
+        "url": "https://doi.org/10.2307/1913827",
+        "year": 1978
+      },
+      {
+        "title": "Econometric Models for Count Data with an Application to the Patents-R & D Relationship",
+        "url": "https://doi.org/10.2307/1911191",
+        "year": 1984
+      }
+    ]
+  },
+  {
+    "id": "david-forbes-hendry",
+    "status": "matched",
+    "author": "https://openalex.org/A5014898803",
+    "name": "David F. Hendry",
+    "institutions": [
+      "Federal Reserve",
+      "Federal Reserve Board of Governors",
+      "University of Oxford",
+      "California Institute of Technology",
+      "University of London",
+      "Federal Reserve",
+      "Central Bank of Venezuela",
+      "Duke University",
+      "Stockholm School of Economics",
+      "Universidad de Salamanca",
+      "University of Aberdeen",
+      "Economic and Social Research Council",
+      "Federal Reserve Board of Governors",
+      "University of Surrey",
+      "University of California San Diego",
+      "University of Warwick",
+      "University of Oxford",
+      "Institute for New Economic Thinking",
+      "Manor Hospital",
+      "University of Southampton",
+      "London School of Economics and Political Science"
+    ],
+    "works": [
+      {
+        "title": "Co-integration, Error Correction, and the Econometric Analysis of Non-Stationary Data",
+        "url": "https://doi.org/10.1093/0198288107.001.0001",
+        "year": 1993
+      },
+      {
+        "title": "Econometric Modelling of the Aggregate Time-Series Relationship Between Consumers' Expenditure and Income in the United Kingdom",
+        "url": "https://doi.org/10.2307/2231972",
+        "year": 1978
+      }
+    ]
+  },
+  {
+    "id": "m-hashem-pesaran",
+    "status": "matched",
+    "author": "https://openalex.org/A5004307122",
+    "name": "M. Hashem Pesaran",
+    "institutions": [
+      "University of Southern California",
+      "University of Cambridge",
+      "University of Messina",
+      "University of Southern California",
+      "Australian National University",
+      "Louisiana State University",
+      "University of London",
+      "Center for Economic and Policy Research",
+      "International Monetary Fund",
+      "National Bureau of Economic Research",
+      "Emerald Group Publishing (United Kingdom)",
+      "University of Bonn",
+      "Harvard University",
+      "Johns Hopkins University",
+      "University of South Carolina",
+      "University of California, Los Angeles",
+      "University of Pittsburgh",
+      "King's College London",
+      "Inter-American Development Bank",
+      "IZA - Institute of Labor Economics",
+      "Vanderbilt University",
+      "University of California, Irvine",
+      "Trinity College",
+      "University of Kent",
+      "University of Cambridge",
+      "National Tsing Hua University",
+      "University of Michigan",
+      "Prague University of Economics and Business",
+      "University of California San Diego",
+      "University of Warwick",
+      "Centre for Economic Policy Research",
+      "Federal Reserve Bank of New York",
+      "Bank of England",
+      "Trinity College",
+      "Massachusetts Institute of Technology",
+      "Federal Reserve Bank of Dallas",
+      "Bocconi University",
+      "University of Pennsylvania",
+      "Michigan State University",
+      "Bank of Canada",
+      "Graduate Institute of International and Development Studies",
+      "Birkbeck, University of London",
+      "University of Edinburgh"
+    ],
+    "works": [
+      {
+        "title": "Bounds testing approaches to the analysis of level relationships",
+        "url": "https://doi.org/10.1002/jae.616",
+        "year": 2001
+      },
+      {
+        "title": "Testing for unit roots in heterogeneous panels",
+        "url": "https://doi.org/10.1016/s0304-4076(03)00092-7",
+        "year": 2003
+      }
+    ]
+  },
+  {
+    "id": "peter-c-b-phillips",
+    "status": "matched",
+    "author": "https://openalex.org/A5076177583",
+    "name": "Peter C.B. Phillips",
+    "institutions": [
+      "University of Auckland",
+      "Yale University",
+      "Cowles Foundation for Research in Economics",
+      "Singapore Management University",
+      "Rutgers, The State University of New Jersey",
+      "University of Essex",
+      "Southern Illinois University Carbondale",
+      "University of Southern California",
+      "Western University",
+      "The University of Sydney",
+      "Central University of Finance and Economics",
+      "University of Auckland",
+      "Durham University",
+      "Peking University",
+      "Queen's University",
+      "Yale University",
+      "University of California San Diego",
+      "University of Southampton",
+      "Cowles Foundation for Research in Economics",
+      "Sim Kee Boon Institute for Financial Economics",
+      "Clark Atlanta University",
+      "University of York",
+      "Université de Montréal",
+      "Rice University",
+      "University of Birmingham",
+      "Singapore Management University",
+      "Michigan State University",
+      "Macquarie University"
+    ],
+    "works": [
+      {
+        "title": "Testing for a unit root in time series regression",
+        "url": "https://doi.org/10.1093/biomet/75.2.335",
+        "year": 1988
+      },
+      {
+        "title": "Testing the null hypothesis of stationarity against the alternative of a unit root",
+        "url": "https://doi.org/10.1016/0304-4076(92)90104-y",
+        "year": 1992
+      }
+    ]
+  },
+  {
+    "id": "sam-peltzman",
+    "status": "matched",
+    "author": "https://openalex.org/A5028479414",
+    "name": "Sam Peltzman",
+    "institutions": [
+      "University of Chicago",
+      "National Bureau of Economic Research",
+      "University of California, Los Angeles",
+      "University of Chicago"
+    ],
+    "works": [
+      {
+        "title": "Toward a More General Theory of Regulation",
+        "url": "https://doi.org/10.1086/466865",
+        "year": 1976
+      },
+      {
+        "title": "The Effects of Automobile Safety Regulation",
+        "url": "https://doi.org/10.1086/260352",
+        "year": 1975
+      }
+    ]
+  },
+  {
+    "id": "richard-posner",
+    "status": "matched",
+    "author": "https://openalex.org/A5045732747",
+    "name": "Richard A. Posner",
+    "institutions": [
+      "Northern Arizona University",
+      "Yale University",
+      "Brigham Young University",
+      "INSEAD",
+      "University of Arkansas at Little Rock",
+      "Marquette University",
+      "Northern Illinois University",
+      "University of Notre Dame",
+      "Northwestern University",
+      "DePaul University",
+      "University of Minnesota",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of California, Los Angeles",
+      "Duquesne University",
+      "University of Georgia",
+      "Illinois Institute of Technology",
+      "University of Oregon",
+      "Georgetown University",
+      "Durham University",
+      "Loyola University Chicago",
+      "American Bar Foundation",
+      "Northern Arizona University",
+      "Cornell University",
+      "University of Cambridge",
+      "Harvard University Press",
+      "University of California System",
+      "Yale University",
+      "University of Chicago",
+      "Northwestern University",
+      "Indiana University Bloomington",
+      "United States Court of Appeals for the Seventh Circuit",
+      "Kocaeli Üniversitesi",
+      "New York University",
+      "Indiana University",
+      "Massachusetts Institute of Technology",
+      "Pontificia Universidad Católica del Perú",
+      "Université de Montréal",
+      "Syracuse University",
+      "Columbia University",
+      "Universidade Estadual Paulista (Unesp)",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Economic Analysis of Law",
+        "url": "https://doi.org/10.2307/1227682",
+        "year": 1974
+      },
+      {
+        "title": "Theories of Economic Regulation",
+        "url": "https://doi.org/10.3386/w0041",
+        "year": 1974
+      }
+    ]
+  },
+  {
+    "id": "israel-m-kirzner",
+    "status": "matched",
+    "author": "https://openalex.org/A5006898504",
+    "name": "Israel M. Kirzner",
+    "institutions": [
+      "University of London",
+      "University of Cape Town",
+      "University of the Witwatersrand",
+      "New York University",
+      "Brooklyn College",
+      "Catholic University of America"
+    ],
+    "works": [
+      {
+        "title": "Competition and Entrepreneurship",
+        "url": "https://doi.org/10.2307/1056112",
+        "year": 1974
+      },
+      {
+        "title": "Entrepreneurial discovery and the competitive market process: an Austrian approach",
+        "url": "https://doi.org/10.4324/9780203465974-5",
+        "year": 2000
+      }
+    ]
+  },
+  {
+    "id": "mark-granovetter",
+    "status": "matched",
+    "author": "https://openalex.org/A5035549347",
+    "name": "Mark S. Granovetter",
+    "institutions": [
+      "Northwestern University",
+      "State University of New York",
+      "Harvard University",
+      "Johns Hopkins University",
+      "Volgograd State Medical University",
+      "Cornell University",
+      "University of Chicago",
+      "Princeton University Press",
+      "Stony Brook University",
+      "University of Toledo",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "The Strength of Weak Ties",
+        "url": "https://doi.org/10.1086/225469",
+        "year": 1973
+      },
+      {
+        "title": "Economic Action and Social Structure: The Problem of Embeddedness",
+        "url": "https://doi.org/10.1086/228311",
+        "year": 1985
+      }
+    ]
+  },
+  {
+    "id": "richard-blundell",
+    "status": "matched",
+    "author": "https://openalex.org/A5089998471",
+    "name": "Richard W. Blundell",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Centre for Economic Policy Research",
+      "University College London",
+      "INSEAD",
+      "Rutgers, The State University of New Jersey",
+      "Canadian Institute for Advanced Research",
+      "University of Essex",
+      "Northwestern University",
+      "Tulane University",
+      "University of Copenhagen",
+      "University of Iowa",
+      "Center for Economic and Policy Research",
+      "Hoover Institution",
+      "University of Minnesota",
+      "RAND Corporation",
+      "National Bureau of Economic Research",
+      "Collegio Carlo Alberto",
+      "United States Census Bureau",
+      "World Bank",
+      "Federal Reserve Bank of Minneapolis",
+      "Harvard University",
+      "Institute for Fiscal Studies",
+      "University of Kentucky",
+      "Aberystwyth University",
+      "University of California, Los Angeles",
+      "University of Sussex",
+      "Queen Mary University of London",
+      "University of Mannheim",
+      "University of Oregon",
+      "Universidade do Porto",
+      "Inter-American Development Bank",
+      "Collège de France",
+      "Universität Innsbruck",
+      "University of Trento",
+      "Tilburg University",
+      "IZA - Institute of Labor Economics",
+      "University of Malta",
+      "Institut d'Etudes Politiques de Paris",
+      "University College Lillebaelt",
+      "Brown University",
+      "WZB Berlin Social Science Center",
+      "Trinity College London",
+      "University of Surrey",
+      "University of Manchester",
+      "Yale University",
+      "University of Bristol",
+      "University of Warwick",
+      "University of Oxford",
+      "University of Chicago",
+      "Toulouse School of Economics",
+      "Institut d'Économie Publique",
+      "Economie Publique",
+      "Centro de Estudios Monetarios y Financieros",
+      "International Fishmeal and Oil Manufacturers Association",
+      "Centre de Recherche en Économie et Statistique",
+      "Centre for Economic Policy Research",
+      "INSEAD",
+      "INSEAD",
+      "Federal Reserve Bank of New York",
+      "Toulouse School of Economics Research",
+      "University College London",
+      "University of Bath",
+      "University of York",
+      "University of Turin",
+      "Paris School of Economics",
+      "Massachusetts Institute of Technology",
+      "Brandeis University",
+      "National Institute of Economic and Social Research",
+      "Washington State University",
+      "Columbia University",
+      "HEC Paris",
+      "ENSAE Paris",
+      "University of California, Davis",
+      "London School of Economics and Political Science",
+      "Erasmus University Rotterdam",
+      "Financial Services Authority",
+      "Norwegian School of Economics",
+      "University of California, Berkeley",
+      "Stanford University",
+      "Birkbeck, University of London",
+      "KU Leuven"
+    ],
+    "works": [
+      {
+        "title": "Initial conditions and moment restrictions in dynamic panel data models",
+        "url": "https://doi.org/10.1016/s0304-4076(98)00009-8",
+        "year": 1998
+      },
+      {
+        "title": "Competition and Innovation: An Inverted U Relationship",
+        "url": "https://doi.org/10.2139/ssrn.1306944",
+        "year": 2008
+      }
+    ]
+  },
+  {
+    "id": "john-a-list",
+    "status": "matched",
+    "author": "https://openalex.org/A5083530241",
+    "name": "John A. List",
+    "institutions": [
+      "Australian National University",
+      "Walmart (United States)",
+      "University of Chicago",
+      "Brigham Young University",
+      "Claremont McKenna College",
+      "University of Central Florida",
+      "Dartmouth College",
+      "Boston University",
+      "Northwestern University",
+      "University of Technology Sydney",
+      "Council of Economic Advisers",
+      "Oklahoma State University",
+      "University of Southern California",
+      "Australian National University",
+      "University of Nebraska at Omaha",
+      "University of Copenhagen",
+      "University of Maryland, Baltimore",
+      "Vassar College",
+      "University of Wyoming",
+      "Commodity Futures Trading Commission",
+      "Amazon (United States)",
+      "Innovations for Poverty Action",
+      "National Bureau of Economic Research",
+      "Walmart (United States)",
+      "United States Department of Agriculture",
+      "King Fahd University of Petroleum and Minerals",
+      "University of Nevada, Reno",
+      "Unilever (United Kingdom)",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "Howard University",
+      "University of Arizona",
+      "Bentley University",
+      "University of British Columbia",
+      "University of Alaska Anchorage",
+      "University of Ottawa",
+      "University of Alberta",
+      "University of Illinois Urbana-Champaign",
+      "Universität Hamburg",
+      "George Mason University",
+      "National University of Singapore",
+      "Wells Fargo (United States)",
+      "University of Pittsburgh",
+      "Duke University",
+      "University of Alabama",
+      "Iowa State University",
+      "Bangladesh Institute of Development Studies",
+      "Centre for European Economic Research",
+      "Southern Methodist University",
+      "Copenhagen Business School",
+      "University of Oregon",
+      "American University",
+      "Georgia State University",
+      "University of Toronto",
+      "East Carolina University",
+      "Tilburg University",
+      "IZA - Institute of Labor Economics",
+      "Peking University",
+      "Washington University in St. Louis",
+      "Queen's University",
+      "Cornell University",
+      "American Association of University Women",
+      "Resources For The Future",
+      "Oxford University Press (United Kingdom)",
+      "Yale University",
+      "University of California San Diego",
+      "University of Illinois Chicago",
+      "University of Warwick",
+      "University of Oxford",
+      "University of Chicago",
+      "University of Chicago Medical Center",
+      "Purdue Research Foundation",
+      "Abdul Latif Jameel Poverty Action Lab",
+      "The Behavioural Insights Team",
+      "Bahrain Center for Strategic International and Energy Studies",
+      "Kappa Kappa Gamma",
+      "Centre for Economic Policy Research",
+      "University of Southampton",
+      "University College London",
+      "Imperial College London",
+      "Arizona State University",
+      "Monash University",
+      "Massachusetts Institute of Technology",
+      "University of Maryland, College Park",
+      "Rice University",
+      "Carnegie Mellon University",
+      "University of Tennessee at Knoxville",
+      "Columbia University",
+      "University of Pennsylvania",
+      "University of Birmingham",
+      "Old Dominion University",
+      "Ludwig-Maximilians-Universität München",
+      "Michigan State University",
+      "London School of Economics and Political Science",
+      "Texas A&M University",
+      "Wageningen University & Research",
+      "Norwegian School of Economics",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "What Do Laboratory Experiments Measuring Social Preferences Reveal About the Real World?",
+        "url": "https://doi.org/10.1257/jep.21.2.153",
+        "year": 2007
+      },
+      {
+        "title": "Redefine statistical significance",
+        "url": "https://doi.org/10.1038/s41562-017-0189-z",
+        "year": 2017
+      }
+    ]
+  },
+  {
+    "id": "charles-f-manski",
+    "status": "matched",
+    "author": "https://openalex.org/A5001427381",
+    "name": "Charles F. Manski",
+    "institutions": [
+      "Northwestern University",
+      "Northwestern University",
+      "Northwestern University",
+      "University of Iowa",
+      "Center for Economic and Policy Research",
+      "University of Minnesota",
+      "University of Wisconsin System",
+      "U.S. National Science Foundation",
+      "National Bureau of Economic Research",
+      "University of Wisconsin–Madison",
+      "University of Padua",
+      "Institute for Fiscal Studies",
+      "Georgia State University",
+      "University of Oslo",
+      "Hebrew University of Jerusalem",
+      "Cornell University",
+      "University of Michigan",
+      "Harvard University Press",
+      "University of Bristol",
+      "University of Chicago",
+      "Cambridge Systematics (United States)",
+      "Northwestern University",
+      "Federal Reserve Bank of Cleveland",
+      "National Opinion Research Center",
+      "University of Southampton",
+      "Institute for Social Research",
+      "Institute for Research on Poverty",
+      "University College London",
+      "University of Virginia",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Bocconi University",
+      "Carnegie Mellon University",
+      "Ludwig-Maximilians-Universität München",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Identification of Endogenous Social Effects: The Reflection Problem",
+        "url": "https://doi.org/10.2307/2298123",
+        "year": 1993
+      },
+      {
+        "title": "Economic Analysis of Social Interactions",
+        "url": "https://doi.org/10.1257/jep.14.3.115",
+        "year": 2000
+      }
+    ]
+  },
+  {
+    "id": "olivier-blanchard",
+    "status": "matched",
+    "author": "https://openalex.org/A5037232892",
+    "name": "Olivier Jean Blanchard",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Peterson Institute for International Economics",
+      "Chinese Academy of Social Sciences",
+      "Brookings Institution",
+      "University of Southern California",
+      "Western University",
+      "Organisation de Coopération et de Développement Economiques",
+      "Carl von Ossietzky Universität Oldenburg",
+      "Swedish National Bank",
+      "International Monetary Fund",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Peterson Institute for International Economics",
+      "Inserm",
+      "University of Liège",
+      "École des Hautes Études en Santé Publique",
+      "Universitat Pompeu Fabra",
+      "Bank of Spain",
+      "Institut d'Économie Industrielle",
+      "Reserve Bank of Australia",
+      "University of Oxford",
+      "Toulouse School of Economics",
+      "Ministère du travail, de l'emploi et de l'insertion",
+      "Institut de Recherche en Santé, Environnement et Travail",
+      "Georgetown University in Qatar",
+      "Centre de Recerca en Economia Internacional",
+      "Memorial",
+      "Institut national de l'environnement industriel et des risques",
+      "Institute of World Economics and Politics",
+      "Centre de Recherche en Économie et Statistique",
+      "CaixaBank",
+      "Barcelona School of Economics",
+      "Université Toulouse Capitole",
+      "University of Rochester",
+      "Université de Rennes",
+      "Indiana University",
+      "Massachusetts Institute of Technology",
+      "Brandeis University",
+      "Bocconi University",
+      "Federal Reserve Bank of Chicago",
+      "Columbia University",
+      "ENSAE Paris",
+      "Sapienza University of Rome"
+    ],
+    "works": [
+      {
+        "title": "The Dynamic Effects of Aggregate Demand and Supply Disturbances",
+        "url": "https://doi.org/10.3386/w2737",
+        "year": 1988
+      },
+      {
+        "title": "Convergence Across States and Regions",
+        "url": "https://doi.org/10.2307/2534639",
+        "year": 1991
+      }
+    ]
+  },
+  {
+    "id": "marc-melitz",
+    "status": "matched",
+    "author": "https://openalex.org/A5109809770",
+    "name": "Marc J.. Auteur du texte Melitz",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Boston College",
+      "University of Essex",
+      "Boston University",
+      "Center for Economic and Policy Research",
+      "National Bureau of Economic Research",
+      "Institut National de la Statistique et des Etudes Economiques",
+      "Harvard University",
+      "Bank of Spain",
+      "Collège de France",
+      "Princeton University",
+      "Banque de France",
+      "Institut d'Etudes Politiques de Paris",
+      "Brown University",
+      "Centre d'Etudes Prospectives et d'Informations Internationales",
+      "University of Chicago",
+      "Federal Reserve Bank of Cleveland",
+      "Centre for Economic Policy Research",
+      "Federal Reserve Bank of Boston",
+      "New York University",
+      "Bocconi University",
+      "University of Pennsylvania",
+      "HEC Paris",
+      "Bank of Canada",
+      "University of Bologna",
+      "National Bank of Belgium"
+    ],
+    "works": [
+      {
+        "title": "The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity",
+        "url": "https://doi.org/10.1111/1468-0262.00467",
+        "year": 2003
+      },
+      {
+        "title": "Export Versus FDI with Heterogeneous Firms",
+        "url": "https://doi.org/10.1257/000282804322970814",
+        "year": 2004
+      }
+    ]
+  },
+  {
+    "id": "colin-camerer",
+    "status": "matched",
+    "author": "https://openalex.org/A5024087833",
+    "name": "Colin F. Camerer",
+    "institutions": [
+      "California Institute of Technology",
+      "Northwestern University",
+      "University of Southern California",
+      "New York University Abu Dhabi",
+      "California Institute of Technology",
+      "University of Iowa",
+      "National Bureau of Economic Research",
+      "University of British Columbia",
+      "University of Pittsburgh",
+      "Baylor College of Medicine",
+      "Princeton University",
+      "University of Zurich",
+      "University of California, Irvine",
+      "University of Utah",
+      "Lahore School of Economics",
+      "University of Michigan",
+      "Ghent University",
+      "University of Chicago",
+      "Université Mohammed VI Polytechnique",
+      "Collegium Helveticum",
+      "New York University",
+      "Indiana University",
+      "Carnegie Mellon University",
+      "Columbia University",
+      "University of Pennsylvania",
+      "Ludwig-Maximilians-Universität München",
+      "The University of Texas at Austin",
+      "London School of Economics and Political Science",
+      "Texas A&M University",
+      "University of Bologna",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Not So Different After All: A Cross-Discipline View Of Trust",
+        "url": "https://doi.org/10.5465/amr.1998.926617",
+        "year": 1998
+      },
+      {
+        "title": "Behavioral Game Theory: Experiments in Strategic Interaction",
+        "url": "http://www.loc.gov/catdir/description/prin031/2002034642.html",
+        "year": 2003
+      }
+    ]
+  },
+  {
+    "id": "george-loewenstein",
+    "status": "matched",
+    "author": "https://openalex.org/A5074175050",
+    "name": "George F. Loewenstein",
+    "institutions": [
+      "Carnegie Mellon University",
+      "California Institute of Technology",
+      "National Bureau of Economic Research",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "Emory University",
+      "University of Pittsburgh",
+      "Duke University",
+      "Russell Sage Foundation",
+      "Princeton University",
+      "University of California, Irvine",
+      "Cornell University",
+      "University of Michigan",
+      "Yale University",
+      "University of Warwick",
+      "University of Chicago",
+      "VA Ann Arbor Healthcare System",
+      "VA Center for Clinical Management Research",
+      "Philadelphia VA Medical Center",
+      "Coatesville Veterans Affairs Medical Center",
+      "Children's Healthcare of Atlanta",
+      "Leonard Davis Institute of Health Economics",
+      "Case Western Reserve University",
+      "Carnegie Mellon University",
+      "University of Pennsylvania",
+      "American Congress of Obstetricians and Gynecologists",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley"
+    ],
+    "works": [
+      {
+        "title": "Risk as feelings.",
+        "url": "https://doi.org/10.1037/0033-2909.127.2.267",
+        "year": 2001
+      },
+      {
+        "title": "Time Discounting and Time Preference: A Critical Review",
+        "url": "https://doi.org/10.1257/002205102320161311",
+        "year": 2002
+      }
+    ]
+  },
+  {
+    "id": "robert-hall",
+    "status": "matched",
+    "author": "https://openalex.org/A5086784344",
+    "name": "Robert Ernest Hall",
+    "institutions": [
+      "Hoover Institution",
+      "National Bureau of Economic Research",
+      "Stanford University",
+      "Leidos (United States)",
+      "DePaul University",
+      "Hoover Institution",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Georgia State University",
+      "Federal Reserve Bank of San Francisco",
+      "Princeton University",
+      "Government of South Australia",
+      "Department of Health and Aged Care",
+      "Yale University",
+      "Loyola Marymount University",
+      "California State University, Chico",
+      "University of California San Diego",
+      "University of Chicago",
+      "Services Australia",
+      "Federal Reserve Bank of New York",
+      "UNSW Canberra",
+      "University College London",
+      "Federal Reserve Bank of Boston",
+      "University of Virginia",
+      "University of York",
+      "Indiana University – Purdue University Indianapolis",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Procter & Gamble (United States)",
+      "Columbia University",
+      "University of Pennsylvania",
+      "Michigan State University",
+      "Science Applications International Corporation (United States)",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Why do Some Countries Produce So Much More Output Per Worker than Others?",
+        "url": "https://doi.org/10.1162/003355399555954",
+        "year": 1999
+      },
+      {
+        "title": "Stochastic Implications of the Life Cycle-Permanent Income Hypothesis: Theory and Evidence",
+        "url": "https://doi.org/10.1086/260724",
+        "year": 1978
+      }
+    ]
+  },
+  {
+    "id": "stewart-myers",
+    "status": "matched",
+    "author": "https://openalex.org/A5015461877",
+    "name": "Stewart C. Myers",
+    "institutions": [
+      "Massachusetts Institute of Technology",
+      "University College Dublin",
+      "Goethe University Frankfurt",
+      "Center for Economic and Policy Research",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "Ford Foundation",
+      "Harvard University",
+      "Pontificia Universidad Católica de Chile",
+      "University of Toronto",
+      "Yale University",
+      "University of Chicago",
+      "European Corporate Governance Institute",
+      "Federal Reserve Bank of Boston",
+      "New York University",
+      "London Business School",
+      "Massachusetts Institute of Technology",
+      "Lancaster University",
+      "University of Reading",
+      "University of Pennsylvania",
+      "Michigan State University",
+      "University of California, Berkeley",
+      "UCLouvain",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Corporate financing and investment decisions when firms have information that investors do not have",
+        "url": "https://doi.org/10.1016/0304-405x(84)90023-0",
+        "year": 1984
+      },
+      {
+        "title": "Determinants of corporate borrowing",
+        "url": "https://doi.org/10.1016/0304-405x(77)90015-0",
+        "year": 1977
+      }
+    ]
+  },
+  {
+    "id": "raghuram-rajan",
+    "status": "matched",
+    "author": "https://openalex.org/A5020155328",
+    "name": "Raghuram G. Rajan",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "University of Chicago",
+      "Brigham Young University",
+      "INSEAD",
+      "Boston University",
+      "Northwestern University",
+      "University of North Carolina at Chapel Hill",
+      "University of Southern California",
+      "California Institute of Technology",
+      "University of Iowa",
+      "Center for Economic and Policy Research",
+      "Reserve Bank of New Zealand",
+      "Hoover Institution",
+      "Reserve Bank of India",
+      "International Monetary Fund",
+      "U.S. National Science Foundation",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Harvard University",
+      "University of British Columbia",
+      "Peterson Institute for International Economics",
+      "European Central Bank",
+      "University of California, Los Angeles",
+      "Austral University of Chile",
+      "University of Calgary",
+      "Southern Methodist University",
+      "Princeton University",
+      "University of St.Gallen",
+      "Washington University in St. Louis",
+      "Cornell University",
+      "Federal Reserve Board of Governors",
+      "Yale University",
+      "University of Florida",
+      "University of Chicago",
+      "Northwestern University",
+      "Ruđer Bošković Institute",
+      "European Corporate Governance Institute",
+      "INSEAD",
+      "INSEAD",
+      "Federal Reserve Bank of Richmond",
+      "Wake Forest University",
+      "University of Rochester",
+      "New York University",
+      "Federal Reserve Bank of Philadelphia",
+      "Paris School of Economics",
+      "Massachusetts Institute of Technology",
+      "University of Maryland, College Park",
+      "Frankfurt School of Finance & Management",
+      "Carnegie Mellon University",
+      "Federal Reserve Bank of Chicago",
+      "Federal Reserve Bank of St. Louis",
+      "Columbia University",
+      "University of Pennsylvania",
+      "HEC Paris",
+      "Federal Reserve Bank of Kansas City",
+      "University of Amsterdam",
+      "University of Hong Kong",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University",
+      "University of Edinburgh"
+    ],
+    "works": [
+      {
+        "title": "Financial Dependence and Growth",
+        "url": "https://doi.org/10.3386/w5758",
+        "year": 1996
+      },
+      {
+        "title": "What Do We Know about Capital Structure? Some Evidence from International Data",
+        "url": "https://doi.org/10.1111/j.1540-6261.1995.tb05184.x",
+        "year": 1995
+      }
+    ]
+  },
+  {
+    "id": "manuel-arellano",
+    "status": "matched",
+    "author": "https://openalex.org/A5114113233",
+    "name": "Manuel Arellano",
+    "institutions": [
+      "Universidad Nacional de Córdoba",
+      "Centro de Estudios Monetarios y Financieros",
+      "IE University",
+      "University of Alicante",
+      "University of Minnesota",
+      "National Bureau of Economic Research",
+      "University of Wisconsin–Madison",
+      "Institute for Fiscal Studies",
+      "Universidad Nacional de Córdoba",
+      "Bank of Spain",
+      "University of Oxford",
+      "University of Chicago",
+      "Centro de Estudios Monetarios y Financieros",
+      "Federal Reserve Bank of New York",
+      "University College London",
+      "London School of Economics and Political Science"
+    ],
+    "works": [
+      {
+        "title": "Some Tests of Specification for Panel Data: Monte Carlo Evidence and an Application to Employment Equations",
+        "url": "https://doi.org/10.2307/2297968",
+        "year": 1991
+      },
+      {
+        "title": "Another look at the instrumental variable estimation of error-components models",
+        "url": "https://doi.org/10.1016/0304-4076(94)01642-d",
+        "year": 1995
+      }
+    ]
+  },
+  {
+    "id": "steve-bond",
+    "status": "matched",
+    "author": "https://openalex.org/A5107790695",
+    "name": "Stephen R. Bond",
+    "institutions": [
+      "Institute for Fiscal Studies",
+      "University of Oxford",
+      "University College Dublin",
+      "International Monetary Fund",
+      "University of Ulster",
+      "Institute for Fiscal Studies",
+      "University of Oxford",
+      "Infrared Fiber Systems (United States)",
+      "Cemmap",
+      "University College London",
+      "Keele University",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Some Tests of Specification for Panel Data: Monte Carlo Evidence and an Application to Employment Equations",
+        "url": "https://doi.org/10.2307/2297968",
+        "year": 1991
+      },
+      {
+        "title": "Initial conditions and moment restrictions in dynamic panel data models",
+        "url": "https://doi.org/10.1016/s0304-4076(98)00009-8",
+        "year": 1998
+      }
+    ]
+  },
+  {
+    "id": "wesley-m-cohen",
+    "status": "matched",
+    "author": "https://openalex.org/A5066540447",
+    "name": "Wesley M. Cohen",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Duke University",
+      "INSEAD",
+      "Georgia Institute of Technology",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Scuola Superiore Sant'Anna",
+      "University of North Carolina at Greensboro",
+      "Duke University",
+      "Georgia State University",
+      "Federal Reserve Bank of San Francisco",
+      "University of Manchester",
+      "Yale University",
+      "Research Institute of Economy, Trade and Industry",
+      "INSEAD",
+      "INSEAD",
+      "New York University",
+      "London Business School",
+      "Carnegie Mellon University",
+      "European School of Management and Technology",
+      "University of California, Berkeley",
+      "KU Leuven"
+    ],
+    "works": [
+      {
+        "title": "Absorptive Capacity: A New Perspective on Learning and Innovation",
+        "url": "https://doi.org/10.2307/2393553",
+        "year": 1990
+      },
+      {
+        "title": "Innovation and Learning: The Two Faces of R & D",
+        "url": "https://doi.org/10.2307/2233763",
+        "year": 1989
+      }
+    ]
+  },
+  {
+    "id": "daniel-a-levinthal",
+    "status": "matched",
+    "author": "https://openalex.org/A5030291124",
+    "name": "Daniel A. Levinthal",
+    "institutions": [
+      "University of Pennsylvania",
+      "Northwestern University",
+      "Harvard University",
+      "Naval Postgraduate School",
+      "Imperial College London",
+      "Carnegie Mellon University",
+      "University of Pennsylvania",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Absorptive Capacity: A New Perspective on Learning and Innovation",
+        "url": "https://doi.org/10.2307/2393553",
+        "year": 1990
+      },
+      {
+        "title": "Innovation and Learning: The Two Faces of R & D",
+        "url": "https://doi.org/10.2307/2233763",
+        "year": 1989
+      }
+    ]
+  },
+  {
+    "id": "david-m-kreps",
+    "status": "matched",
+    "author": "https://openalex.org/A5102978137",
+    "name": "David M. Kreps",
+    "institutions": [
+      "Science Foundation Ireland",
+      "Ollscoil na Gaillimhe – University of Galway",
+      "University of Vienna",
+      "Harvard University",
+      "Tel Aviv University",
+      "Science Foundation Ireland",
+      "Ollscoil na Gaillimhe – University of Galway",
+      "University of Cambridge",
+      "University of Warwick",
+      "University of Chicago",
+      "Princeton University Press",
+      "University of Salford",
+      "London School of Economics and Political Science",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Martingales and arbitrage in multiperiod securities markets",
+        "url": "https://doi.org/10.1016/0022-0531(79)90043-7",
+        "year": 1979
+      },
+      {
+        "title": "Signaling Games and Stable Equilibria",
+        "url": "https://doi.org/10.2307/1885060",
+        "year": 1987
+      }
+    ]
+  },
+  {
+    "id": "w-brian-arthur",
+    "status": "matched",
+    "author": "https://openalex.org/A5005265336",
+    "name": "W. Brian Arthur",
+    "institutions": [
+      "SRI International",
+      "Santa Fe Institute",
+      "International Institute for Applied Systems Analysis",
+      "Palo Alto Research Center",
+      "Stellenbosch University",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
+        "url": "https://doi.org/10.2307/2234208",
+        "year": 1989
+      },
+      {
+        "title": "Increasing Returns and Path Dependence in the Economy",
+        "url": "https://doi.org/10.3998/mpub.10029",
+        "year": 1994
+      }
+    ]
+  },
+  {
+    "id": "ariel-rubinstein",
+    "status": "matched",
+    "author": "https://openalex.org/A5074321708",
+    "name": "Ariel Rubinstein",
+    "institutions": [
+      "Tel Aviv University",
+      "Hebrew University of Jerusalem",
+      "New York University",
+      "Boston University",
+      "Northwestern University",
+      "University of British Columbia",
+      "Tel Aviv University",
+      "University of Toronto",
+      "Hebrew University of Jerusalem",
+      "Princeton University",
+      "University of Warwick",
+      "University of Oxford",
+      "Arizona State University",
+      "New York University",
+      "London School of Economics and Political Science",
+      "McMaster University"
+    ],
+    "works": [
+      {
+        "title": "Theory of Industrial Organization.",
+        "url": "https://doi.org/10.2307/2554286",
+        "year": 1989
+      },
+      {
+        "title": "Perfect Equilibrium in a Bargaining Model",
+        "url": "https://doi.org/10.2307/1912531",
+        "year": 1982
+      }
+    ]
+  },
+  {
+    "id": "s-ren-johansen",
+    "status": "matched",
+    "author": "https://openalex.org/A5033404536",
+    "name": "Søren Johansen",
+    "institutions": [
+      "University of Copenhagen",
+      "Danish National Research Foundation",
+      "University of Copenhagen",
+      "Oregon State University",
+      "Lundbeck (Denmark)",
+      "University of Helsinki",
+      "Harvard University",
+      "University of Southern Denmark",
+      "Aarhus University",
+      "Herlev Hospital",
+      "Bispebjerg Hospital",
+      "Hvidovre Hospital",
+      "Gentofte Hospital",
+      "Rigshospitalet",
+      "Danish Meteorological Institute",
+      "University of Florida",
+      "University of Oxford",
+      "Danish National Research Foundation",
+      "Massachusetts General Hospital",
+      "Imperial College London",
+      "University of Missouri",
+      "European University Institute",
+      "University of California, Berkeley"
+    ],
+    "works": [
+      {
+        "title": "Statistical analysis of cointegration vectors",
+        "url": "https://doi.org/10.1016/0165-1889(88)90041-3",
+        "year": 1988
+      },
+      {
+        "title": "MAXIMUM LIKELIHOOD ESTIMATION AND INFERENCE ON COINTEGRATION — WITH APPLICATIONS TO THE DEMAND FOR MONEY",
+        "url": "https://doi.org/10.1111/j.1468-0084.1990.mp52002003.x",
+        "year": 1990
+      }
+    ]
+  },
+  {
+    "id": "katarina-juselius-johansen",
+    "status": "matched",
+    "author": "https://openalex.org/A5109487711",
+    "name": "Katarina Jusélius",
+    "institutions": [
+      "University of Copenhagen",
+      "University of Copenhagen",
+      "Swiss National Bank",
+      "University of Oxford",
+      "European University Institute"
+    ],
+    "works": [
+      {
+        "title": "MAXIMUM LIKELIHOOD ESTIMATION AND INFERENCE ON COINTEGRATION — WITH APPLICATIONS TO THE DEMAND FOR MONEY",
+        "url": "https://doi.org/10.1111/j.1468-0084.1990.mp52002003.x",
+        "year": 1990
+      },
+      {
+        "title": "Testing structural hypotheses in a multivariate cointegration analysis of the PPP and the UIP for UK",
+        "url": "https://doi.org/10.1016/0304-4076(92)90086-7",
+        "year": 1992
+      }
+    ]
+  },
+  {
+    "id": "david-dickey",
+    "status": "matched",
+    "author": "https://openalex.org/A5112523012",
+    "name": "David Alan Dickey",
+    "institutions": [
+      "North Carolina State University",
+      "SAS Institute (United States)",
+      "United States Census Bureau",
+      "North Carolina State University",
+      "Ankara University",
+      "University of South Carolina",
+      "Elon University",
+      "Iowa State University",
+      "Stroud Water Research Center"
+    ],
+    "works": [
+      {
+        "title": "Distribution of the Estimators for Autoregressive Time Series with a Unit Root",
+        "url": "https://doi.org/10.1080/01621459.1979.10482531",
+        "year": 1979
+      },
+      {
+        "title": "Likelihood Ratio Statistics for Autoregressive Time Series with a Unit Root",
+        "url": "https://doi.org/10.2307/1912517",
+        "year": 1981
+      }
+    ]
+  },
+  {
+    "id": "wayne-fuller",
+    "status": "matched",
+    "author": "https://openalex.org/A5053114801",
+    "name": "Wayne Arthur Fuller",
+    "institutions": [
+      "Iowa State University",
+      "Statistics Canada",
+      "United States Census Bureau",
+      "United States Department of Agriculture",
+      "North Carolina State University",
+      "University of Kentucky",
+      "Iowa State University",
+      "The University of Texas at Arlington",
+      "Yonsei University",
+      "Korea University",
+      "University of Michigan",
+      "Universidad Carlos III de Madrid",
+      "Mathematica Policy Research",
+      "University of Maryland, Baltimore County",
+      "Texas A&M University",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Distribution of the Estimators for Autoregressive Time Series with a Unit Root",
+        "url": "https://doi.org/10.1080/01621459.1979.10482531",
+        "year": 1979
+      },
+      {
+        "title": "Likelihood Ratio Statistics for Autoregressive Time Series with a Unit Root",
+        "url": "https://doi.org/10.2307/1912517",
+        "year": 1981
+      }
+    ]
+  },
+  {
+    "id": "pierre-perron",
+    "status": "matched",
+    "author": "https://openalex.org/A5017831058",
+    "name": "Pierre Perrón",
+    "institutions": [
+      "Boston University",
+      "Boston College",
+      "Boston University",
+      "National Bureau of Economic Research",
+      "University of Ottawa",
+      "Princeton University",
+      "Pontifícia Universidade Católica do Rio de Janeiro",
+      "Yale University",
+      "Université de Montréal"
+    ],
+    "works": [
+      {
+        "title": "Testing for a unit root in time series regression",
+        "url": "https://doi.org/10.1093/biomet/75.2.335",
+        "year": 1988
+      },
+      {
+        "title": "The Great Crash, the Oil Price Shock, and the Unit Root Hypothesis",
+        "url": "https://doi.org/10.2307/1913712",
+        "year": 1989
+      }
+    ]
+  },
+  {
+    "id": "steven-t-berry",
+    "status": "matched",
+    "author": "https://openalex.org/A5004826774",
+    "name": "Steven Berry",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Yale University",
+      "Boston University",
+      "University of London",
+      "University of Minnesota",
+      "National Bureau of Economic Research",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "Institute for Fiscal Studies",
+      "Tel Aviv University",
+      "Hebrew University of Jerusalem",
+      "University of Zurich",
+      "University of Michigan",
+      "Yale University",
+      "University of Cyprus",
+      "Compass (United States)",
+      "IESE Business School",
+      "University College London",
+      "University of Pennsylvania",
+      "University of California, Berkeley",
+      "Stanford University",
+      "Birkbeck, University of London"
+    ],
+    "works": [
+      {
+        "title": "Automobile Prices in Market Equilibrium",
+        "url": "https://doi.org/10.2307/2171802",
+        "year": 1995
+      },
+      {
+        "title": "Estimating Discrete-Choice Models of Product Differentiation",
+        "url": "https://doi.org/10.2307/2555829",
+        "year": 1994
+      }
+    ]
+  },
+  {
+    "id": "james-a-levinsohn",
+    "status": "matched",
+    "author": "https://openalex.org/A5073750267",
+    "name": "James Levinsohn",
+    "institutions": [
+      "Yale University",
+      "Tufts University",
+      "Hoover Institution",
+      "Ford Motor Company (United States)",
+      "RAND Corporation",
+      "National Bureau of Economic Research",
+      "RAND School of Public Policy",
+      "University of Botswana",
+      "University of Cape Town",
+      "University of Michigan",
+      "Yale University",
+      "University of Chicago",
+      "Cowles Foundation for Research in Economics",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Estimating Production Functions Using Inputs to Control for Unobservables",
+        "url": "https://doi.org/10.1111/1467-937x.00246",
+        "year": 2003
+      },
+      {
+        "title": "Automobile Prices in Market Equilibrium",
+        "url": "https://doi.org/10.2307/2171802",
+        "year": 1995
+      }
+    ]
+  },
+  {
+    "id": "ariel-pakes",
+    "status": "matched",
+    "author": "https://openalex.org/A5065421458",
+    "name": "Ariel Pakes",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Boston College",
+      "Boston University",
+      "Bureau of Labor Statistics",
+      "University of Wisconsin System",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Institute for Fiscal Studies",
+      "University of California, Los Angeles",
+      "Tel Aviv University",
+      "University of Toronto",
+      "Hebrew University of Jerusalem",
+      "Cornell University",
+      "Yale University",
+      "University of Chicago",
+      "Microsoft Research New England (United States)",
+      "University College London",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "University of Pennsylvania",
+      "The University of Texas at Austin",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "The Dynamics of Productivity in the Telecommunications Equipment Industry",
+        "url": "https://doi.org/10.2307/2171831",
+        "year": 1992
+      },
+      {
+        "title": "Automobile Prices in Market Equilibrium",
+        "url": "https://doi.org/10.2307/2171802",
+        "year": 1995
+      }
+    ]
+  },
+  {
+    "id": "david-b-audretsch",
+    "status": "matched",
+    "author": "https://openalex.org/A5078117070",
+    "name": "David Bruce Audretsch",
+    "institutions": [
+      "Indiana University Bloomington",
+      "University of Klagenfurt",
+      "Indiana University",
+      "Universitat Autònoma de Barcelona",
+      "Kiel Institute for the World Economy",
+      "Ewing Marion Kauffman Foundation",
+      "Max Planck Society",
+      "University of Leicester",
+      "University of South Carolina",
+      "George Mason University",
+      "University of Wuppertal",
+      "University of South Australia",
+      "Free University of Bozen-Bolzano",
+      "University of Potsdam",
+      "University of Augsburg",
+      "Georgia State University",
+      "Durham University",
+      "Middlebury College",
+      "Tinbergen Institute",
+      "Paderborn University",
+      "WZB Berlin Social Science Center",
+      "King Saud University",
+      "Indiana University Bloomington",
+      "Fraunhofer Institute for Systems and Innovation Research",
+      "Centre for Economic Policy Research",
+      "University of Klagenfurt",
+      "Indiana University Indianapolis",
+      "The University of Adelaide",
+      "Case Western Reserve University",
+      "Indiana University",
+      "Universitat Politècnica de València",
+      "University of Baltimore",
+      "University of Reading",
+      "Friedrich Schiller University Jena",
+      "University of Birmingham",
+      "WHU – Otto Beisheim School of Management",
+      "KTH Royal Institute of Technology",
+      "Erasmus University Rotterdam",
+      "Babson College"
+    ],
+    "works": [
+      {
+        "title": "R&D Spillovers and the Geography of Innovation and Production.",
+        "url": "http://hdl.handle.net/10068/217299",
+        "year": 1994
+      },
+      {
+        "title": "Innovation in Large and Small Firms: An Empirical Analysis",
+        "url": "https://doi.org/10.4337/9781035305421.00007",
+        "year": 2008
+      }
+    ]
+  },
+  {
+    "id": "david-teece",
+    "status": "matched",
+    "author": "https://openalex.org/A5016373986",
+    "name": "David J. Teece",
+    "institutions": [
+      "University of California, Berkeley",
+      "Hitotsubashi University",
+      "American Petroleum Institute",
+      "Harvard University",
+      "University of California, Los Angeles",
+      "The University of Texas at Dallas",
+      "Copenhagen Business School",
+      "University of Canterbury",
+      "University of Michigan",
+      "University of California System",
+      "Yale University",
+      "Silicon Valley University",
+      "Siemens Healthineers (Germany)",
+      "Boston Consulting Group (United States)",
+      "San Jose State University",
+      "University of Pennsylvania",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Dynamic capabilities and strategic management",
+        "url": "https://doi.org/10.1002/(sici)1097-0266(199708)18:7<509::aid-smj882>3.0.co;2-z",
+        "year": 1997
+      },
+      {
+        "title": "Explicating dynamic capabilities: the nature and microfoundations of (sustainable) enterprise performance",
+        "url": "https://doi.org/10.1002/smj.640",
+        "year": 2007
+      }
+    ]
+  },
+  {
+    "id": "carmen-reinhart",
+    "status": "matched",
+    "author": "https://openalex.org/A5080219284",
+    "name": "Carmen Reinhart",
+    "institutions": [
+      "Center for Economic and Policy Research",
+      "Harvard University",
+      "Brookings Institution",
+      "University of Maryland, Baltimore",
+      "Center for Economic and Policy Research",
+      "German Institute for Economic Research",
+      "American Enterprise Institute",
+      "Kiel Institute for the World Economy",
+      "International Monetary Fund",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Harvard University",
+      "Peterson Institute for International Economics",
+      "University of California, Los Angeles",
+      "William & Mary",
+      "Tel Aviv University",
+      "Universitat Pompeu Fabra",
+      "University of Oregon",
+      "Inter-American Development Bank",
+      "Georgetown University",
+      "George Washington University",
+      "Institut d'Etudes Politiques de Paris",
+      "Oxford University Press (United Kingdom)",
+      "Federal Reserve Board of Governors",
+      "Centre for Economic Policy Research",
+      "Département d'économie de Sciences Po",
+      "Princeton University Press",
+      "The Ohio State University",
+      "University of Maryland, College Park",
+      "Université de Montréal",
+      "Federal Reserve Bank of St. Louis",
+      "Ludwig-Maximilians-Universität München",
+      "London School of Economics and Political Science"
+    ],
+    "works": [
+      {
+        "title": "The Twin Crises: The Causes of Banking and Balance-of-Payments Problems",
+        "url": "https://doi.org/10.1257/aer.89.3.473",
+        "year": 1999
+      },
+      {
+        "title": "This Time Is Different",
+        "url": "https://doi.org/10.1515/9781400831722",
+        "year": 2009
+      }
+    ]
+  },
+  {
+    "id": "kenneth-rogoff",
+    "status": "matched",
+    "author": "https://openalex.org/A5065176405",
+    "name": "Kenneth Rogoff",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Boston College",
+      "Brookings Institution",
+      "Institució Catalana de Recerca i Estudis Avançats",
+      "Center for Economic and Policy Research",
+      "Reserve Bank of New Zealand",
+      "University of Wisconsin System",
+      "International Monetary Fund",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "Peterson Institute for International Economics",
+      "Duke University",
+      "University of Oregon",
+      "Princeton University",
+      "University of Washington",
+      "Institut d'Etudes Politiques de Paris",
+      "Cornell University",
+      "University of Michigan",
+      "Federal Reserve Board of Governors",
+      "University of California System",
+      "Yale University",
+      "Reserve Bank of Australia",
+      "University of Oxford",
+      "Département d'économie de Sciences Po",
+      "Massachusetts Institute of Technology",
+      "University of Maryland, College Park",
+      "Columbia University",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Empirical exchange rate models of the seventies",
+        "url": "https://doi.org/10.1016/0022-1996(83)90017-x",
+        "year": 1983
+      },
+      {
+        "title": "The Optimal Degree of Commitment to an Intermediate Monetary Target",
+        "url": "https://doi.org/10.2307/1885679",
+        "year": 1985
+      }
+    ]
+  },
+  {
+    "id": "samuel-bowles",
+    "status": "matched",
+    "author": "https://openalex.org/A5062793544",
+    "name": "Samuel Bowles",
+    "institutions": [
+      "Santa Fe Institute",
+      "University College London",
+      "University of Siena",
+      "New School",
+      "Ames Research Center",
+      "Santa Fe Institute",
+      "Harvard University",
+      "University of California, Los Angeles",
+      "University of Washington",
+      "University of Massachusetts Amherst",
+      "University College Cork",
+      "University of Michigan",
+      "University of Massachusetts System",
+      "Kyungpook National University",
+      "University of Massachusetts Boston",
+      "Centre for Economic Policy Research",
+      "University College London",
+      "Arizona State University",
+      "Sheffield Hallam University",
+      "University of California, Davis"
+    ],
+    "works": [
+      {
+        "title": "In Search of Homo Economicus: Behavioral Experiments in 15 Small-Scale Societies",
+        "url": "https://doi.org/10.1257/aer.91.2.73",
+        "year": 2001
+      },
+      {
+        "title": "“Economic man” in cross-cultural perspective: Behavioral experiments in 15 small-scale societies",
+        "url": "https://doi.org/10.1017/s0140525x05000142",
+        "year": 2005
+      }
+    ]
+  },
+  {
+    "id": "richard-layard",
+    "status": "matched",
+    "author": "https://openalex.org/A5065459900",
+    "name": "Richard Layard",
+    "institutions": [
+      "London School of Economics and Political Science",
+      "Organisation de Coopération et de Développement Economiques",
+      "WZB Berlin Social Science Center",
+      "United Nations University World Institute for Development Economics Research",
+      "University of Oxford",
+      "Ministère du travail, de l'emploi et de l'insertion",
+      "Laser Scan Engineering (United Kingdom)",
+      "London School of Economics and Political Science"
+    ],
+    "works": [
+      {
+        "title": "Happiness: Lessons from a New Science",
+        "url": "https://doi.org/10.2307/20031793",
+        "year": 2005
+      },
+      {
+        "title": "Unemployment: macroeconomic performance and the labour market",
+        "url": "https://doi.org/10.5860/choice.29-6396",
+        "year": 1992
+      }
+    ]
+  },
+  {
+    "id": "andrew-oswald",
+    "status": "matched",
+    "author": "https://openalex.org/A5023471380",
+    "name": "Andrew J. Oswald",
+    "institutions": [
+      "University of Warwick",
+      "University of Oxford",
+      "Manchester College",
+      "Dartmouth College",
+      "University of London",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of Sussex",
+      "The University of Queensland",
+      "University of Pittsburgh",
+      "Nanyang Technological University",
+      "University of Mannheim",
+      "City, University of London",
+      "IZA - Institute of Labor Economics",
+      "Federal Reserve Bank of San Francisco",
+      "Princeton University",
+      "University of Zurich",
+      "Cornell University",
+      "University of Kent",
+      "Economic and Social Research Council",
+      "University of Surrey",
+      "Yale University",
+      "University of California San Diego",
+      "University of Warwick",
+      "University of Oxford",
+      "Centre for Arctic Gas Hydrate, Environment and Climate",
+      "Manchester College",
+      "City St George's, University of London",
+      "CAGE: Contrôle et géométrie",
+      "University of Wisconsin–Oshkosh",
+      "University of Guelph",
+      "London School of Economics and Political Science"
+    ],
+    "works": [
+      {
+        "title": "Satisfaction and comparison income",
+        "url": "https://doi.org/10.1016/0047-2727(95)01564-7",
+        "year": 1996
+      },
+      {
+        "title": "Well-Being Over Time in Britain and the USA",
+        "url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.24.4784",
+        "year": 1999
+      }
+    ]
+  },
+  {
+    "id": "raj-chetty",
+    "status": "matched",
+    "author": "https://openalex.org/A5051484328",
+    "name": "Raj Chetty",
+    "institutions": [
+      "Swarthmore College",
+      "University of Copenhagen",
+      "United States Department of the Treasury",
+      "U.S. National Science Foundation",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of British Columbia",
+      "Johns Hopkins University",
+      "Universitat Pompeu Fabra",
+      "Brown University",
+      "Phillips Academy",
+      "Yale University",
+      "University of California San Diego",
+      "Central European University - Budapest Campus",
+      "Stanford Institute for Economic Policy Research",
+      "University College London",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "The University of Texas at Austin",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Where is the land of Opportunity? The Geography of Intergenerational Mobility in the United States *",
+        "url": "https://doi.org/10.1093/qje/qju022",
+        "year": 2014
+      },
+      {
+        "title": "The Association Between Income and Life Expectancy in the United States, 2001-2014",
+        "url": "https://doi.org/10.1001/jama.2016.4226",
+        "year": 2016
+      }
+    ]
+  },
+  {
+    "id": "edward-glaeser",
+    "status": "matched",
+    "author": "https://openalex.org/A5113890882",
+    "name": "Edward L. Glaeser",
+    "institutions": [
+      "Brookings Institution",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Boston College",
+      "Dartmouth College",
+      "Boston University",
+      "Northwestern University",
+      "Brookings Institution",
+      "Tufts University",
+      "Hoover Institution",
+      "U.S. National Science Foundation",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Harvard University",
+      "University of British Columbia",
+      "Peterson Institute for International Economics",
+      "University of Illinois Urbana-Champaign",
+      "Universitat Pompeu Fabra",
+      "Duke University",
+      "Union College",
+      "University of Toronto",
+      "Cornell University",
+      "Brown University",
+      "University of Illinois System",
+      "Yale University",
+      "University of Oxford",
+      "University of Chicago",
+      "Barcelona School of Economics",
+      "Institut de Política Econòmica i Governança",
+      "Rappaport Institute for Greater Boston",
+      "University of Houston",
+      "World Bank Group",
+      "Massachusetts Institute of Technology",
+      "Syracuse University",
+      "University of Pennsylvania",
+      "Rockefeller University",
+      "London School of Economics and Political Science"
+    ],
+    "works": [
+      {
+        "title": "Growth in Cities",
+        "url": "https://doi.org/10.1086/261856",
+        "year": 1992
+      },
+      {
+        "title": "Do Institutions Cause Growth?",
+        "url": "https://doi.org/10.1023/b:joeg.0000038933.16398.ed",
+        "year": 2004
+      }
+    ]
+  },
+  {
+    "id": "thomas-piketty",
+    "status": "matched",
+    "author": "https://openalex.org/A5026928510",
+    "name": "Thomas Piketty",
+    "institutions": [
+      "Institut d'Etudes Politiques de Paris",
+      "Paris Jourdan Sciences Economiques",
+      "Paris School of Economics",
+      "École des hautes études en sciences sociales",
+      "Centre National de la Recherche Scientifique",
+      "National Bureau of Economic Research",
+      "Institut National de la Statistique et des Etudes Economiques",
+      "Peterson Institute for International Economics",
+      "Consejo Nacional de Investigaciones Científicas y Técnicas",
+      "Pontificia Universidad Católica de Chile",
+      "Universidad de la República de Uruguay",
+      "Institut d'Etudes Politiques de Paris",
+      "Université Paris Sciences et Lettres",
+      "Harvard University Press",
+      "École Normale Supérieure - PSL",
+      "University of Oxford",
+      "Centre Pour La Recherche Economique et ses Applications",
+      "Centre for Economic Policy Research",
+      "Paris Jourdan Sciences Economiques",
+      "Centre de recherche sur les Inégalités Sociales",
+      "Paris School of Economics",
+      "Massachusetts Institute of Technology",
+      "University of Chile",
+      "École des hautes études en sciences sociales",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley"
+    ],
+    "works": [
+      {
+        "title": "Capital in the Twenty-First Century",
+        "url": "https://doi.org/10.4159/9780674369542",
+        "year": 2014
+      },
+      {
+        "title": "Income Inequality in the United States, 1913-1998",
+        "url": "https://doi.org/10.1162/00335530360535135",
+        "year": 2003
+      }
+    ]
+  },
+  {
+    "id": "emmanuel-saez",
+    "status": "matched",
+    "author": "https://openalex.org/A5017685817",
+    "name": "Emmanuel Saez",
+    "institutions": [
+      "University of California, Berkeley",
+      "Hitotsubashi University",
+      "Northwestern University",
+      "Brookings Institution",
+      "University of Copenhagen",
+      "Center for Economic and Policy Research",
+      "United States Social Security Administration",
+      "United States Department of the Treasury",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Lawrence Berkeley National Laboratory",
+      "Consejo Nacional de Investigaciones Científicas y Técnicas",
+      "University of California, Los Angeles",
+      "Stockholm University",
+      "University of California, Santa Cruz",
+      "University of St.Gallen",
+      "Keio University",
+      "Brown University",
+      "University of California System",
+      "University of Surrey",
+      "ETH Zurich",
+      "University of Oxford",
+      "National Tax Association",
+      "Modélisation multi-échelle des systèmes urbains",
+      "Suntory and Toyota International Centres for Economics and Related Disciplines",
+      "Paris School of Economics",
+      "Massachusetts Institute of Technology",
+      "Athens University of Economics and Business",
+      "The University of Tokyo",
+      "Columbia University",
+      "Singapore Management University",
+      "London School of Economics and Political Science",
+      "Erasmus University Rotterdam",
+      "University of California, Berkeley",
+      "Stanford University",
+      "The University of Osaka"
+    ],
+    "works": [
+      {
+        "title": "Income Inequality in the United States, 1913-1998",
+        "url": "https://doi.org/10.1162/00335530360535135",
+        "year": 2003
+      },
+      {
+        "title": "Where is the land of Opportunity? The Geography of Intergenerational Mobility in the United States *",
+        "url": "https://doi.org/10.1093/qje/qju022",
+        "year": 2014
+      }
+    ]
+  },
+  {
+    "id": "gabriel-zucman",
+    "status": "matched",
+    "author": "https://openalex.org/A5090091703",
+    "name": "Gabriel Zucman",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Paris School of Economics",
+      "University of California, Berkeley",
+      "University of Copenhagen",
+      "National Bureau of Economic Research",
+      "Lawrence Berkeley National Laboratory",
+      "Consejo Nacional de Investigaciones Científicas y Técnicas",
+      "Utrecht University",
+      "Princeton University",
+      "Charles University",
+      "University of California System",
+      "École Normale Supérieure - PSL",
+      "University of Oxford",
+      "Danish Ministry of Finance",
+      "Centre de Recherche en Économie et Statistique",
+      "Centre for Economic Policy Research",
+      "Ramachandra College of Engineering (A)",
+      "Internal Revenue Service",
+      "Norwegian University of Life Sciences",
+      "Paris School of Economics",
+      "Carnegie Mellon University",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley"
+    ],
+    "works": [
+      {
+        "title": "Wealth Inequality in the United States since 1913: Evidence from Capitalized Income Tax Data *",
+        "url": "https://doi.org/10.1093/qje/qjw004",
+        "year": 2016
+      },
+      {
+        "title": "Capital is Back: Wealth-Income Ratios in Rich Countries 1700–2010 *",
+        "url": "https://doi.org/10.1093/qje/qju018",
+        "year": 2014
+      }
+    ]
+  },
+  {
+    "id": "janet-currie",
+    "status": "matched",
+    "author": "https://openalex.org/A5045972447",
+    "name": "Janet Currie",
+    "institutions": [
+      "Princeton University",
+      "Yale University",
+      "Boston University",
+      "Northwestern University",
+      "Tulane University",
+      "University of Southern California",
+      "Tufts University",
+      "Uppsala University",
+      "Hoover Institution",
+      "RAND Corporation",
+      "National Bureau of Economic Research",
+      "United States Census Bureau",
+      "Harvard University",
+      "North Carolina State University",
+      "University of Arizona",
+      "University of Kentucky",
+      "Johns Hopkins University",
+      "University of Kansas",
+      "University of Illinois Urbana-Champaign",
+      "University of California, Los Angeles",
+      "Stockholm University",
+      "University of Sussex",
+      "Tel Aviv University",
+      "City University of New York",
+      "Chinese University of Hong Kong",
+      "American University",
+      "Georgia State University",
+      "Georgetown University",
+      "University of Oslo",
+      "University of Toronto",
+      "IZA - Institute of Labor Economics",
+      "Vanderbilt University",
+      "Princeton University",
+      "Peking University",
+      "University of Zurich",
+      "Cornell University",
+      "Kyoto University",
+      "University of Massachusetts Amherst",
+      "Brown University",
+      "University of Michigan",
+      "Karolinska Institutet",
+      "University of Manchester",
+      "Yale University",
+      "University of California San Diego",
+      "University of Warwick",
+      "University of Chicago",
+      "New York State School of Industrial and Labor Relations",
+      "Northwestern University",
+      "Stanford Medicine",
+      "State University of New York at Oswego",
+      "Indian Statistical Institute, Delhi Centre",
+      "University of Bergen",
+      "University College London",
+      "University of Manitoba",
+      "University of Virginia",
+      "Paris School of Economics",
+      "Indiana University",
+      "National Institute of Population and Social Security Research",
+      "Massachusetts Institute of Technology",
+      "Mathematica Policy Research",
+      "Federal Reserve Bank of Chicago",
+      "Columbia University",
+      "University of Pennsylvania",
+      "Singapore Management University",
+      "Newcastle University",
+      "Michigan State University",
+      "University of Gothenburg",
+      "University of Amsterdam",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University",
+      "University of Edinburgh",
+      "Icahn School of Medicine at Mount Sinai",
+      "Aalto University"
+    ],
+    "works": [
+      {
+        "title": "Killing Me Softly: The Fetal Origins Hypothesis",
+        "url": "https://doi.org/10.1257/jep.25.3.153",
+        "year": 2011
+      },
+      {
+        "title": "Healthy, Wealthy, and Wise: Socioeconomic Status, Poor Health in Childhood, and Human Capital Development",
+        "url": "https://doi.org/10.1257/jel.47.1.87",
+        "year": 2009
+      }
+    ]
+  },
+  {
+    "id": "partha-dasgupta",
+    "status": "matched",
+    "author": "https://openalex.org/A5109204185",
+    "name": "Partha Sarathi Dasgupta",
+    "institutions": [
+      "R. G. Kar Medical College and Hospital",
+      "Medical College and Hospital, Kolkata",
+      "University of Delhi",
+      "University of London",
+      "Georgia Institute of Technology",
+      "National Bureau of Economic Research",
+      "Royal Swedish Academy of Sciences",
+      "Harvard University",
+      "University of St Andrews",
+      "University of Milan",
+      "Princeton University",
+      "Purdue University West Lafayette",
+      "University of Cambridge",
+      "Northeastern University London",
+      "Resources For The Future",
+      "University of Manchester",
+      "R. G. Kar Medical College and Hospital",
+      "Institute for Advanced Study",
+      "Bridge University",
+      "Fondazione Eni Enrico Mattei",
+      "St. John's College",
+      "Arizona State University",
+      "Medical College and Hospital, Kolkata",
+      "London School of Economics and Political Science",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Ecosystems and Human well-being",
+        "url": "https://symplectic.its.deakin.edu.au/viewobject.html?cid=1&amp;id=29617",
+        "year": 2003
+      },
+      {
+        "title": "Economic Growth, Carrying Capacity, and the Environment",
+        "url": "https://doi.org/10.1126/science.268.5210.520",
+        "year": 1995
+      }
+    ]
+  },
+  {
+    "id": "paolo-mauro",
+    "status": "matched",
+    "author": "https://openalex.org/A5112180477",
+    "name": "Paolo Mauro",
+    "institutions": [
+      "International Monetary Fund",
+      "Harvard University",
+      "Peterson Institute for International Economics",
+      "European Central Bank"
+    ],
+    "works": [
+      {
+        "title": "Corruption and Growth",
+        "url": "https://doi.org/10.2307/2946696",
+        "year": 1995
+      },
+      {
+        "title": "Corruption and the composition of government expenditure",
+        "url": "https://doi.org/10.1016/s0047-2727(98)00025-5",
+        "year": 1998
+      }
+    ]
+  },
+  {
+    "id": "david-autor",
+    "status": "matched",
+    "author": "https://openalex.org/A5029839974",
+    "name": "David Autor",
+    "institutions": [
+      "Northwestern University",
+      "National Bureau of Economic Research",
+      "IZA - Institute of Labor Economics",
+      "Massachusetts Institute of Technology",
+      "Boston University",
+      "Hitotsubashi University",
+      "Northwestern University",
+      "Federal Reserve Bank of Atlanta",
+      "Tufts University",
+      "Uppsala University",
+      "United States Social Security Administration",
+      "Pew Research Center",
+      "Georgia Institute of Technology",
+      "RAND Corporation",
+      "National Bureau of Economic Research",
+      "IBM (United States)",
+      "Harvard University",
+      "University of British Columbia",
+      "Emory University",
+      "University of Leicester",
+      "University of California, Santa Barbara",
+      "Université du Québec à Montréal",
+      "University of California, Los Angeles",
+      "The University of Melbourne",
+      "National University of Singapore",
+      "Simon Fraser University",
+      "University of California, Santa Cruz",
+      "University of Toronto",
+      "Lund University",
+      "United States Military Academy",
+      "Utrecht University",
+      "IZA - Institute of Labor Economics",
+      "Federal Reserve Bank of San Francisco",
+      "Princeton University",
+      "University of Zurich",
+      "Washington University in St. Louis",
+      "Cornell University",
+      "University of Massachusetts Amherst",
+      "Institut für Arbeitsmarkt und Berufsforschung",
+      "Brown University",
+      "University of Michigan",
+      "University of Florida Health",
+      "Federal Reserve Board of Governors",
+      "University of Florida",
+      "Maastricht University",
+      "University of California San Diego",
+      "University of Chicago",
+      "Centro de Estudios Monetarios y Financieros",
+      "International Road Transport Union",
+      "University of Southampton",
+      "University of Houston",
+      "Banco de Portugal",
+      "University of Virginia",
+      "Monash University",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "University of Maryland, College Park",
+      "Black Hills State University",
+      "Columbia University",
+      "University of Pennsylvania",
+      "Miami University",
+      "W.E. Upjohn Institute for Employment Research",
+      "The University of Texas at Austin",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "The Skill Content of Recent Technological Change: An Empirical Exploration",
+        "url": "https://doi.org/10.1162/003355303322552801",
+        "year": 2003
+      },
+      {
+        "title": "The China Syndrome: Local Labor Market Effects of Import Competition in the United States",
+        "url": "https://doi.org/10.1257/aer.103.6.2121",
+        "year": 2013
+      }
+    ]
+  },
+  {
+    "id": "lawrence-f-katz",
+    "status": "matched",
+    "author": "https://openalex.org/A5111429542",
+    "name": "Lawrence F. Katz",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Dartmouth College",
+      "Boston University",
+      "Northwestern University",
+      "Manpower Demonstration Research Corporation",
+      "United States Department of Health and Human Services",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of British Columbia",
+      "Johns Hopkins University",
+      "University of California, Los Angeles",
+      "Georgetown University",
+      "University of Toronto",
+      "Princeton University",
+      "Cornell University",
+      "University of Michigan",
+      "Yale University",
+      "University of Chicago",
+      "Abdul Latif Jameel Poverty Action Lab",
+      "Massachusetts Institute of Technology",
+      "University of Maryland, College Park",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Changes in Relative Wages, 1963-1987: Supply and Demand Factors",
+        "url": "https://doi.org/10.2307/2118323",
+        "year": 1992
+      },
+      {
+        "title": "Experimental Analysis of Neighborhood Effects",
+        "url": "https://doi.org/10.1111/j.1468-0262.2007.00733.x",
+        "year": 2007
+      }
+    ]
+  },
+  {
+    "id": "marianne-bertrand",
+    "status": "matched",
+    "author": "https://openalex.org/A5111433522",
+    "name": "Marianne Bertrand",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "IZA - Institute of Labor Economics",
+      "University of Chicago",
+      "Centre for Economic Policy Research",
+      "Rutgers, The State University of New Jersey",
+      "Boston College",
+      "Boston University",
+      "Center for Economic and Policy Research",
+      "University of Minnesota",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Harvard University",
+      "University of British Columbia",
+      "Emory University",
+      "University of Alberta",
+      "University of California, Los Angeles",
+      "National University of Singapore",
+      "Copenhagen Business School",
+      "University of Toronto",
+      "IZA - Institute of Labor Economics",
+      "Vanderbilt University",
+      "Hong Kong University of Science and Technology",
+      "Princeton University",
+      "Cornell University",
+      "University of Michigan",
+      "Yale University",
+      "University of Florida",
+      "University of California San Diego",
+      "University of Illinois Chicago",
+      "University of Chicago",
+      "European Corporate Governance Institute",
+      "Centre de Recherche en Économie et Statistique",
+      "Centre for Economic Policy Research",
+      "INSEAD",
+      "INSEAD",
+      "Heartland Alliance",
+      "Barcelona School of Economics",
+      "Escola de Economia de São Paulo",
+      "Université du Québec",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "University of Pennsylvania",
+      "ENSAE Paris",
+      "University of California, Davis",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination",
+        "url": "https://doi.org/10.1257/0002828042002561",
+        "year": 2004
+      },
+      {
+        "title": "Enjoying the Quiet Life? Corporate Governance and Managerial Preferences",
+        "url": "https://doi.org/10.1086/376950",
+        "year": 2003
+      }
+    ]
+  },
+  {
+    "id": "sendhil-mullainathan",
+    "status": "matched",
+    "author": "https://openalex.org/A5034703281",
+    "name": "Sendhil Mullainathan",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Massachusetts Institute of Technology",
+      "Rutgers, The State University of New Jersey",
+      "Dartmouth College",
+      "Boston University",
+      "Northwestern University",
+      "Brookings Institution",
+      "Innovations for Poverty Action",
+      "Congressional Budget Office",
+      "National Bureau of Economic Research",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "University of British Columbia",
+      "University of Illinois Urbana-Champaign",
+      "Universität Hamburg",
+      "University of California, Los Angeles",
+      "Georgetown University",
+      "University of Colorado Boulder",
+      "Princeton University",
+      "Peking University",
+      "Cornell University",
+      "Yale University",
+      "University of Florida",
+      "University of Chicago",
+      "Northwestern University",
+      "Abdul Latif Jameel Poverty Action Lab",
+      "Centre for Economic Policy Research",
+      "Consumer Financial Protection Bureau",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Mathematica Policy Research",
+      "University of Pennsylvania",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "How Much Should We Trust Differences-In-Differences Estimates?",
+        "url": "https://doi.org/10.1162/003355304772839588",
+        "year": 2004
+      },
+      {
+        "title": "Dissecting racial bias in an algorithm used to manage the health of populations",
+        "url": "https://doi.org/10.1126/science.aax2342",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "nicholas-bloom",
+    "status": "matched",
+    "author": "https://openalex.org/A5044421873",
+    "name": "Nicholas Bloom",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Hunter College",
+      "Stanford University",
+      "Boston University",
+      "Hitotsubashi University",
+      "Northwestern University",
+      "University of North Carolina at Chapel Hill",
+      "Tulane University",
+      "University of Southern California",
+      "Federal Reserve Bank of Atlanta",
+      "Center for Economic and Policy Research",
+      "Hoover Institution",
+      "John D. and Catherine T. MacArthur Foundation",
+      "University of Minnesota",
+      "National Bureau of Economic Research",
+      "Alfred P. Sloan Foundation",
+      "United States Census Bureau",
+      "World Bank",
+      "Ifo Institute for Economic Research",
+      "Federal Reserve Bank of Minneapolis",
+      "New York Institute of Technology",
+      "Harvard University",
+      "North Carolina State University",
+      "Institute for Fiscal Studies",
+      "University of British Columbia",
+      "University of Nottingham",
+      "Johns Hopkins University",
+      "Smith Richardson Foundation",
+      "University of California, Merced",
+      "University of California, Los Angeles",
+      "Tel Aviv University",
+      "University of St Andrews",
+      "Duke University",
+      "City University of New York",
+      "BI Norwegian Business School",
+      "Bank of Finland",
+      "King's College London",
+      "University of Toronto",
+      "Instituto Tecnológico Autónomo de México",
+      "IZA - Institute of Labor Economics",
+      "Yeshiva University",
+      "Princeton University",
+      "Peking University",
+      "University of Zurich",
+      "University of Utah",
+      "University of Cambridge",
+      "Brown University",
+      "Federal Reserve Board of Governors",
+      "Yale University",
+      "European Bank for Reconstruction and Development",
+      "University of Bristol",
+      "University of California San Diego",
+      "Hunter College",
+      "University of Oxford",
+      "University of Chicago",
+      "New York Institute of Technology",
+      "Duke Medical Center",
+      "McKinsey & Company (Germany)",
+      "Centre for Economic Policy Research",
+      "Dartmouth Hospital",
+      "Federal Reserve Bank of New York",
+      "Stanford Institute for Economic Policy Research",
+      "University College London",
+      "Bank of England",
+      "Bank of Japan",
+      "Imperial College London",
+      "The Ohio State University",
+      "New York University",
+      "Paris School of Economics",
+      "London Business School",
+      "Massachusetts Institute of Technology",
+      "Athens University of Economics and Business",
+      "Federal Reserve Bank of St. Louis",
+      "Columbia University",
+      "University of Pennsylvania",
+      "W.E. Upjohn Institute for Employment Research",
+      "The University of Texas at Austin",
+      "Charles River Associates",
+      "London School of Economics and Political Science",
+      "Texas A&M University",
+      "University of California, Berkeley",
+      "Stanford University",
+      "Tsinghua University"
+    ],
+    "works": [
+      {
+        "title": "Measuring Economic Policy Uncertainty*",
+        "url": "https://doi.org/10.1093/qje/qjw024",
+        "year": 2016
+      },
+      {
+        "title": "The Impact of Uncertainty Shocks",
+        "url": "https://doi.org/10.3982/ecta6248",
+        "year": 2009
+      }
+    ]
+  },
+  {
+    "id": "susan-athey",
+    "status": "matched",
+    "author": "https://openalex.org/A5001211242",
+    "name": "Susan Carleton Athey",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Stanford University",
+      "Boston University",
+      "Microsoft (United States)",
+      "Google (United States)",
+      "University of Minnesota",
+      "United States Department of Justice",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "Federal Reserve Bank of Minneapolis",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "Ca' Foscari University of Venice",
+      "University of California, Los Angeles",
+      "University of Mannheim",
+      "University of Toronto",
+      "York University",
+      "Tilburg University",
+      "Tinbergen Institute",
+      "Central European University",
+      "Federal Reserve Bank of San Francisco",
+      "Princeton University",
+      "University of Cambridge",
+      "Brown University",
+      "University of Michigan",
+      "Institut d'Économie Industrielle",
+      "Yale University",
+      "University of Chicago",
+      "Meta (United States)",
+      "Stanford Institute for Economic Policy Research",
+      "University College London",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "University of Chile",
+      "Bocconi University",
+      "Columbia University",
+      "Michigan State University",
+      "Erasmus University Rotterdam",
+      "Colorado State University",
+      "University of California, Berkeley",
+      "Stanford University",
+      "Tsinghua University"
+    ],
+    "works": [
+      {
+        "title": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
+        "url": "https://doi.org/10.1080/01621459.2017.1319839",
+        "year": 2017
+      },
+      {
+        "title": "Generalized random forests",
+        "url": "https://doi.org/10.1214/18-aos1709",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "hal-varian",
+    "status": "matched",
+    "author": "https://openalex.org/A5073542398",
+    "name": "Hal R. Varian",
+    "institutions": [
+      "Google (United States)",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "University of Wisconsin–Madison",
+      "University of Michigan",
+      "University of California San Diego",
+      "Massachusetts Institute of Technology",
+      "University of California, Berkeley"
+    ],
+    "works": [
+      {
+        "title": "Information Rules: A Strategic Guide to the Network Economy",
+        "url": "https://doi.org/10.2307/259025",
+        "year": 2000
+      },
+      {
+        "title": "Recommender systems",
+        "url": "https://doi.org/10.1145/245108.245121",
+        "year": 1997
+      }
+    ]
+  },
+  {
+    "id": "michael-dean-woodford",
+    "status": "matched",
+    "author": "https://openalex.org/A5072791098",
+    "name": "Michael Woodford",
+    "institutions": [
+      "Columbia University",
+      "International Monetary Fund",
+      "National Bureau of Economic Research",
+      "United States Department of Energy",
+      "Harvard University",
+      "Western Michigan University",
+      "Instituto Nacional de Matemática Pura e Aplicada",
+      "University of California, Los Angeles",
+      "Duke University",
+      "University of Mannheim",
+      "Federal Reserve Bank of San Francisco",
+      "Princeton University",
+      "University of Michigan",
+      "Hampshire County Council",
+      "University of California System",
+      "U.S. Energy Information Administration",
+      "École Normale Supérieure - PSL",
+      "Yale University",
+      "University of Oxford",
+      "University of Chicago",
+      "Barcelona School of Economics",
+      "Federal Reserve Bank of New York",
+      "Banco Central de Chile",
+      "Princeton University Press",
+      "Universidad Carlos III de Madrid",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "University of Maryland, College Park",
+      "Carnegie Mellon University",
+      "Wilfrid Laurier University",
+      "Columbia University",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "INTEREST AND PRICES: FOUNDATIONS OF A THEORY OF MONETARY POLICY",
+        "url": "https://doi.org/10.1017/s1365100505040253",
+        "year": 2005
+      },
+      {
+        "title": "Interest and Prices",
+        "url": "https://doi.org/10.1515/9781400830169",
+        "year": 2004
+      }
+    ]
+  },
+  {
+    "id": "sidney-g-winter",
+    "status": "matched",
+    "author": "https://openalex.org/A5103445562",
+    "name": "Sidney G. Winter",
+    "institutions": [
+      "University of Pennsylvania",
+      "United States Government Accountability Office",
+      "University of Michigan",
+      "UNSW Sydney",
+      "Yale University",
+      "London Business School",
+      "Carnegie Mellon University",
+      "University of Pennsylvania",
+      "University of California, Berkeley"
+    ],
+    "works": [
+      {
+        "title": "An Evolutionary Theory of Economic Change.",
+        "url": "https://doi.org/10.2307/2232409",
+        "year": 1983
+      },
+      {
+        "title": "Deliberate Learning and the Evolution of Dynamic Capabilities",
+        "url": "https://doi.org/10.1287/orsc.13.3.339.2780",
+        "year": 2002
+      }
+    ]
+  },
+  {
+    "id": "ludwig-straub",
+    "status": "matched",
+    "author": "https://openalex.org/A5049361598",
+    "name": "Ludwig Straub",
+    "institutions": [
+      "Harvard University",
+      "Northwestern University",
+      "University of Copenhagen",
+      "Center for Economic and Policy Research",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of California, Los Angeles",
+      "Princeton University",
+      "Banque de France",
+      "Federal Reserve Board of Governors",
+      "University of Chicago",
+      "Centre for Economic Policy Research",
+      "Banco Central de Chile",
+      "Federal Reserve Bank of Boston",
+      "Bank of England",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Federal Reserve Bank of Chicago",
+      "University of Pennsylvania",
+      "Bank of Canada",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Macroeconomic Implications of COVID-19: Can Negative Supply Shocks Cause Demand Shortages?",
+        "url": "https://doi.org/10.3386/w26918",
+        "year": 2020
+      },
+      {
+        "title": "Using the Sequence‐Space Jacobian to Solve and Estimate Heterogeneous‐Agent Models",
+        "url": "https://doi.org/10.3982/ecta17434",
+        "year": 2021
+      }
+    ]
+  },
+  {
+    "id": "stefanie-stantcheva",
+    "status": "matched",
+    "author": "https://openalex.org/A5061976066",
+    "name": "Stefanie Stantcheva",
+    "institutions": [
+      "Center for Economic and Policy Research",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Centre for Economic Policy Research",
+      "Boston University",
+      "University of Copenhagen",
+      "Center for Economic and Policy Research",
+      "Organisation de Coopération et de Développement Economiques",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of British Columbia",
+      "University of California, Los Angeles",
+      "University of Pittsburgh",
+      "Collège de France",
+      "Banque de France",
+      "Hellenic Open University",
+      "University of Michigan",
+      "Harvard University Press",
+      "University of California San Diego",
+      "University of Chicago",
+      "Centre de Recherche en Économie et Statistique",
+      "Centre for Economic Policy Research",
+      "Paris School of Economics",
+      "Massachusetts Institute of Technology",
+      "University of Pennsylvania",
+      "Ludwig-Maximilians-Universität München",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "How Elastic Are Preferences for Redistribution? Evidence from Randomized Survey Experiments",
+        "url": "https://doi.org/10.1257/aer.20130360",
+        "year": 2015
+      },
+      {
+        "title": "Intergenerational Mobility and Preferences for Redistribution",
+        "url": "https://doi.org/10.1257/aer.20162015",
+        "year": 2018
+      }
+    ]
+  },
+  {
+    "id": "philipp-strack",
+    "status": "matched",
+    "author": "https://openalex.org/A5020332447",
+    "name": "Philipp Strack",
+    "institutions": [
+      "Yale University",
+      "California Institute of Technology",
+      "Microsoft (United States)",
+      "U.S. National Science Foundation",
+      "National Bureau of Economic Research",
+      "University of Bonn",
+      "Harvard University",
+      "Central European University",
+      "Yale University",
+      "University of Chicago",
+      "Hausdorff Center for Mathematics",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Speed, Accuracy, and the Optimal Timing of Choices",
+        "url": "https://doi.org/10.1257/aer.20150742",
+        "year": 2018
+      },
+      {
+        "title": "Unrealistic Expectations and Misguided Learning",
+        "url": "https://doi.org/10.3982/ecta14084",
+        "year": 2018
+      }
+    ]
+  },
+  {
+    "id": "oleg-itskhoki",
+    "status": "matched",
+    "author": "https://openalex.org/A5088518091",
+    "name": "Oleg Itskhoki",
+    "institutions": [
+      "Harvard University",
+      "Rutgers, The State University of New Jersey",
+      "Federal Reserve Bank of Atlanta",
+      "Center for Economic and Policy Research",
+      "The Honourable Society of Lincoln's Inn",
+      "National Bureau of Economic Research",
+      "Federal Reserve Bank of Minneapolis",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "Seoul National University",
+      "University of Liverpool",
+      "European Central Bank",
+      "University of California, Los Angeles",
+      "National University of Singapore",
+      "Princeton University",
+      "University of California, Irvine",
+      "Federal Reserve Board of Governors",
+      "Yale University",
+      "University of Chicago",
+      "Centre for Economic Policy Research",
+      "Federal Reserve Bank of New York",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Federal Reserve Bank of Chicago",
+      "Federal Reserve Bank of St. Louis",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "National Bank of Belgium",
+      "KU Leuven"
+    ],
+    "works": [
+      {
+        "title": "Inequality and Unemployment in a Global Economy",
+        "url": "https://doi.org/10.3982/ecta8640",
+        "year": 2010
+      },
+      {
+        "title": "Importers, Exporters, and Exchange Rate Disconnect",
+        "url": "https://doi.org/10.1257/aer.104.7.1942",
+        "year": 2014
+      }
+    ]
+  },
+  {
+    "id": "isaiah-andrews",
+    "status": "matched",
+    "author": "https://openalex.org/A5114167505",
+    "name": "Isaiah Andrews",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Massachusetts Institute of Technology",
+      "Pennsylvania State University",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of Connecticut",
+      "Brown University",
+      "Moscow Institute of Thermal Technology",
+      "Cemmap",
+      "University College London",
+      "Massachusetts Institute of Technology",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Weak Instruments in Instrumental Variables Regression: Theory and Practice",
+        "url": "https://doi.org/10.1146/annurev-economics-080218-025643",
+        "year": 2019
+      },
+      {
+        "title": "Identification of and Correction for Publication Bias",
+        "url": "https://doi.org/10.1257/aer.20180310",
+        "year": 2019
+      }
+    ]
+  },
+  {
+    "id": "melissa-dell",
+    "status": "matched",
+    "author": "https://openalex.org/A5078758511",
+    "name": "Melissa Dell",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Boston College",
+      "Canadian Institute for Advanced Research",
+      "Northwestern University",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Harvard University",
+      "University of Waterloo",
+      "University of California, Santa Barbara",
+      "University of Illinois Urbana-Champaign",
+      "Stockholm University",
+      "Central European University",
+      "Harvard University Press",
+      "Universidad del Pacífico",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "University of the Pacific",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "What Do We Learn from the Weather? The New Climate-Economy Literature",
+        "url": "https://doi.org/10.1257/jel.52.3.740",
+        "year": 2014
+      },
+      {
+        "title": "Temperature Shocks and Economic Growth: Evidence from the Last Half Century",
+        "url": "https://doi.org/10.1257/mac.4.3.66",
+        "year": 2012
+      }
+    ]
+  },
+  {
+    "id": "emi-nakamura",
+    "status": "matched",
+    "author": "https://openalex.org/A5055718351",
+    "name": "Emi Nakamura",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Columbia University",
+      "University of California, Berkeley",
+      "Boston University",
+      "Northwestern University",
+      "Center for Economic and Policy Research",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "Federal Reserve Bank of Minneapolis",
+      "Harvard University",
+      "California State University, Fullerton",
+      "Princeton University",
+      "Banque de France",
+      "University of Cambridge",
+      "Centre for Economic Policy Research",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "University of California, Berkeley"
+    ],
+    "works": [
+      {
+        "title": "Five Facts about Prices: A Reevaluation of Menu Cost Models *",
+        "url": "https://doi.org/10.1162/qjec.2008.123.4.1415",
+        "year": 2008
+      },
+      {
+        "title": "High Frequency Identification of Monetary Non-Neutrality: The Information Effect",
+        "url": "https://doi.org/10.1093/qje/qjy004",
+        "year": 2013
+      }
+    ]
+  },
+  {
+    "id": "parag-pathak",
+    "status": "matched",
+    "author": "https://openalex.org/A5019266000",
+    "name": "Parag A. Pathak",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Massachusetts Institute of Technology",
+      "Boston College",
+      "Northwestern University",
+      "University of Hawaiʻi at Mānoa",
+      "Pennsylvania State University",
+      "National Bureau of Economic Research",
+      "University of Hawaii System",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "North Carolina State University",
+      "Lehman College",
+      "Duke University",
+      "New York City Department of Education",
+      "United States Military Academy",
+      "Princeton University",
+      "Washington University in St. Louis",
+      "Cornell University",
+      "Brown University",
+      "Yale University",
+      "University of Chicago",
+      "BRIQ Institute on Behavior and Inequality",
+      "IIT@MIT",
+      "York University",
+      "York College",
+      "Military Medical Academy",
+      "Barcelona School of Economics",
+      "Federal Reserve Bank of New York",
+      "Federal Reserve Bank of Boston",
+      "University of Virginia",
+      "University of Rochester",
+      "Arizona State University",
+      "New York University",
+      "Paris School of Economics",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "University of Pennsylvania",
+      "The University of Texas at Austin",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Short interest, institutional ownership, and stock returns",
+        "url": "https://doi.org/10.1016/j.jfineco.2005.01.001",
+        "year": 2005
+      },
+      {
+        "title": "Forced Sales and House Prices",
+        "url": "https://doi.org/10.1257/aer.101.5.2108",
+        "year": 2011
+      }
+    ]
+  },
+  {
+    "id": "dave-donaldson",
+    "status": "matched",
+    "author": "https://openalex.org/A5018485700",
+    "name": "Dave Donaldson",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Duke University",
+      "Centre for Economic Policy Research",
+      "Massachusetts Institute of Technology",
+      "Stanford University",
+      "Dartmouth College",
+      "Pennsylvania State University",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "University of Wisconsin–Madison",
+      "Harvard University",
+      "University of British Columbia",
+      "University of California, Los Angeles",
+      "Duke University",
+      "University of Oregon",
+      "George Washington University",
+      "Hong Kong University of Science and Technology",
+      "Princeton University",
+      "University of Zurich",
+      "Cornell University",
+      "Brown University",
+      "University of Michigan",
+      "Yale University",
+      "University of California San Diego",
+      "University of Chicago",
+      "The Econometric Society",
+      "Centre for Economic Policy Research",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "Ludwig-Maximilians-Universität München",
+      "University of California, Davis",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Railroads of the Raj: Estimating the Impact of Transportation Infrastructure",
+        "url": "https://doi.org/10.1257/aer.20101199",
+        "year": 2018
+      },
+      {
+        "title": "Railroads and American Economic Growth: A “Market Access” Approach *",
+        "url": "https://doi.org/10.1093/qje/qjw002",
+        "year": 2016
+      }
+    ]
+  },
+  {
+    "id": "yuliy-sannikov",
+    "status": "matched",
+    "author": "https://openalex.org/A5029970501",
+    "name": "Yuliy Sannikov",
+    "institutions": [
+      "Stanford University",
+      "University of California, Riverside",
+      "Bank of Italy",
+      "Hitotsubashi University",
+      "Center for Economic and Policy Research",
+      "University of Minnesota",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "University of California, Los Angeles",
+      "The University of Queensland",
+      "Stockholm School of Economics",
+      "University of California, Santa Cruz",
+      "Princeton University",
+      "Central Bank of the Republic of Turkey",
+      "University of California, Irvine",
+      "University of Exeter",
+      "University of Michigan",
+      "Federal Reserve Board of Governors",
+      "Yale University",
+      "University of Bristol",
+      "University of Chicago",
+      "Federal Reserve Bank of New York",
+      "University College London",
+      "Bank of England",
+      "Banco de Portugal",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "The University of Tokyo",
+      "University of Pennsylvania",
+      "University of California, Davis",
+      "European University Institute",
+      "London School of Economics and Political Science",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "A Macroeconomic Model with a Financial Sector",
+        "url": "https://doi.org/10.1257/aer.104.2.379",
+        "year": 2014
+      },
+      {
+        "title": "A Continuous-Time Version of the Principal–Agent Problem",
+        "url": "https://doi.org/10.1111/j.1467-937x.2008.00486.x",
+        "year": 2008
+      }
+    ]
+  },
+  {
+    "id": "roland-fryer",
+    "status": "matched",
+    "author": "https://openalex.org/A5080267776",
+    "name": "Roland G. Fryer",
+    "institutions": [
+      "Harvard University",
+      "Canadian Institute for Advanced Research",
+      "Boston University",
+      "Northwestern University",
+      "California Institute of Technology",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "New York City Department of Education",
+      "American Bar Foundation",
+      "Princeton University",
+      "Cornell University",
+      "Brown University",
+      "UNSW Sydney",
+      "University of California San Diego",
+      "University of Chicago",
+      "Harlem Children's Zone",
+      "District of Columbia Public School",
+      "Fondren Foundation",
+      "University College London",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "University of Pennsylvania",
+      "London School of Economics and Political Science",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Understanding the Black-White Test Score Gap in the First Two Years of School",
+        "url": "https://doi.org/10.1162/003465304323031049",
+        "year": 2004
+      },
+      {
+        "title": "The Causes and Consequences of Distinctively Black Names",
+        "url": "https://doi.org/10.1162/0033553041502180",
+        "year": 2004
+      }
+    ]
+  },
+  {
+    "id": "matthew-gentzkow",
+    "status": "matched",
+    "author": "https://openalex.org/A5008542297",
+    "name": "Matthew Aaron Gentzkow",
+    "institutions": [
+      "Stanford University",
+      "Northwestern University",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of British Columbia",
+      "University of California, Los Angeles",
+      "University of Mannheim",
+      "Simon Fraser University",
+      "University of California, Santa Cruz",
+      "Instituto Tecnológico Autónomo de México",
+      "Princeton University",
+      "University of Washington",
+      "University of Zurich",
+      "University of Utah",
+      "Brown University",
+      "University of Michigan",
+      "Yale University",
+      "University of Chicago",
+      "Institute for Humane Studies",
+      "Northwestern University",
+      "Microsoft Research New England (United States)",
+      "Stanford Institute for Economic Policy Research",
+      "New York University",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "University of Pennsylvania",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Social Media and Fake News in the 2016 Election",
+        "url": "https://doi.org/10.1257/jep.31.2.211",
+        "year": 2017
+      },
+      {
+        "title": "Bayesian Persuasion",
+        "url": "https://doi.org/10.1257/aer.101.6.2590",
+        "year": 2011
+      }
+    ]
+  },
+  {
+    "id": "amy-finkelstein",
+    "status": "error",
+    "message": "Error: Command failed: curl --fail --silent --show-error --max-time 35 https://api.openalex.org/works?filter=author.id:A5012244489&sort=cited_by_count:desc&per-page=8\ncurl: (56) The requested URL returned error: 429\n"
+  },
+  {
+    "id": "jonathan-levin",
+    "status": "matched",
+    "author": "https://openalex.org/A5069334537",
+    "name": "Jonathan Levin",
+    "institutions": [
+      "RAND Corporation",
+      "Rutgers, The State University of New Jersey",
+      "Boston University",
+      "University of Southern California",
+      "Dartmouth Institute for Health Policy and Clinical Practice",
+      "New America",
+      "University of Minnesota",
+      "RAND Corporation",
+      "U.S. National Science Foundation",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "Duke University",
+      "City University of New York",
+      "Washington and Lee University",
+      "George Washington University",
+      "University of Michigan",
+      "Institut d'Économie Industrielle",
+      "University of Oxford",
+      "University of Chicago",
+      "Center for Medical Technology Policy",
+      "eBay (United States)",
+      "Wake Forest University",
+      "Massachusetts Institute of Technology",
+      "University of Birmingham",
+      "The University of Texas at Austin",
+      "Erasmus University Rotterdam",
+      "University of California, Berkeley",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Relational Incentive Contracts",
+        "url": "https://doi.org/10.1257/000282803322157115",
+        "year": 2003
+      },
+      {
+        "title": "Estimating Dynamic Models of Imperfect Competition",
+        "url": "https://doi.org/10.1111/j.1468-0262.2007.00796.x",
+        "year": 2007
+      }
+    ]
+  },
+  {
+    "id": "steven-levitt",
+    "status": "matched",
+    "author": "https://openalex.org/A5110461946",
+    "name": "Steven D. Levitt",
+    "institutions": [
+      "University of Chicago",
+      "United States Department of the Treasury",
+      "American Bar Association",
+      "U.S. National Science Foundation",
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "University of Illinois Urbana-Champaign",
+      "Wells Fargo (United States)",
+      "American Bar Foundation",
+      "University of Michigan",
+      "Harvard University Press",
+      "University of California San Diego",
+      "University of Oxford",
+      "University of Chicago",
+      "The University of Texas at San Antonio",
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "University of Pennsylvania",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "What Do Laboratory Experiments Measuring Social Preferences Reveal About the Real World?",
+        "url": "https://doi.org/10.1257/jep.21.2.153",
+        "year": 2007
+      },
+      {
+        "title": "Understanding Why Crime Fell in the 1990s: Four Factors that Explain the Decline and Six that Do Not",
+        "url": "https://doi.org/10.1257/089533004773563485",
+        "year": 2004
+      }
+    ]
+  },
+  {
+    "id": "andrei-shleifer",
+    "status": "matched",
+    "author": "https://openalex.org/A5110890240",
+    "name": "Andrei Shleifer",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "Harvard University",
+      "European Corporate Governance Institute",
+      "Università Cattolica del Sacro Cuore",
+      "Dartmouth College",
+      "University of Southern California",
+      "California Institute of Technology",
+      "National Bureau of Economic Research",
+      "World Bank",
+      "Harvard University",
+      "Peterson Institute for International Economics",
+      "University of Ottawa",
+      "University of Alberta",
+      "University of Illinois Urbana-Champaign",
+      "University of California, Los Angeles",
+      "Stockholm University",
+      "Tel Aviv University",
+      "Universitat Pompeu Fabra",
+      "Stockholm School of Economics",
+      "SKEMA Business School",
+      "Royal Holloway University of London",
+      "Princeton University",
+      "Cornell University",
+      "Brown University",
+      "Harvard University Press",
+      "University of Illinois System",
+      "Yale University",
+      "University of Illinois Chicago",
+      "University of Oxford",
+      "University of Chicago",
+      "European Corporate Governance Institute",
+      "Barcelona School of Economics",
+      "Institut de Política Econòmica i Governança",
+      "Paris Jourdan Sciences Economiques",
+      "World Justice Project",
+      "World Bank Group",
+      "New York University",
+      "Paris School of Economics",
+      "Massachusetts Institute of Technology",
+      "Bocconi University",
+      "Columbia University",
+      "University of Amsterdam",
+      "Ecole des Hautes Etudes Commerciales du Nord",
+      "London School of Economics and Political Science",
+      "University of Bologna",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Law and Finance",
+        "url": "https://doi.org/10.1086/250042",
+        "year": 1998
+      },
+      {
+        "title": "A Survey of Corporate Governance",
+        "url": "https://doi.org/10.1111/j.1540-6261.1997.tb04820.x",
+        "year": 1997
+      }
+    ]
+  },
+  {
+    "id": "lawrence-h-summers",
+    "status": "matched",
+    "author": "https://openalex.org/A5059478603",
+    "name": "Lawrence H. Summers",
+    "institutions": [
+      "Massachusetts Institute of Technology",
+      "Boston University",
+      "Northwestern University",
+      "Council of Economic Advisers",
+      "United States Department of the Treasury",
+      "International Monetary Fund",
+      "United States Department of Labor",
+      "Federal Reserve",
+      "National Bureau of Economic Research",
+      "United States Census Bureau",
+      "World Bank",
+      "Harvard University",
+      "Peterson Institute for International Economics",
+      "Urban Institute",
+      "Princeton University",
+      "Brown University",
+      "University of Michigan",
+      "Harvard University Press",
+      "ETH Zurich",
+      "University of Chicago",
+      "COMETE - Mobilités : Vieillissement, pathologie, santé",
+      "World Health Organization",
+      "Max Planck Institute for Innovation and Competition",
+      "Norges Bank",
+      "Bank of England",
+      "University of Rochester",
+      "Massachusetts Institute of Technology",
+      "Federal Reserve Bank of St. Louis",
+      "University of Pennsylvania",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "Noise Trader Risk in Financial Markets",
+        "url": "https://doi.org/10.1086/261703",
+        "year": 1990
+      },
+      {
+        "title": "Positive Feedback Investment Strategies and Destabilizing Rational Speculation",
+        "url": "https://doi.org/10.1111/j.1540-6261.1990.tb03695.x",
+        "year": 1990
+      }
+    ]
+  },
+  {
+    "id": "sanford-j-grossman",
+    "status": "matched",
+    "author": "https://openalex.org/A5074145755",
+    "name": "Sanford J. Grossman",
+    "institutions": [
+      "National Bureau of Economic Research",
+      "University of Illinois Urbana-Champaign",
+      "University of Toronto",
+      "Hebrew University of Jerusalem",
+      "Princeton University",
+      "Washington University in St. Louis",
+      "University of Illinois System",
+      "Federal Reserve Board of Governors",
+      "Yale University",
+      "University of Chicago",
+      "Massachusetts Institute of Technology",
+      "University of Pennsylvania",
+      "London School of Economics and Political Science",
+      "Stanford University"
+    ],
+    "works": [
+      {
+        "title": "The Costs and Benefits of Ownership: A Theory of Vertical and Lateral Integration",
+        "url": "https://doi.org/10.1086/261404",
+        "year": 1986
+      },
+      {
+        "title": "On the Impossibility of Informationally Efficient Markets",
+        "url": "https://doi.org/10.7916/d8765r99",
+        "year": 1980
+      }
+    ]
+  }
+]

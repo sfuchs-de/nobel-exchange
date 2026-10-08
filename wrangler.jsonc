@@ -1,0 +1,6 @@
+{
+  "name": "nobel-exchange-api", "main": "worker/index.ts", "compatibility_date": "2026-10-01",
+  "durable_objects": {"bindings": [{"name":"MARKET","class_name":"Market"}]},
+  "migrations": [{"tag":"v1","new_sqlite_classes":["Market"]}],
+  "vars": {"ALLOWED_ORIGINS":"https://sfuchs-de.github.io,http://127.0.0.1:4196","GOOGLE_CLIENT_ID":"","ADMIN_SUB":"","MARKET_CLOSE":"2026-10-12T00:00:00Z","ANNOUNCEMENT":"2026-10-12T09:45:00Z"}
+}

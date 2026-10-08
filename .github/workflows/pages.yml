@@ -1,0 +1,60 @@
+name: Release Nobel Exchange (manual)
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_backend:
+        description: Also deploy the Worker (requires the scoped Cloudflare environment secret)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: nobel-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test && npm run test:integration && npm run typecheck:worker && npm run check:release && npm run check:deployment
+      - name: Deploy reviewed backend without replacing data
+        if: inputs.deploy_backend
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          GOOGLE_CLIENT_ID: ${{ vars.GOOGLE_CLIENT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo "Scoped deployment secret is not configured"; exit 1; }
+          test -n "$GOOGLE_CLIENT_ID" || { echo "Google identity client is not configured"; exit 1; }
+          npx wrangler deploy --config wrangler.production.jsonc --var "GOOGLE_CLIENT_ID:$GOOGLE_CLIENT_ID"
+      - name: Validate public API address
+        env:
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
+        run: node -e 'if(!process.env.VITE_API_URL?.startsWith("https://"))throw Error("Set VITE_API_URL to the deployed HTTPS Worker URL")'
+      - run: npm run build
+        env:
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
+      - name: Verify the live API before Pages publication
+        run: npm run check:deployment -- --live
+        env:
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

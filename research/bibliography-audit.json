@@ -1,0 +1,3097 @@
+[
+  {
+    "candidate": "robert-barro",
+    "title": "Economic Growth in a Cross Section of Countries",
+    "crossrefTitle": "Economic Growth in a Cross Section of Countries",
+    "url": "https://doi.org/10.2307/2937943",
+    "authors": [
+      "Barro"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1991,
+    "crossrefYear": 1991,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "robert-barro",
+    "title": "Government Spending in a Simple Model of Endogeneous Growth",
+    "crossrefTitle": "Government Spending in a Simple Model of Endogeneous Growth",
+    "url": "https://doi.org/10.1086/261726",
+    "authors": [
+      "Barro"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1990,
+    "crossrefYear": 1990,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "kenneth-french",
+    "title": "Common risk factors in the returns on stocks and bonds",
+    "crossrefTitle": "Common risk factors in the returns on stocks and bonds",
+    "url": "https://doi.org/10.1016/0304-405x(93)90023-5",
+    "authors": [
+      "Fama",
+      "French"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1993,
+    "crossrefYear": 1993,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "kenneth-french",
+    "title": "The Cross‐Section of Expected Stock Returns",
+    "crossrefTitle": "The Cross‐Section of Expected Stock Returns",
+    "url": "https://doi.org/10.1111/j.1540-6261.1992.tb04398.x",
+    "authors": [
+      "FAMA",
+      "FRENCH"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1992,
+    "crossrefYear": 1992,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "jagdish-bhagwati",
+    "title": "Immiserizing Growth: A Geometrical Note",
+    "crossrefTitle": "Immiserizing Growth: A Geometrical Note",
+    "url": "https://doi.org/10.2307/2295990",
+    "authors": [
+      "Bhagwati"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1958,
+    "crossrefYear": 1958,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "jagdish-bhagwati",
+    "title": "Directly Unproductive, Profit-Seeking (DUP) Activities",
+    "crossrefTitle": "Directly Unproductive, Profit-Seeking (DUP) Activities",
+    "url": "https://doi.org/10.1086/261104",
+    "authors": [
+      "Bhagwati"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1982,
+    "crossrefYear": 1982,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "avinash-dixit",
+    "title": "Entry and Exit Decisions under Uncertainty",
+    "crossrefTitle": "Entry and Exit Decisions under Uncertainty",
+    "url": "https://doi.org/10.1086/261619",
+    "authors": [
+      "Dixit"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1989,
+    "crossrefYear": 1989,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "avinash-dixit",
+    "title": "The Role of Investment in Entry-Deterrence",
+    "crossrefTitle": "The Role of Investment in Entry-Deterrence",
+    "url": "https://doi.org/10.2307/2231658",
+    "authors": [
+      "Dixit"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1980,
+    "crossrefYear": 1980,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "elhanan-helpman",
+    "title": "Export Versus FDI with Heterogeneous Firms",
+    "crossrefTitle": "Export Versus FDI with Heterogeneous Firms",
+    "url": "https://doi.org/10.1257/000282804322970814",
+    "authors": [
+      "Helpman",
+      "Melitz",
+      "Yeaple"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "elhanan-helpman",
+    "title": "Estimating Trade Flows: Trading Partners and Trading Volumes *",
+    "crossrefTitle": "Estimating Trade Flows: Trading Partners and Trading Volumes\n                    <sup>*</sup>",
+    "url": "https://doi.org/10.1162/qjec.2008.123.2.441",
+    "authors": [
+      "Helpman",
+      "Melitz",
+      "Rubinstein"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2008,
+    "crossrefYear": 2008,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "gene-grossman",
+    "title": "Quality Ladders in the Theory of Growth",
+    "crossrefTitle": "Quality Ladders in the Theory of Growth",
+    "url": "https://doi.org/10.2307/2298044",
+    "authors": [
+      "Grossman",
+      "Helpman"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1991,
+    "crossrefYear": 1991,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "gene-grossman",
+    "title": "Trading Tasks: A Simple Theory of Offshoring",
+    "crossrefTitle": "Trading Tasks: A Simple Theory of Offshoring",
+    "url": "https://doi.org/10.1257/aer.98.5.1978",
+    "authors": [
+      "Grossman",
+      "Rossi-Hansberg"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2008,
+    "crossrefYear": 2008,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "ernst-fehr",
+    "title": "A Theory of Fairness, Competition, and Cooperation",
+    "crossrefTitle": "A Theory of Fairness, Competition, and Cooperation",
+    "url": "https://doi.org/10.1162/003355399556151",
+    "authors": [
+      "Fehr",
+      "Schmidt"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1999,
+    "crossrefYear": 1999,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "ernst-fehr",
+    "title": "Altruistic punishment in humans",
+    "crossrefTitle": "Altruistic punishment in humans",
+    "url": "https://doi.org/10.1038/415137a",
+    "authors": [
+      "Fehr",
+      "Gächter"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2002,
+    "crossrefYear": 2002,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "matthew-rabin",
+    "title": "Doing It Now or Later",
+    "crossrefTitle": "Doing It Now or Later",
+    "url": "https://doi.org/10.1257/aer.89.1.103",
+    "authors": [
+      "O'Donoghue",
+      "Rabin"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1999,
+    "crossrefYear": 1999,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "matthew-rabin",
+    "title": "Risk Aversion and Expected-utility Theory: A Calibration Theorem",
+    "crossrefTitle": "Risk Aversion and Expected-utility Theory: A Calibration Theorem",
+    "url": "https://doi.org/10.1111/1468-0262.00158",
+    "authors": [
+      "Rabin"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2000,
+    "crossrefYear": 2000,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "john-b-taylor",
+    "title": "Discretion versus policy rules in practice",
+    "crossrefTitle": "Discretion versus policy rules in practice",
+    "url": "https://doi.org/10.1016/0167-2231(93)90009-l",
+    "authors": [
+      "Taylor"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1993,
+    "crossrefYear": 1993,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "john-b-taylor",
+    "title": "Aggregate Dynamics and Staggered Contracts",
+    "crossrefTitle": "Aggregate Dynamics and Staggered Contracts",
+    "url": "https://doi.org/10.1086/260845",
+    "authors": [
+      "Taylor"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1980,
+    "crossrefYear": 1980,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "jordi-gali",
+    "title": "The Science of Monetary Policy: A New Keynesian Perspective",
+    "crossrefTitle": "The Science of Monetary Policy: A New Keynesian Perspective",
+    "url": "https://doi.org/10.1257/jel.37.4.1661",
+    "authors": [
+      "Clarida",
+      "Galí",
+      "Gertler"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1999,
+    "crossrefYear": 1999,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "jordi-gali",
+    "title": "Monetary Policy Rules and Macroeconomic Stability: Evidence and Some Theory*",
+    "crossrefTitle": "Monetary Policy Rules and Macroeconomic Stability: Evidence and Some Theory*",
+    "url": "https://doi.org/10.1162/003355300554692",
+    "authors": [
+      "Clarida",
+      "Gali",
+      "Gertler"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2000,
+    "crossrefYear": 2000,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "mark-gertler",
+    "title": "Chapter 21 The financial accelerator in a quantitative business cycle framework",
+    "crossrefTitle": "Chapter 21 The financial accelerator in a quantitative business cycle framework",
+    "url": "https://doi.org/10.1016/s1574-0048(99)10034-x",
+    "authors": [],
+    "titleOK": true,
+    "authorOK": false,
+    "originalYear": 1999,
+    "crossrefYear": 1999,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "source": "https://www.nber.org/papers/w6455",
+    "evidence": "NBER identifies Gertler as an author and lists the 1999 Handbook chapter.",
+    "reviewedYear": 1999,
+    "reviewedUrl": "https://doi.org/10.1016/s1574-0048(99)10034-x"
+  },
+  {
+    "candidate": "mark-gertler",
+    "title": "Inside the Black Box: The Credit Channel of Monetary Policy Transmission",
+    "crossrefTitle": "Inside the Black Box: The Credit Channel of Monetary Policy Transmission",
+    "url": "https://doi.org/10.1257/jep.9.4.27",
+    "authors": [
+      "Bernanke",
+      "Gertler"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1995,
+    "crossrefYear": 1995,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "nobuhiro-kiyotaki",
+    "title": "Credit Cycles",
+    "crossrefTitle": "Credit Cycles",
+    "url": "https://doi.org/10.1086/262072",
+    "authors": [
+      "Kiyotaki",
+      "Moore"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1997,
+    "crossrefYear": 1997,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "nobuhiro-kiyotaki",
+    "title": "Financial Intermediation and Credit Policy in Business Cycle Analysis",
+    "crossrefTitle": "Financial Intermediation and Credit Policy in Business Cycle Analysis",
+    "url": "https://doi.org/10.1016/b978-0-444-53238-1.00011-9",
+    "authors": [
+      "Gertler",
+      "Kiyotaki"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2010,
+    "crossrefYear": 2010,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "john-h-moore",
+    "title": "Property Rights and the Nature of the Firm",
+    "crossrefTitle": "Property Rights and the Nature of the Firm",
+    "url": "https://doi.org/10.1086/261729",
+    "authors": [
+      "Hart",
+      "Moore"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1990,
+    "crossrefYear": 1990,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "john-h-moore",
+    "title": "Credit Cycles",
+    "crossrefTitle": "Credit Cycles",
+    "url": "https://doi.org/10.1086/262072",
+    "authors": [
+      "Kiyotaki",
+      "Moore"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1997,
+    "crossrefYear": 1997,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "kevin-m-murphy",
+    "title": "Changes in Relative Wages, 1963-1987: Supply and Demand Factors",
+    "crossrefTitle": "Changes in Relative Wages, 1963-1987: Supply and Demand Factors",
+    "url": "https://doi.org/10.2307/2118323",
+    "authors": [
+      "Katz",
+      "Murphy"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1992,
+    "crossrefYear": 1992,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "kevin-m-murphy",
+    "title": "A Theory of Rational Addiction",
+    "crossrefTitle": "A Theory of Rational Addiction",
+    "url": "https://doi.org/10.1086/261558",
+    "authors": [
+      "Becker",
+      "Murphy"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1988,
+    "crossrefYear": 1988,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "anne-osborn-krueger",
+    "title": "The Political Economy of the Rent-Seeking Society",
+    "crossrefTitle": "The Political Economy of the Rent-Seeking Society",
+    "url": "https://doi.org/10.1007/978-3-540-79247-5_8",
+    "authors": [
+      "Krueger"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2008,
+    "crossrefYear": 2008,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "source": "https://gazette.jhu.edu/2011/02/28/sais-profs-article-lauded-as-one-of-journals-best-in-100-years/",
+    "evidence": "Johns Hopkins identifies original AER article as 1974; replaced 2008 reprint date.",
+    "reviewedYear": 1974,
+    "reviewedUrl": "https://gazette.jhu.edu/2011/02/28/sais-profs-article-lauded-as-one-of-journals-best-in-100-years/"
+  },
+  {
+    "candidate": "anne-osborn-krueger",
+    "title": "Government Failures in Development",
+    "crossrefTitle": "Government Failures in Development",
+    "url": "https://doi.org/10.1257/jep.4.3.9",
+    "authors": [
+      "Krueger"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1990,
+    "crossrefYear": 1990,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "jerry-a-hausman",
+    "title": "Specification Tests in Econometrics",
+    "crossrefTitle": "Specification Tests in Econometrics",
+    "url": "https://doi.org/10.2307/1913827",
+    "authors": [
+      "Hausman"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1978,
+    "crossrefYear": 1978,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "jerry-a-hausman",
+    "title": "Econometric Models for Count Data with an Application to the Patents-R & D Relationship",
+    "crossrefTitle": "Econometric Models for Count Data with an Application to the Patents-R &amp; D Relationship",
+    "url": "https://doi.org/10.2307/1911191",
+    "authors": [
+      "Hausman",
+      "Hall",
+      "Griliches"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1984,
+    "crossrefYear": 1984,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-forbes-hendry",
+    "title": "Co-integration, Error Correction, and the Econometric Analysis of Non-Stationary Data",
+    "crossrefTitle": "Co-integration, Error Correction, and the Econometric Analysis of Non-Stationary Data",
+    "url": "https://doi.org/10.1093/0198288107.001.0001",
+    "authors": [
+      "Banerjee",
+      "Dolado",
+      "Galbraith",
+      "Hendry"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1993,
+    "crossrefYear": 1993,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-forbes-hendry",
+    "title": "Econometric Modelling of the Aggregate Time-Series Relationship Between Consumers' Expenditure and Income in the United Kingdom",
+    "crossrefTitle": "Econometric Modelling of the Aggregate Time-Series Relationship Between Consumers' Expenditure and Income in the United Kingdom",
+    "url": "https://doi.org/10.2307/2231972",
+    "authors": [
+      "Davidson",
+      "Hendry",
+      "Srba",
+      "Yeo"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1978,
+    "crossrefYear": 1978,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "m-hashem-pesaran",
+    "title": "Bounds testing approaches to the analysis of level relationships",
+    "crossrefTitle": "Bounds testing approaches to the analysis of level relationships",
+    "url": "https://doi.org/10.1002/jae.616",
+    "authors": [
+      "Pesaran",
+      "Shin",
+      "Smith"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2001,
+    "crossrefYear": 2001,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "m-hashem-pesaran",
+    "title": "Testing for unit roots in heterogeneous panels",
+    "crossrefTitle": "Testing for unit roots in heterogeneous panels",
+    "url": "https://doi.org/10.1016/s0304-4076(03)00092-7",
+    "authors": [
+      "Im",
+      "Pesaran",
+      "Shin"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "peter-c-b-phillips",
+    "title": "Testing for a unit root in time series regression",
+    "crossrefTitle": "Testing for a unit root in time series regression",
+    "url": "https://doi.org/10.1093/biomet/75.2.335",
+    "authors": [
+      "PHILLIPS",
+      "PERRON"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1988,
+    "crossrefYear": 1988,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "peter-c-b-phillips",
+    "title": "Testing the null hypothesis of stationarity against the alternative of a unit root",
+    "crossrefTitle": "Testing the null hypothesis of stationarity against the alternative of a unit root",
+    "url": "https://doi.org/10.1016/0304-4076(92)90104-y",
+    "authors": [
+      "Kwiatkowski",
+      "Phillips",
+      "Schmidt",
+      "Shin"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1992,
+    "crossrefYear": 1992,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "sam-peltzman",
+    "title": "Toward a More General Theory of Regulation",
+    "crossrefTitle": "Toward a More General Theory of Regulation",
+    "url": "https://doi.org/10.1086/466865",
+    "authors": [
+      "Peltzman"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1976,
+    "crossrefYear": 1976,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "sam-peltzman",
+    "title": "The Effects of Automobile Safety Regulation",
+    "crossrefTitle": "The Effects of Automobile Safety Regulation",
+    "url": "https://doi.org/10.1086/260352",
+    "authors": [
+      "Peltzman"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1975,
+    "crossrefYear": 1975,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "richard-posner",
+    "title": "Theories of Economic Regulation",
+    "crossrefTitle": "Theories of Economic Regulation",
+    "url": "https://doi.org/10.2307/3003113",
+    "authors": [
+      "Posner"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1974,
+    "crossrefYear": 1974,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "richard-posner",
+    "title": "The Independent Judiciary in an Interest-Group Perspective",
+    "crossrefTitle": "The Independent Judiciary in an Interest-Group Perspective",
+    "url": "https://doi.org/10.1086/466849",
+    "authors": [
+      "Landes",
+      "Posner"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1975,
+    "crossrefYear": 1975,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "israel-m-kirzner",
+    "title": "Competition and Entrepreneurship",
+    "crossrefTitle": "Competition and Entrepreneurship",
+    "url": "https://doi.org/10.7208/chicago/9780226375489.001.0001",
+    "authors": [
+      "Kirzner"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1978,
+    "crossrefYear": 1978,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "source": "https://search.worldcat.org/title/Competition-and-entrepreneurship/oclc/807936",
+    "evidence": "Library record confirms original 1973 book; OpenAlex/DOI entry described a 1978 edition.",
+    "reviewedYear": 1973,
+    "reviewedUrl": "https://search.worldcat.org/title/Competition-and-entrepreneurship/oclc/807936"
+  },
+  {
+    "candidate": "israel-m-kirzner",
+    "title": "Entrepreneurial Discovery and the Competitive Market Process: An Austrian Approach",
+    "status": "manual source reviewed",
+    "url": "https://openalex.org/W3124950409",
+    "source": "https://econfaculty.gmu.edu/pboettke/summer/summer%20docs/kirzner1997.pdf",
+    "evidence": "Original JEL article identifies Kirzner and March 1997.",
+    "retrieved": "2026-10-08",
+    "reviewedYear": 1997,
+    "reviewedUrl": "https://econfaculty.gmu.edu/pboettke/summer/summer%20docs/kirzner1997.pdf"
+  },
+  {
+    "candidate": "mark-granovetter",
+    "title": "The Strength of Weak Ties",
+    "crossrefTitle": "The Strength of Weak Ties",
+    "url": "https://doi.org/10.1086/225469",
+    "authors": [
+      "Granovetter"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1973,
+    "crossrefYear": 1973,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "mark-granovetter",
+    "title": "Economic Action and Social Structure: The Problem of Embeddedness",
+    "crossrefTitle": "Economic Action and Social Structure: The Problem of Embeddedness",
+    "url": "https://doi.org/10.1086/228311",
+    "authors": [
+      "Granovetter"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1985,
+    "crossrefYear": 1985,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "richard-blundell",
+    "title": "Initial conditions and moment restrictions in dynamic panel data models",
+    "crossrefTitle": "Initial conditions and moment restrictions in dynamic panel data models",
+    "url": "https://doi.org/10.1016/s0304-4076(98)00009-8",
+    "authors": [
+      "Blundell",
+      "Bond"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1998,
+    "crossrefYear": 1998,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "richard-blundell",
+    "title": "Quadratic Engel Curves and Consumer Demand",
+    "crossrefTitle": "Quadratic Engel Curves and Consumer Demand",
+    "url": "https://doi.org/10.1162/003465397557015",
+    "authors": [
+      "Banks",
+      "Blundell",
+      "Lewbel"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1997,
+    "crossrefYear": 1997,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "john-a-list",
+    "title": "Field Experiments",
+    "crossrefTitle": "Field Experiments",
+    "url": "https://doi.org/10.1257/0022051043004577",
+    "authors": [
+      "Harrison",
+      "List"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "john-a-list",
+    "title": "Does Market Experience Eliminate Market Anomalies?",
+    "crossrefTitle": "Does Market Experience Eliminate Market Anomalies?",
+    "url": "https://doi.org/10.1162/00335530360535144",
+    "authors": [
+      "List"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "charles-f-manski",
+    "title": "Identification of Endogenous Social Effects: The Reflection Problem",
+    "crossrefTitle": "Identification of Endogenous Social Effects: The Reflection Problem",
+    "url": "https://doi.org/10.2307/2298123",
+    "authors": [
+      "Manski"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1993,
+    "crossrefYear": 1993,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "charles-f-manski",
+    "title": "Economic Analysis of Social Interactions",
+    "crossrefTitle": "Economic Analysis of Social Interactions",
+    "url": "https://doi.org/10.1257/jep.14.3.115",
+    "authors": [
+      "Manski"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2000,
+    "crossrefYear": 2000,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "olivier-blanchard",
+    "title": "The Dynamic Effects of Aggregate Demand and Supply Disturbances",
+    "crossrefTitle": "The Dynamic Effects of Aggregate Demand and Supply Disturbances",
+    "url": "https://doi.org/10.3386/w2737",
+    "authors": [
+      "Blanchard",
+      "Quah"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1988,
+    "crossrefYear": 1988,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "olivier-blanchard",
+    "title": "Convergence Across States and Regions",
+    "crossrefTitle": "Convergence Across States and Regions",
+    "url": "https://doi.org/10.2307/2534639",
+    "authors": [
+      "Barro",
+      "Sala-I-Martin",
+      "Blanchard",
+      "Hall"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1991,
+    "crossrefYear": 1991,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "marc-melitz",
+    "title": "The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity",
+    "crossrefTitle": "The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity",
+    "url": "https://doi.org/10.1111/1468-0262.00467",
+    "authors": [
+      "Melitz"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "marc-melitz",
+    "title": "Export Versus FDI with Heterogeneous Firms",
+    "crossrefTitle": "Export Versus FDI with Heterogeneous Firms",
+    "url": "https://doi.org/10.1257/000282804322970814",
+    "authors": [
+      "Helpman",
+      "Melitz",
+      "Yeaple"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "colin-camerer",
+    "title": "Not So Different After All: A Cross-Discipline View Of Trust",
+    "crossrefTitle": "Not So Different After All: A Cross-Discipline View Of Trust",
+    "url": "https://doi.org/10.5465/amr.1998.926617",
+    "authors": [
+      "Rousseau",
+      "Sitkin",
+      "Burt",
+      "Camerer"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1998,
+    "crossrefYear": 1998,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "colin-camerer",
+    "title": "Behavioral Game Theory: Experiments in Strategic Interaction",
+    "status": "manual source reviewed",
+    "url": "https://openalex.org/W1713503745",
+    "source": "https://casbs.stanford.edu/behavioral-game-theory-experiments-strategic-interaction",
+    "evidence": "Stanford book record identifies Camerer, publisher and 2003.",
+    "retrieved": "2026-10-08",
+    "reviewedYear": 2003,
+    "reviewedUrl": "https://casbs.stanford.edu/behavioral-game-theory-experiments-strategic-interaction"
+  },
+  {
+    "candidate": "george-loewenstein",
+    "title": "Risk as feelings.",
+    "crossrefTitle": "Risk as feelings.",
+    "url": "https://doi.org/10.1037/0033-2909.127.2.267",
+    "authors": [
+      "Loewenstein",
+      "Weber",
+      "Hsee",
+      "Welch"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2001,
+    "crossrefYear": 2001,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "george-loewenstein",
+    "title": "Time Discounting and Time Preference: A Critical Review",
+    "url": "https://doi.org/10.1257/002205102320161311",
+    "status": "manual source reviewed",
+    "error": "SyntaxError: Unexpected end of JSON input",
+    "source": "https://www.aeaweb.org/articles?id=10.1257/002205102320161311",
+    "evidence": "AEA article record identifies Frederick, Loewenstein and O’Donoghue, 2002.",
+    "retrieved": "2026-10-08",
+    "reviewedYear": 2002,
+    "reviewedUrl": "https://doi.org/10.1257/002205102320161311"
+  },
+  {
+    "candidate": "robert-hall",
+    "title": "Why do Some Countries Produce So Much More Output Per Worker than Others?",
+    "crossrefTitle": "Why do Some Countries Produce So Much More Output Per Worker than Others?",
+    "url": "https://doi.org/10.1162/003355399555954",
+    "authors": [
+      "Hall",
+      "Jones"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1999,
+    "crossrefYear": 1999,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "robert-hall",
+    "title": "Stochastic Implications of the Life Cycle-Permanent Income Hypothesis: Theory and Evidence",
+    "crossrefTitle": "Stochastic Implications of the Life Cycle-Permanent Income Hypothesis: Theory and Evidence",
+    "url": "https://doi.org/10.1086/260724",
+    "authors": [
+      "Hall"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1978,
+    "crossrefYear": 1978,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "stewart-myers",
+    "title": "Corporate financing and investment decisions when firms have information that investors do not have",
+    "crossrefTitle": "Corporate financing and investment decisions when firms have information that investors do not have",
+    "url": "https://doi.org/10.1016/0304-405x(84)90023-0",
+    "authors": [
+      "Myers",
+      "Majluf"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1984,
+    "crossrefYear": 1984,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "stewart-myers",
+    "title": "Determinants of corporate borrowing",
+    "crossrefTitle": "Determinants of corporate borrowing",
+    "url": "https://doi.org/10.1016/0304-405x(77)90015-0",
+    "authors": [
+      "Myers"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1977,
+    "crossrefYear": 1977,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "raghuram-rajan",
+    "title": "Financial Dependence and Growth",
+    "crossrefTitle": "Financial Dependence and Growth",
+    "url": "https://doi.org/10.3386/w5758",
+    "authors": [
+      "Rajan",
+      "Zingales"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1996,
+    "crossrefYear": 1996,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "raghuram-rajan",
+    "title": "What Do We Know about Capital Structure? Some Evidence from International Data",
+    "crossrefTitle": "What Do We Know about Capital Structure? Some Evidence from International Data",
+    "url": "https://doi.org/10.1111/j.1540-6261.1995.tb05184.x",
+    "authors": [
+      "RAJAN",
+      "ZINGALES"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1995,
+    "crossrefYear": 1995,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "manuel-arellano",
+    "title": "Some Tests of Specification for Panel Data: Monte Carlo Evidence and an Application to Employment Equations",
+    "crossrefTitle": "Some Tests of Specification for Panel Data: Monte Carlo Evidence and an Application to Employment Equations",
+    "url": "https://doi.org/10.2307/2297968",
+    "authors": [
+      "Arellano",
+      "Bond"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1991,
+    "crossrefYear": 1991,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "manuel-arellano",
+    "title": "Another look at the instrumental variable estimation of error-components models",
+    "crossrefTitle": "Another look at the instrumental variable estimation of error-components models",
+    "url": "https://doi.org/10.1016/0304-4076(94)01642-d",
+    "authors": [
+      "Arellano",
+      "Bover"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1995,
+    "crossrefYear": 1995,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "steve-bond",
+    "title": "Some Tests of Specification for Panel Data: Monte Carlo Evidence and an Application to Employment Equations",
+    "crossrefTitle": "Some Tests of Specification for Panel Data: Monte Carlo Evidence and an Application to Employment Equations",
+    "url": "https://doi.org/10.2307/2297968",
+    "authors": [
+      "Arellano",
+      "Bond"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1991,
+    "crossrefYear": 1991,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "steve-bond",
+    "title": "Initial conditions and moment restrictions in dynamic panel data models",
+    "crossrefTitle": "Initial conditions and moment restrictions in dynamic panel data models",
+    "url": "https://doi.org/10.1016/s0304-4076(98)00009-8",
+    "authors": [
+      "Blundell",
+      "Bond"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1998,
+    "crossrefYear": 1998,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "wesley-m-cohen",
+    "title": "Absorptive Capacity: A New Perspective on Learning and Innovation",
+    "crossrefTitle": "Absorptive Capacity: A New Perspective on Learning and Innovation",
+    "url": "https://doi.org/10.2307/2393553",
+    "authors": [
+      "Cohen",
+      "Levinthal"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1990,
+    "crossrefYear": 1990,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "wesley-m-cohen",
+    "title": "Innovation and Learning: The Two Faces of R & D",
+    "crossrefTitle": "Innovation and Learning: The Two Faces of R &amp; D",
+    "url": "https://doi.org/10.2307/2233763",
+    "authors": [
+      "Cohen",
+      "Levinthal"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1989,
+    "crossrefYear": 1989,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "daniel-a-levinthal",
+    "title": "Absorptive Capacity: A New Perspective on Learning and Innovation",
+    "crossrefTitle": "Absorptive Capacity: A New Perspective on Learning and Innovation",
+    "url": "https://doi.org/10.2307/2393553",
+    "authors": [
+      "Cohen",
+      "Levinthal"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1990,
+    "crossrefYear": 1990,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "daniel-a-levinthal",
+    "title": "Innovation and Learning: The Two Faces of R & D",
+    "crossrefTitle": "Innovation and Learning: The Two Faces of R &amp; D",
+    "url": "https://doi.org/10.2307/2233763",
+    "authors": [
+      "Cohen",
+      "Levinthal"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1989,
+    "crossrefYear": 1989,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-m-kreps",
+    "title": "Sequential Equilibria",
+    "crossrefTitle": "Sequential Equilibria",
+    "url": "https://doi.org/10.2307/1912767",
+    "authors": [
+      "Kreps",
+      "Wilson"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1982,
+    "crossrefYear": 1982,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-m-kreps",
+    "title": "Reputation and imperfect information",
+    "crossrefTitle": "Reputation and imperfect information",
+    "url": "https://doi.org/10.1016/0022-0531(82)90030-8",
+    "authors": [
+      "Kreps",
+      "Wilson"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1982,
+    "crossrefYear": 1982,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "w-brian-arthur",
+    "title": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
+    "crossrefTitle": "Competing Technologies, Increasing Returns, and Lock-In by Historical Events",
+    "url": "https://doi.org/10.2307/2234208",
+    "authors": [
+      "Arthur"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1989,
+    "crossrefYear": 1989,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "w-brian-arthur",
+    "title": "Increasing Returns and Path Dependence in the Economy",
+    "crossrefTitle": "Increasing Returns and Path Dependence in the Economy",
+    "url": "https://doi.org/10.3998/mpub.10029",
+    "authors": [
+      "Arthur"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1994,
+    "crossrefYear": 1994,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "ariel-rubinstein",
+    "title": "Perfect Equilibrium in a Bargaining Model",
+    "crossrefTitle": "Perfect Equilibrium in a Bargaining Model",
+    "url": "https://doi.org/10.2307/1912531",
+    "authors": [
+      "Rubinstein"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1982,
+    "crossrefYear": 1982,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "ariel-rubinstein",
+    "title": "Modeling Bounded Rationality",
+    "crossrefTitle": "Modeling Bounded Rationality",
+    "url": "https://doi.org/10.7551/mitpress/4702.001.0001",
+    "authors": [
+      "Rubinstein"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1998,
+    "crossrefYear": 1998,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "s-ren-johansen",
+    "title": "Statistical analysis of cointegration vectors",
+    "crossrefTitle": "Statistical analysis of cointegration vectors",
+    "url": "https://doi.org/10.1016/0165-1889(88)90041-3",
+    "authors": [
+      "Johansen"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1988,
+    "crossrefYear": 1988,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "s-ren-johansen",
+    "title": "MAXIMUM LIKELIHOOD ESTIMATION AND INFERENCE ON COINTEGRATION — WITH APPLICATIONS TO THE DEMAND FOR MONEY",
+    "crossrefTitle": "MAXIMUM LIKELIHOOD ESTIMATION AND INFERENCE ON COINTEGRATION — WITH APPLICATIONS TO THE DEMAND FOR MONEY",
+    "url": "https://doi.org/10.1111/j.1468-0084.1990.mp52002003.x",
+    "authors": [
+      "Johansen",
+      "Juselius"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1990,
+    "crossrefYear": 1990,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "katarina-juselius-johansen",
+    "title": "MAXIMUM LIKELIHOOD ESTIMATION AND INFERENCE ON COINTEGRATION — WITH APPLICATIONS TO THE DEMAND FOR MONEY",
+    "crossrefTitle": "MAXIMUM LIKELIHOOD ESTIMATION AND INFERENCE ON COINTEGRATION — WITH APPLICATIONS TO THE DEMAND FOR MONEY",
+    "url": "https://doi.org/10.1111/j.1468-0084.1990.mp52002003.x",
+    "authors": [
+      "Johansen",
+      "Juselius"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1990,
+    "crossrefYear": 1990,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "katarina-juselius-johansen",
+    "title": "Testing structural hypotheses in a multivariate cointegration analysis of the PPP and the UIP for UK",
+    "crossrefTitle": "Testing structural hypotheses in a multivariate cointegration analysis of the PPP and the UIP for UK",
+    "url": "https://doi.org/10.1016/0304-4076(92)90086-7",
+    "authors": [
+      "Johansen",
+      "Juselius"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1992,
+    "crossrefYear": 1992,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-dickey",
+    "title": "Distribution of the Estimators for Autoregressive Time Series with a Unit Root",
+    "crossrefTitle": "Distribution of the Estimators for Autoregressive Time Series with a Unit Root",
+    "url": "https://doi.org/10.1080/01621459.1979.10482531",
+    "authors": [
+      "Dickey",
+      "Fuller"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1979,
+    "crossrefYear": 1979,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-dickey",
+    "title": "Likelihood Ratio Statistics for Autoregressive Time Series with a Unit Root",
+    "crossrefTitle": "Likelihood Ratio Statistics for Autoregressive Time Series with a Unit Root",
+    "url": "https://doi.org/10.2307/1912517",
+    "authors": [
+      "Dickey",
+      "Fuller"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1981,
+    "crossrefYear": 1981,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "wayne-fuller",
+    "title": "Distribution of the Estimators for Autoregressive Time Series with a Unit Root",
+    "crossrefTitle": "Distribution of the Estimators for Autoregressive Time Series with a Unit Root",
+    "url": "https://doi.org/10.1080/01621459.1979.10482531",
+    "authors": [
+      "Dickey",
+      "Fuller"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1979,
+    "crossrefYear": 1979,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "wayne-fuller",
+    "title": "Likelihood Ratio Statistics for Autoregressive Time Series with a Unit Root",
+    "crossrefTitle": "Likelihood Ratio Statistics for Autoregressive Time Series with a Unit Root",
+    "url": "https://doi.org/10.2307/1912517",
+    "authors": [
+      "Dickey",
+      "Fuller"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1981,
+    "crossrefYear": 1981,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "pierre-perron",
+    "title": "Testing for a unit root in time series regression",
+    "crossrefTitle": "Testing for a unit root in time series regression",
+    "url": "https://doi.org/10.1093/biomet/75.2.335",
+    "authors": [
+      "PHILLIPS",
+      "PERRON"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1988,
+    "crossrefYear": 1988,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "pierre-perron",
+    "title": "The Great Crash, the Oil Price Shock, and the Unit Root Hypothesis",
+    "crossrefTitle": "The Great Crash, the Oil Price Shock, and the Unit Root Hypothesis",
+    "url": "https://doi.org/10.2307/1913712",
+    "authors": [
+      "Perron"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1989,
+    "crossrefYear": 1989,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "steven-t-berry",
+    "title": "Automobile Prices in Market Equilibrium",
+    "crossrefTitle": "Automobile Prices in Market Equilibrium",
+    "url": "https://doi.org/10.2307/2171802",
+    "authors": [
+      "Berry",
+      "Levinsohn",
+      "Pakes"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1995,
+    "crossrefYear": 1995,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "steven-t-berry",
+    "title": "Estimating Discrete-Choice Models of Product Differentiation",
+    "crossrefTitle": "Estimating Discrete-Choice Models of Product Differentiation",
+    "url": "https://doi.org/10.2307/2555829",
+    "authors": [
+      "Berry"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1994,
+    "crossrefYear": 1994,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "james-a-levinsohn",
+    "title": "Estimating Production Functions Using Inputs to Control for Unobservables",
+    "crossrefTitle": "Estimating Production Functions Using Inputs to Control for Unobservables",
+    "url": "https://doi.org/10.1111/1467-937x.00246",
+    "authors": [
+      "Levinsohn",
+      "Petrin"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "james-a-levinsohn",
+    "title": "Automobile Prices in Market Equilibrium",
+    "crossrefTitle": "Automobile Prices in Market Equilibrium",
+    "url": "https://doi.org/10.2307/2171802",
+    "authors": [
+      "Berry",
+      "Levinsohn",
+      "Pakes"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1995,
+    "crossrefYear": 1995,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "ariel-pakes",
+    "title": "The Dynamics of Productivity in the Telecommunications Equipment Industry",
+    "crossrefTitle": "The Dynamics of Productivity in the Telecommunications Equipment Industry",
+    "url": "https://doi.org/10.2307/2171831",
+    "authors": [
+      "Olley",
+      "Pakes"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1996,
+    "crossrefYear": 1996,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "ariel-pakes",
+    "title": "Automobile Prices in Market Equilibrium",
+    "crossrefTitle": "Automobile Prices in Market Equilibrium",
+    "url": "https://doi.org/10.2307/2171802",
+    "authors": [
+      "Berry",
+      "Levinsohn",
+      "Pakes"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1995,
+    "crossrefYear": 1995,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-b-audretsch",
+    "title": "The knowledge spillover theory of entrepreneurship",
+    "crossrefTitle": "The knowledge spillover theory of entrepreneurship",
+    "url": "https://doi.org/10.1007/s11187-008-9157-3",
+    "authors": [
+      "Acs",
+      "Braunerhjelm",
+      "Audretsch",
+      "Carlsson"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2009,
+    "crossrefYear": 2009,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-b-audretsch",
+    "title": "Innovation, Market Structure, and Firm Size",
+    "crossrefTitle": "Innovation, Market Structure, and Firm Size",
+    "url": "https://doi.org/10.2307/1935950",
+    "authors": [
+      "Acs",
+      "Audretsch"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1987,
+    "crossrefYear": 1987,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-teece",
+    "title": "Dynamic capabilities and strategic management",
+    "crossrefTitle": "Dynamic capabilities and strategic management",
+    "url": "https://doi.org/10.1002/(sici)1097-0266(199708)18:7<509::aid-smj882>3.0.co;2-z",
+    "authors": [
+      "Teece",
+      "Pisano",
+      "Shuen"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1997,
+    "crossrefYear": 1997,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-teece",
+    "title": "Explicating dynamic capabilities: the nature and microfoundations of (sustainable) enterprise performance",
+    "crossrefTitle": "Explicating dynamic capabilities: the nature and microfoundations of (sustainable) enterprise performance",
+    "url": "https://doi.org/10.1002/smj.640",
+    "authors": [
+      "Teece"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2007,
+    "crossrefYear": 2007,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "carmen-reinhart",
+    "title": "The Twin Crises: The Causes of Banking and Balance-of-Payments Problems",
+    "crossrefTitle": "The Twin Crises: The Causes of Banking and Balance-of-Payments Problems",
+    "url": "https://doi.org/10.1257/aer.89.3.473",
+    "authors": [
+      "Kaminsky",
+      "Reinhart"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1999,
+    "crossrefYear": 1999,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "carmen-reinhart",
+    "title": "This Time Is Different",
+    "crossrefTitle": "This Time Is Different",
+    "url": "https://doi.org/10.1515/9781400831722",
+    "authors": [
+      "Reinhart",
+      "Rogoff"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2009,
+    "crossrefYear": 2009,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "kenneth-rogoff",
+    "title": "Empirical exchange rate models of the seventies",
+    "crossrefTitle": "Empirical exchange rate models of the seventies",
+    "url": "https://doi.org/10.1016/0022-1996(83)90017-x",
+    "authors": [
+      "Meese",
+      "Rogoff"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1983,
+    "crossrefYear": 1983,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "kenneth-rogoff",
+    "title": "The Optimal Degree of Commitment to an Intermediate Monetary Target",
+    "crossrefTitle": "The Optimal Degree of Commitment to an Intermediate Monetary Target",
+    "url": "https://doi.org/10.2307/1885679",
+    "authors": [
+      "Rogoff"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1985,
+    "crossrefYear": 1985,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "samuel-bowles",
+    "title": "In Search of Homo Economicus: Behavioral Experiments in 15 Small-Scale Societies",
+    "crossrefTitle": "In Search of Homo Economicus: Behavioral Experiments in 15 Small-Scale Societies",
+    "url": "https://doi.org/10.1257/aer.91.2.73",
+    "authors": [
+      "Henrich",
+      "Boyd",
+      "Bowles",
+      "Camerer",
+      "Fehr",
+      "Gintis",
+      "McElreath"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2001,
+    "crossrefYear": 2001,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "samuel-bowles",
+    "title": "“Economic man” in cross-cultural perspective: Behavioral experiments in 15 small-scale societies",
+    "crossrefTitle": "“Economic man” in cross-cultural perspective: Behavioral experiments in 15 small-scale societies",
+    "url": "https://doi.org/10.1017/s0140525x05000142",
+    "authors": [
+      "Henrich",
+      "Boyd",
+      "Bowles",
+      "Camerer",
+      "Fehr",
+      "Gintis",
+      "McElreath",
+      "Alvard",
+      "Barr",
+      "Ensminger",
+      "Henrich",
+      "Hill",
+      "Gil-White",
+      "Gurven",
+      "Marlowe",
+      "Patton",
+      "Tracer"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2005,
+    "crossrefYear": 2005,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "richard-layard",
+    "title": "Happiness: Lessons from a New Science",
+    "crossrefTitle": "Happiness: Lessons from a New Science",
+    "url": "https://doi.org/10.2307/20031793",
+    "authors": [
+      "Cooper",
+      "Layard"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2005,
+    "crossrefYear": 2005,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "richard-layard",
+    "title": "The marginal utility of income",
+    "crossrefTitle": "The marginal utility of income",
+    "url": "https://doi.org/10.1016/j.jpubeco.2008.01.007",
+    "authors": [
+      "Layard",
+      "Mayraz",
+      "Nickell"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2008,
+    "crossrefYear": 2008,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "andrew-oswald",
+    "title": "Satisfaction and comparison income",
+    "crossrefTitle": "Satisfaction and comparison income",
+    "url": "https://doi.org/10.1016/0047-2727(95)01564-7",
+    "authors": [
+      "Clark",
+      "Oswald"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1996,
+    "crossrefYear": 1996,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "andrew-oswald",
+    "title": "Well-Being Over Time in Britain and the USA",
+    "status": "manual source reviewed",
+    "url": "https://openalex.org/W3121936984",
+    "source": "https://doi.org/10.1016/S0047-2727(02)00168-8",
+    "evidence": "Warwick repository links the published article; 2002 is the draft/online date, 2004 the volume year.",
+    "retrieved": "2026-10-08",
+    "reviewedYear": 2004,
+    "reviewedUrl": "https://doi.org/10.1016/S0047-2727(02)00168-8"
+  },
+  {
+    "candidate": "raj-chetty",
+    "title": "Where is the land of Opportunity? The Geography of Intergenerational Mobility in the United States *",
+    "crossrefTitle": "Where is the land of Opportunity? The Geography of Intergenerational Mobility in the United States *",
+    "url": "https://doi.org/10.1093/qje/qju022",
+    "authors": [
+      "Chetty",
+      "Hendren",
+      "Kline",
+      "Saez"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2014,
+    "crossrefYear": 2014,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "raj-chetty",
+    "title": "The Association Between Income and Life Expectancy in the United States, 2001-2014",
+    "crossrefTitle": "The Association Between Income and Life Expectancy in the United States, 2001-2014",
+    "url": "https://doi.org/10.1001/jama.2016.4226",
+    "authors": [
+      "Chetty",
+      "Stepner",
+      "Abraham",
+      "Lin",
+      "Scuderi",
+      "Turner",
+      "Bergeron",
+      "Cutler"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2016,
+    "crossrefYear": 2016,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "edward-glaeser",
+    "title": "Growth in Cities",
+    "crossrefTitle": "Growth in Cities",
+    "url": "https://doi.org/10.1086/261856",
+    "authors": [
+      "Glaeser",
+      "Kallal",
+      "Scheinkman",
+      "Shleifer"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1992,
+    "crossrefYear": 1992,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "edward-glaeser",
+    "title": "Do Institutions Cause Growth?",
+    "crossrefTitle": "Do Institutions Cause Growth?",
+    "url": "https://doi.org/10.1023/b:joeg.0000038933.16398.ed",
+    "authors": [
+      "Glaeser",
+      "La Porta",
+      "Lopez-de-Silanes",
+      "Shleifer"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "thomas-piketty",
+    "title": "Capital in the Twenty-First Century",
+    "crossrefTitle": "Capital in the Twenty-First Century",
+    "url": "https://doi.org/10.4159/9780674369542",
+    "authors": [
+      "Piketty"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2014,
+    "crossrefYear": 2014,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "thomas-piketty",
+    "title": "Income Inequality in the United States, 1913-1998",
+    "crossrefTitle": "Income Inequality in the United States, 1913-1998",
+    "url": "https://doi.org/10.1162/00335530360535135",
+    "authors": [
+      "Piketty",
+      "Saez"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "emmanuel-saez",
+    "title": "Income Inequality in the United States, 1913-1998",
+    "crossrefTitle": "Income Inequality in the United States, 1913-1998",
+    "url": "https://doi.org/10.1162/00335530360535135",
+    "authors": [
+      "Piketty",
+      "Saez"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "emmanuel-saez",
+    "title": "Where is the land of Opportunity? The Geography of Intergenerational Mobility in the United States *",
+    "crossrefTitle": "Where is the land of Opportunity? The Geography of Intergenerational Mobility in the United States *",
+    "url": "https://doi.org/10.1093/qje/qju022",
+    "authors": [
+      "Chetty",
+      "Hendren",
+      "Kline",
+      "Saez"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2014,
+    "crossrefYear": 2014,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "gabriel-zucman",
+    "title": "Wealth Inequality in the United States since 1913: Evidence from Capitalized Income Tax Data *",
+    "crossrefTitle": "Wealth Inequality in the United States since 1913: Evidence from Capitalized Income Tax Data *",
+    "url": "https://doi.org/10.1093/qje/qjw004",
+    "authors": [
+      "Saez",
+      "Zucman"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2016,
+    "crossrefYear": 2016,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "gabriel-zucman",
+    "title": "Capital is Back: Wealth-Income Ratios in Rich Countries 1700–2010 *",
+    "crossrefTitle": "Capital is Back: Wealth-Income Ratios in Rich Countries 1700–2010 *",
+    "url": "https://doi.org/10.1093/qje/qju018",
+    "authors": [
+      "Piketty",
+      "Zucman"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2014,
+    "crossrefYear": 2014,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "janet-currie",
+    "title": "Killing Me Softly: The Fetal Origins Hypothesis",
+    "crossrefTitle": "Killing Me Softly: The Fetal Origins Hypothesis",
+    "url": "https://doi.org/10.1257/jep.25.3.153",
+    "authors": [
+      "Almond",
+      "Currie"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2011,
+    "crossrefYear": 2011,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "janet-currie",
+    "title": "Healthy, Wealthy, and Wise: Socioeconomic Status, Poor Health in Childhood, and Human Capital Development",
+    "crossrefTitle": "Healthy, Wealthy, and Wise: Socioeconomic Status, Poor Health in Childhood, and Human Capital Development",
+    "url": "https://doi.org/10.1257/jel.47.1.87",
+    "authors": [
+      "Currie"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2009,
+    "crossrefYear": 2009,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "partha-dasgupta",
+    "title": "Economic Growth, Carrying Capacity, and the Environment",
+    "crossrefTitle": "Economic Growth, Carrying Capacity, and the Environment",
+    "url": "https://doi.org/10.1126/science.268.5210.520",
+    "authors": [
+      "Arrow",
+      "Bolin",
+      "Costanza",
+      "Dasgupta",
+      "Folke",
+      "Holling",
+      "Jansson",
+      "Levin",
+      "Mäler",
+      "Perrings",
+      "Pimentel"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1995,
+    "crossrefYear": 1995,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "partha-dasgupta",
+    "title": "The Optimal Depletion of Exhaustible Resources",
+    "crossrefTitle": "The Optimal Depletion of Exhaustible Resources",
+    "url": "https://doi.org/10.2307/2296369",
+    "authors": [
+      "Dasgupta",
+      "Heal"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1974,
+    "crossrefYear": 1974,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "paolo-mauro",
+    "title": "Corruption and Growth",
+    "crossrefTitle": "Corruption and Growth",
+    "url": "https://doi.org/10.2307/2946696",
+    "authors": [
+      "Mauro"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1995,
+    "crossrefYear": 1995,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "paolo-mauro",
+    "title": "Corruption and the composition of government expenditure",
+    "crossrefTitle": "Corruption and the composition of government expenditure",
+    "url": "https://doi.org/10.1016/s0047-2727(98)00025-5",
+    "authors": [
+      "Mauro"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1998,
+    "crossrefYear": 1998,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-autor",
+    "title": "The Skill Content of Recent Technological Change: An Empirical Exploration",
+    "crossrefTitle": "The Skill Content of Recent Technological Change: An Empirical Exploration",
+    "url": "https://doi.org/10.1162/003355303322552801",
+    "authors": [
+      "Autor",
+      "Levy",
+      "Murnane"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "david-autor",
+    "title": "The China Syndrome: Local Labor Market Effects of Import Competition in the United States",
+    "crossrefTitle": "The China Syndrome: Local Labor Market Effects of Import Competition in the United States",
+    "url": "https://doi.org/10.1257/aer.103.6.2121",
+    "authors": [
+      "Autor",
+      "Dorn",
+      "Hanson"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2013,
+    "crossrefYear": 2013,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "lawrence-f-katz",
+    "title": "Changes in Relative Wages, 1963-1987: Supply and Demand Factors",
+    "crossrefTitle": "Changes in Relative Wages, 1963-1987: Supply and Demand Factors",
+    "url": "https://doi.org/10.2307/2118323",
+    "authors": [
+      "Katz",
+      "Murphy"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1992,
+    "crossrefYear": 1992,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "lawrence-f-katz",
+    "title": "Experimental Analysis of Neighborhood Effects",
+    "crossrefTitle": "Experimental Analysis of Neighborhood Effects",
+    "url": "https://doi.org/10.1111/j.1468-0262.2007.00733.x",
+    "authors": [
+      "Kling",
+      "Liebman",
+      "Katz"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2007,
+    "crossrefYear": 2007,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "marianne-bertrand",
+    "title": "Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination",
+    "crossrefTitle": "Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination",
+    "url": "https://doi.org/10.1257/0002828042002561",
+    "authors": [
+      "Bertrand",
+      "Mullainathan"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "marianne-bertrand",
+    "title": "Enjoying the Quiet Life? Corporate Governance and Managerial Preferences",
+    "crossrefTitle": "Enjoying the Quiet Life? Corporate Governance and Managerial Preferences",
+    "url": "https://doi.org/10.1086/376950",
+    "authors": [
+      "Bertrand",
+      "Mullainathan"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "sendhil-mullainathan",
+    "title": "How Much Should We Trust Differences-In-Differences Estimates?",
+    "crossrefTitle": "How Much Should We Trust Differences-In-Differences Estimates?",
+    "url": "https://doi.org/10.1162/003355304772839588",
+    "authors": [
+      "Bertrand",
+      "Duflo",
+      "Mullainathan"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "sendhil-mullainathan",
+    "title": "Dissecting racial bias in an algorithm used to manage the health of populations",
+    "crossrefTitle": "Dissecting racial bias in an algorithm used to manage the health of populations",
+    "url": "https://doi.org/10.1126/science.aax2342",
+    "authors": [
+      "Obermeyer",
+      "Powers",
+      "Vogeli",
+      "Mullainathan"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2019,
+    "crossrefYear": 2019,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "nicholas-bloom",
+    "title": "Measuring Economic Policy Uncertainty*",
+    "crossrefTitle": "Measuring Economic Policy Uncertainty*",
+    "url": "https://doi.org/10.1093/qje/qjw024",
+    "authors": [
+      "Baker",
+      "Bloom",
+      "Davis"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2016,
+    "crossrefYear": 2016,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "nicholas-bloom",
+    "title": "The Impact of Uncertainty Shocks",
+    "crossrefTitle": "The Impact of Uncertainty Shocks",
+    "url": "https://doi.org/10.3982/ecta6248",
+    "authors": [],
+    "titleOK": true,
+    "authorOK": false,
+    "originalYear": 2009,
+    "crossrefYear": 2009,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "source": "https://nbloom.people.stanford.edu/research",
+    "evidence": "Author publication list identifies Econometrica, May 2009.",
+    "reviewedYear": 2009,
+    "reviewedUrl": "https://doi.org/10.3982/ecta6248"
+  },
+  {
+    "candidate": "susan-athey",
+    "title": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
+    "crossrefTitle": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
+    "url": "https://doi.org/10.1080/01621459.2017.1319839",
+    "authors": [
+      "Wager",
+      "Athey"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2018,
+    "crossrefYear": 2018,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "susan-athey",
+    "title": "Generalized random forests",
+    "crossrefTitle": "Generalized random forests",
+    "url": "https://doi.org/10.1214/18-aos1709",
+    "authors": [
+      "Athey",
+      "Tibshirani",
+      "Wager"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2019,
+    "crossrefYear": 2019,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "hal-varian",
+    "title": "On the private provision of public goods",
+    "crossrefTitle": "On the private provision of public goods",
+    "url": "https://doi.org/10.1016/0047-2727(86)90024-1",
+    "authors": [
+      "Bergstrom",
+      "Blume",
+      "Varian"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1986,
+    "crossrefYear": 1986,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "hal-varian",
+    "title": "Big Data: New Tricks for Econometrics",
+    "crossrefTitle": "Big Data: New Tricks for Econometrics",
+    "url": "https://doi.org/10.1257/jep.28.2.3",
+    "authors": [
+      "Varian"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2014,
+    "crossrefYear": 2014,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "michael-dean-woodford",
+    "title": "Interest and Prices",
+    "crossrefTitle": "Interest and Prices",
+    "url": "https://doi.org/10.1515/9781400830169",
+    "authors": [
+      "Woodford"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "michael-dean-woodford",
+    "title": "An Optimization-Based Econometric Framework for the Evaluation of Monetary Policy",
+    "crossrefTitle": "An Optimization-Based Econometric Framework for the Evaluation of Monetary Policy",
+    "url": "https://doi.org/10.1086/654340",
+    "authors": [
+      "Rotemberg",
+      "Woodford"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1997,
+    "crossrefYear": 1997,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "sidney-g-winter",
+    "title": "Deliberate Learning and the Evolution of Dynamic Capabilities",
+    "crossrefTitle": "Deliberate Learning and the Evolution of Dynamic Capabilities",
+    "url": "https://doi.org/10.1287/orsc.13.3.339.2780",
+    "authors": [
+      "Zollo",
+      "Winter"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2002,
+    "crossrefYear": 2002,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "sidney-g-winter",
+    "title": "Understanding dynamic capabilities",
+    "crossrefTitle": "Understanding dynamic capabilities",
+    "url": "https://doi.org/10.1002/smj.318",
+    "authors": [
+      "Winter"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "ludwig-straub",
+    "title": "Macroeconomic Implications of COVID-19: Can Negative Supply Shocks Cause Demand Shortages?",
+    "crossrefTitle": "Macroeconomic Implications of COVID-19: Can Negative Supply Shocks Cause Demand Shortages?",
+    "url": "https://doi.org/10.3386/w26918",
+    "authors": [
+      "Guerrieri",
+      "Lorenzoni",
+      "Straub",
+      "Werning"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2020,
+    "crossrefYear": 2020,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "ludwig-straub",
+    "title": "Using the Sequence‐Space Jacobian to Solve and Estimate Heterogeneous‐Agent Models",
+    "crossrefTitle": "Using the Sequence‐Space Jacobian to Solve and Estimate Heterogeneous‐Agent Models",
+    "url": "https://doi.org/10.3982/ecta17434",
+    "authors": [
+      "Auclert",
+      "Bardóczy",
+      "Rognlie",
+      "Straub"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2021,
+    "crossrefYear": 2021,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "stefanie-stantcheva",
+    "title": "How Elastic Are Preferences for Redistribution? Evidence from Randomized Survey Experiments",
+    "crossrefTitle": "How Elastic Are Preferences for Redistribution? Evidence from Randomized Survey Experiments",
+    "url": "https://doi.org/10.1257/aer.20130360",
+    "authors": [
+      "Kuziemko",
+      "Norton",
+      "Saez",
+      "Stantcheva"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2015,
+    "crossrefYear": 2015,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "stefanie-stantcheva",
+    "title": "Intergenerational Mobility and Preferences for Redistribution",
+    "crossrefTitle": "Intergenerational Mobility and Preferences for Redistribution",
+    "url": "https://doi.org/10.1257/aer.20162015",
+    "authors": [
+      "Alesina",
+      "Stantcheva",
+      "Teso"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2018,
+    "crossrefYear": 2018,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "philipp-strack",
+    "title": "Speed, Accuracy, and the Optimal Timing of Choices",
+    "crossrefTitle": "Speed, Accuracy, and the Optimal Timing of Choices",
+    "url": "https://doi.org/10.1257/aer.20150742",
+    "authors": [
+      "Fudenberg",
+      "Strack",
+      "Strzalecki"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2018,
+    "crossrefYear": 2018,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "philipp-strack",
+    "title": "Unrealistic Expectations and Misguided Learning",
+    "crossrefTitle": "Unrealistic Expectations and Misguided Learning",
+    "url": "https://doi.org/10.3982/ecta14084",
+    "authors": [
+      "Heidhues",
+      "Kőszegi",
+      "Strack"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2018,
+    "crossrefYear": 2018,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "oleg-itskhoki",
+    "title": "Inequality and Unemployment in a Global Economy",
+    "crossrefTitle": "Inequality and Unemployment in a Global Economy",
+    "url": "https://doi.org/10.3982/ecta8640",
+    "authors": [],
+    "titleOK": true,
+    "authorOK": false,
+    "originalYear": 2010,
+    "crossrefYear": 2010,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "source": "https://doi.org/10.3982/ecta8640",
+    "evidence": "Publisher citation identifies Helpman, Itskhoki and Redding, 2010.",
+    "reviewedYear": 2010,
+    "reviewedUrl": "https://doi.org/10.3982/ecta8640"
+  },
+  {
+    "candidate": "oleg-itskhoki",
+    "title": "Importers, Exporters, and Exchange Rate Disconnect",
+    "crossrefTitle": "Importers, Exporters, and Exchange Rate Disconnect",
+    "url": "https://doi.org/10.1257/aer.104.7.1942",
+    "authors": [
+      "Amiti",
+      "Itskhoki",
+      "Konings"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2014,
+    "crossrefYear": 2014,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "isaiah-andrews",
+    "title": "Weak Instruments in Instrumental Variables Regression: Theory and Practice",
+    "crossrefTitle": "Weak Instruments in Instrumental Variables Regression: Theory and Practice",
+    "url": "https://doi.org/10.1146/annurev-economics-080218-025643",
+    "authors": [
+      "Andrews",
+      "Stock",
+      "Sun"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2019,
+    "crossrefYear": 2019,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "isaiah-andrews",
+    "title": "Identification of and Correction for Publication Bias",
+    "crossrefTitle": "Identification of and Correction for Publication Bias",
+    "url": "https://doi.org/10.1257/aer.20180310",
+    "authors": [
+      "Andrews",
+      "Kasy"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2019,
+    "crossrefYear": 2019,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "melissa-dell",
+    "title": "The Persistent Effects of Peru's Mining Mita",
+    "crossrefTitle": "The Persistent Effects of Peru's Mining\n                    <i>Mita</i>",
+    "url": "https://doi.org/10.3982/ecta8121",
+    "authors": [],
+    "titleOK": true,
+    "authorOK": false,
+    "originalYear": 2010,
+    "crossrefYear": 2010,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "source": "https://dell.scholars.harvard.edu/publications/persistent-effects-perus-mining-mita",
+    "evidence": "Author publication page identifies Econometrica 78(6), 2010.",
+    "reviewedYear": 2010,
+    "reviewedUrl": "https://doi.org/10.3982/ecta8121"
+  },
+  {
+    "candidate": "melissa-dell",
+    "title": "Trafficking Networks and the Mexican Drug War",
+    "crossrefTitle": "Trafficking Networks and the Mexican Drug War",
+    "url": "https://doi.org/10.1257/aer.20121637",
+    "authors": [
+      "Dell"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2015,
+    "crossrefYear": 2015,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "emi-nakamura",
+    "title": "Five Facts about Prices: A Reevaluation of Menu Cost Models *",
+    "crossrefTitle": "Five Facts about Prices: A Reevaluation of Menu Cost Models\n                    <sup>*</sup>",
+    "url": "https://doi.org/10.1162/qjec.2008.123.4.1415",
+    "authors": [
+      "Nakamura",
+      "Steinsson"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2008,
+    "crossrefYear": 2008,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "emi-nakamura",
+    "title": "Fiscal Stimulus in a Monetary Union: Evidence from US Regions",
+    "crossrefTitle": "Fiscal Stimulus in a Monetary Union: Evidence from US Regions",
+    "url": "https://doi.org/10.1257/aer.104.3.753",
+    "authors": [
+      "Nakamura",
+      "Steinsson"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2014,
+    "crossrefYear": 2014,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "parag-pathak",
+    "title": "The New York City High School Match",
+    "crossrefTitle": "The New York City High School Match",
+    "url": "https://doi.org/10.1257/000282805774670167",
+    "authors": [
+      "Abdulkadiroğlu",
+      "Pathak",
+      "Roth"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2005,
+    "crossrefYear": 2005,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "parag-pathak",
+    "title": "The Boston Public School Match",
+    "crossrefTitle": "The Boston Public School Match",
+    "url": "https://doi.org/10.1257/000282805774669637",
+    "authors": [
+      "Abdulkadiroğlu",
+      "Pathak",
+      "Roth",
+      "Sönmez"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2005,
+    "crossrefYear": 2005,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "dave-donaldson",
+    "title": "Railroads of the Raj: Estimating the Impact of Transportation Infrastructure",
+    "crossrefTitle": "Railroads of the Raj: Estimating the Impact of Transportation Infrastructure",
+    "url": "https://doi.org/10.1257/aer.20101199",
+    "authors": [
+      "Donaldson"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2018,
+    "crossrefYear": 2018,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "dave-donaldson",
+    "title": "Railroads and American Economic Growth: A “Market Access” Approach *",
+    "crossrefTitle": "Railroads and American Economic Growth: A “Market Access” Approach\n*",
+    "url": "https://doi.org/10.1093/qje/qjw002",
+    "authors": [
+      "Donaldson",
+      "Hornbeck"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2016,
+    "crossrefYear": 2016,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "yuliy-sannikov",
+    "title": "A Macroeconomic Model with a Financial Sector",
+    "crossrefTitle": "A Macroeconomic Model with a Financial Sector",
+    "url": "https://doi.org/10.1257/aer.104.2.379",
+    "authors": [
+      "Brunnermeier",
+      "Sannikov"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2014,
+    "crossrefYear": 2014,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "yuliy-sannikov",
+    "title": "A Continuous-Time Version of the Principal–Agent Problem",
+    "crossrefTitle": "A Continuous-Time Version of the Principal–Agent Problem",
+    "url": "https://doi.org/10.1111/j.1467-937x.2008.00486.x",
+    "authors": [
+      "SANNIKOV"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2008,
+    "crossrefYear": 2008,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "roland-fryer",
+    "title": "Understanding the Black-White Test Score Gap in the First Two Years of School",
+    "crossrefTitle": "Understanding the Black-White Test Score Gap in the First Two Years of School",
+    "url": "https://doi.org/10.1162/003465304323031049",
+    "authors": [
+      "Fryer",
+      "Levitt"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "roland-fryer",
+    "title": "The Causes and Consequences of Distinctively Black Names",
+    "crossrefTitle": "The Causes and Consequences of Distinctively Black Names",
+    "url": "https://doi.org/10.1162/0033553041502180",
+    "authors": [
+      "Fryer",
+      "Levitt"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "matthew-gentzkow",
+    "title": "Social Media and Fake News in the 2016 Election",
+    "crossrefTitle": "Social Media and Fake News in the 2016 Election",
+    "url": "https://doi.org/10.1257/jep.31.2.211",
+    "authors": [
+      "Allcott",
+      "Gentzkow"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2017,
+    "crossrefYear": 2017,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "matthew-gentzkow",
+    "title": "Bayesian Persuasion",
+    "crossrefTitle": "Bayesian Persuasion",
+    "url": "https://doi.org/10.1257/aer.101.6.2590",
+    "authors": [
+      "Kamenica",
+      "Gentzkow"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2011,
+    "crossrefYear": 2011,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "amy-finkelstein",
+    "title": "The Oregon Health Insurance Experiment: Evidence from the First Year",
+    "status": "manual source reviewed",
+    "url": "https://economics.mit.edu/people/faculty/amy-finkelstein/papers-topic",
+    "source": "https://economics.mit.edu/people/faculty/amy-finkelstein/publications",
+    "evidence": "MIT author publication list.",
+    "retrieved": "2026-10-08",
+    "reviewedYear": 2012,
+    "reviewedUrl": "https://economics.mit.edu/people/faculty/amy-finkelstein/papers-topic"
+  },
+  {
+    "candidate": "amy-finkelstein",
+    "title": "The Aggregate Effects of Health Insurance: Evidence from the Introduction of Medicare",
+    "status": "manual source reviewed",
+    "url": "https://economics.mit.edu/people/faculty/amy-finkelstein/publications",
+    "source": "https://economics.mit.edu/people/faculty/amy-finkelstein/publications",
+    "evidence": "MIT author publication list.",
+    "retrieved": "2026-10-08",
+    "reviewedYear": 2007,
+    "reviewedUrl": "https://economics.mit.edu/people/faculty/amy-finkelstein/publications"
+  },
+  {
+    "candidate": "jonathan-levin",
+    "title": "Relational Incentive Contracts",
+    "crossrefTitle": "Relational Incentive Contracts",
+    "url": "https://doi.org/10.1257/000282803322157115",
+    "authors": [
+      "Levin"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2003,
+    "crossrefYear": 2003,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "jonathan-levin",
+    "title": "Estimating Dynamic Models of Imperfect Competition",
+    "crossrefTitle": "Estimating Dynamic Models of Imperfect Competition",
+    "url": "https://doi.org/10.1111/j.1468-0262.2007.00796.x",
+    "authors": [
+      "Bajari",
+      "Benkard",
+      "Levin"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2007,
+    "crossrefYear": 2007,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "steven-levitt",
+    "title": "What Do Laboratory Experiments Measuring Social Preferences Reveal About the Real World?",
+    "crossrefTitle": "What Do Laboratory Experiments Measuring Social Preferences Reveal About the Real World?",
+    "url": "https://doi.org/10.1257/jep.21.2.153",
+    "authors": [
+      "Levitt",
+      "List"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2007,
+    "crossrefYear": 2007,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "steven-levitt",
+    "title": "Understanding Why Crime Fell in the 1990s: Four Factors that Explain the Decline and Six that Do Not",
+    "crossrefTitle": "Understanding Why Crime Fell in the 1990s: Four Factors that Explain the Decline and Six that Do Not",
+    "url": "https://doi.org/10.1257/089533004773563485",
+    "authors": [
+      "Levitt"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 2004,
+    "crossrefYear": 2004,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "andrei-shleifer",
+    "title": "Law and Finance",
+    "crossrefTitle": "Law and Finance",
+    "url": "https://doi.org/10.1086/250042",
+    "authors": [
+      "La Porta",
+      "Lopez‐de‐Silanes",
+      "Shleifer",
+      "Vishny"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1998,
+    "crossrefYear": 1998,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "andrei-shleifer",
+    "title": "A Survey of Corporate Governance",
+    "crossrefTitle": "A Survey of Corporate Governance",
+    "url": "https://doi.org/10.1111/j.1540-6261.1997.tb04820.x",
+    "authors": [
+      "Shleifer",
+      "Vishny"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1997,
+    "crossrefYear": 1997,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "lawrence-h-summers",
+    "title": "Noise Trader Risk in Financial Markets",
+    "crossrefTitle": "Noise Trader Risk in Financial Markets",
+    "url": "https://doi.org/10.1086/261703",
+    "authors": [
+      "De Long",
+      "Shleifer",
+      "Summers",
+      "Waldmann"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1990,
+    "crossrefYear": 1990,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "lawrence-h-summers",
+    "title": "Positive Feedback Investment Strategies and Destabilizing Rational Speculation",
+    "crossrefTitle": "Positive Feedback Investment Strategies and Destabilizing Rational Speculation",
+    "url": "https://doi.org/10.1111/j.1540-6261.1990.tb03695.x",
+    "authors": [
+      "DE LONG",
+      "SHLEIFER",
+      "SUMMERS",
+      "WALDMANN"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1990,
+    "crossrefYear": 1990,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "sanford-j-grossman",
+    "title": "The Costs and Benefits of Ownership: A Theory of Vertical and Lateral Integration",
+    "crossrefTitle": "The Costs and Benefits of Ownership: A Theory of Vertical and Lateral Integration",
+    "url": "https://doi.org/10.1086/261404",
+    "authors": [
+      "Grossman",
+      "Hart"
+    ],
+    "titleOK": true,
+    "authorOK": true,
+    "originalYear": 1986,
+    "crossrefYear": 1986,
+    "status": "metadata agrees",
+    "retrieved": "2026-10-08"
+  },
+  {
+    "candidate": "sanford-j-grossman",
+    "title": "On the Impossibility of Informationally Efficient Markets",
+    "url": "https://doi.org/10.7916/d8765r99",
+    "status": "manual source reviewed",
+    "error": "Error: Command failed: curl --fail --silent --show-error --max-time 20 https://api.crossref.org/works/10.7916%2Fd8765r99\ncurl: (6) Could not resolve h",
+    "source": "https://www.aeaweb.org/aer/top20/70.3.393-408.pdf",
+    "evidence": "Original AER article identifies Grossman and Stiglitz, June 1980.",
+    "retrieved": "2026-10-08",
+    "reviewedYear": 1980,
+    "reviewedUrl": "https://www.aeaweb.org/aer/top20/70.3.393-408.pdf"
+  },
+  {
+    "candidate": "timothy-bresnahan",
+    "title": "The oligopoly solution concept is identified",
+    "url": "https://doi.org/10.1016/0165-1765(82)90121-5",
+    "reviewedUrl": "https://doi.org/10.1016/0165-1765(82)90121-5",
+    "reviewedYear": 1982,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "timothy-bresnahan",
+    "title": "Empirical studies of industries with market power",
+    "url": "https://doi.org/10.1016/S1573-448X(89)02005-4",
+    "reviewedUrl": "https://doi.org/10.1016/S1573-448X(89)02005-4",
+    "reviewedYear": 1989,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "samuel-kortum",
+    "title": "Technology, Geography, and Trade",
+    "url": "https://doi.org/10.1111/1468-0262.00352",
+    "reviewedUrl": "https://doi.org/10.1111/1468-0262.00352",
+    "reviewedYear": 2002,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "samuel-kortum",
+    "title": "Trade and the Global Recession",
+    "url": "https://doi.org/10.1257/aer.20101557",
+    "reviewedUrl": "https://doi.org/10.1257/aer.20101557",
+    "reviewedYear": 2016,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "whitney-newey",
+    "title": "A Simple, Positive Semi-Definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix",
+    "url": "https://doi.org/10.2307/1913610",
+    "reviewedUrl": "https://doi.org/10.2307/1913610",
+    "reviewedYear": 1987,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "whitney-newey",
+    "title": "Large sample estimation and hypothesis testing",
+    "url": "https://doi.org/10.1016/S1573-4412(05)80005-4",
+    "reviewedUrl": "https://doi.org/10.1016/S1573-4412(05)80005-4",
+    "reviewedYear": 1994,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "drew-fudenberg",
+    "title": "The Folk Theorem in Repeated Games with Discounting or with Incomplete Information",
+    "url": "https://doi.org/10.2307/1911307",
+    "reviewedUrl": "https://doi.org/10.2307/1911307",
+    "reviewedYear": 1986,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "drew-fudenberg",
+    "title": "Game Theory",
+    "url": "https://mitpress.mit.edu/9780262061414/game-theory/",
+    "reviewedUrl": "https://mitpress.mit.edu/9780262061414/game-theory/",
+    "reviewedYear": 1991,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Author/publisher book record checked for title, authorship and original edition year."
+  },
+  {
+    "candidate": "matthew-jackson",
+    "title": "A Strategic Model of Social and Economic Networks",
+    "url": "https://doi.org/10.1006/jeth.1996.0108",
+    "reviewedUrl": "https://doi.org/10.1006/jeth.1996.0108",
+    "reviewedYear": 1996,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "matthew-jackson",
+    "title": "Social and Economic Networks",
+    "url": "https://web.stanford.edu/~jacksonm/netbook.pdf",
+    "reviewedUrl": "https://web.stanford.edu/~jacksonm/netbook.pdf",
+    "reviewedYear": 2008,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Author/publisher book record checked for title, authorship and original edition year."
+  },
+  {
+    "candidate": "andreu-mas-colell",
+    "title": "The Theory of General Economic Equilibrium: A Differentiable Approach",
+    "url": "https://www.cambridge.org/core/books/theory-of-general-economic-equilibrium/EC6D76C9FDC0D3558E9479BDE4ABD1C2",
+    "reviewedUrl": "https://www.cambridge.org/core/books/theory-of-general-economic-equilibrium/EC6D76C9FDC0D3558E9479BDE4ABD1C2",
+    "reviewedYear": 1985,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Author/publisher book record checked for title, authorship and original edition year."
+  },
+  {
+    "candidate": "andreu-mas-colell",
+    "title": "A Simple Adaptive Procedure Leading to Correlated Equilibrium",
+    "url": "https://doi.org/10.1111/1468-0262.00153",
+    "reviewedUrl": "https://doi.org/10.1111/1468-0262.00153",
+    "reviewedYear": 2000,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "victor-chernozhukov",
+    "title": "Double/debiased machine learning for treatment and structural parameters",
+    "url": "https://doi.org/10.1111/ectj.12097",
+    "reviewedUrl": "https://doi.org/10.1111/ectj.12097",
+    "reviewedYear": 2018,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "victor-chernozhukov",
+    "title": "Inference on Treatment Effects after Selection among High-Dimensional Controls",
+    "url": "https://doi.org/10.1093/restud/rdt044",
+    "reviewedUrl": "https://doi.org/10.1093/restud/rdt044",
+    "reviewedYear": 2014,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "luigi-zingales",
+    "title": "What Do We Know about Capital Structure? Some Evidence from International Data",
+    "url": "https://doi.org/10.1111/j.1540-6261.1995.tb05184.x",
+    "reviewedUrl": "https://doi.org/10.1111/j.1540-6261.1995.tb05184.x",
+    "reviewedYear": 1995,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "luigi-zingales",
+    "title": "What Determines the Value of Corporate Votes?",
+    "url": "https://doi.org/10.2307/2946648",
+    "reviewedUrl": "https://doi.org/10.2307/2946648",
+    "reviewedYear": 1995,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "john-haltiwanger",
+    "title": "Who Creates Jobs? Small versus Large versus Young",
+    "url": "https://doi.org/10.1162/REST_a_00288",
+    "reviewedUrl": "https://doi.org/10.1162/REST_a_00288",
+    "reviewedYear": 2013,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  },
+  {
+    "candidate": "john-haltiwanger",
+    "title": "Reallocation, Firm Turnover, and Efficiency: Selection on Productivity or Profitability?",
+    "url": "https://doi.org/10.1257/aer.98.1.394",
+    "reviewedUrl": "https://doi.org/10.1257/aer.98.1.394",
+    "reviewedYear": 2008,
+    "status": "manual source reviewed",
+    "retrieved": "2026-10-08",
+    "evidence": "Crossref title, publication year and author names checked; print edition used where online-first year differs."
+  }
+]

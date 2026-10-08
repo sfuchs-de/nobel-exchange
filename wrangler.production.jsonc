@@ -1,0 +1,21 @@
+{
+  "name": "nobel-exchange-api",
+  "account_id": "666f2da8e168887d747ee05b5803c3a4",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "durable_objects": {"bindings": [{"name": "MARKET", "class_name": "Market"}]},
+  "migrations": [{"tag": "v1", "new_sqlite_classes": ["Market"]}],
+  "vars": {
+    "ALLOWED_ORIGINS": "https://sfuchs-de.github.io",
+    "GOOGLE_CLIENT_ID": "976789739175-mmj3a5r88k4cftfja9k6q4lefsfis7tp.apps.googleusercontent.com",
+    "MARKET_CLOSE": "2026-10-12T00:00:00Z",
+    "ANNOUNCEMENT": "2026-10-12T09:45:00Z"
+  },
+  "observability": {
+    "enabled": true,
+    "logs": {"enabled": true, "invocation_logs": false, "head_sampling_rate": 0.1},
+    "traces": {"enabled": true, "head_sampling_rate": 0.01}
+  }
+}

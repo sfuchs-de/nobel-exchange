@@ -1,0 +1,160 @@
+{
+  "reviewedOn": "2026-10-08",
+  "rosterVersion": "economics-2026.3-draft",
+  "eligibilitySource": "https://api.nobelprize.org/2.1/nobelPrizes?nobelPrizeCategory=eco&limit=100",
+  "eligibilityNote": "Compared all available economics laureate names in the official Nobel API with these nine names; no match. Primary institutional profiles reviewed for identity and living-status indicators. Recheck immediately before opening.",
+  "candidates": [
+    {
+      "id": "timothy-bresnahan", "name": "Timothy Bresnahan", "field": "IO & digital", "institution": "Stanford University (emeritus)",
+      "summary": "Made market power and competition measurable, developing empirical methods for studying how firms behave in concentrated industries.",
+      "year": 2018, "honors": ["BBVA Frontiers of Knowledge Award · announced 2018"],
+      "profileUrl": "https://economics.stanford.edu/people/timothy-f-bresnahan",
+      "sources": [
+        {"label": "Stanford faculty profile", "url": "https://economics.stanford.edu/people/timothy-f-bresnahan"},
+        {"label": "Stanford award announcement", "url": "https://economics.stanford.edu/news/timothy-bresnahan-wins-bbva-frontiers-knowledge-award"}
+      ],
+      "papers": [
+        {"title": "The oligopoly solution concept is identified", "year": 1982, "url": "https://doi.org/10.1016/0165-1765(82)90121-5"},
+        {"title": "Empirical studies of industries with market power", "year": 1989, "url": "https://doi.org/10.1016/S1573-448X(89)02005-4"}
+      ],
+      "group": "established", "reason": "A mature empirical-IO prize case, with an explicit Cowen prediction alongside Pakes. Adds the identification and market-power side of this research cluster.",
+      "evidenceCodes": ["M23"], "award": {"label": "BBVA", "dateLabel": "2018", "url": "https://economics.stanford.edu/news/timothy-bresnahan-wins-bbva-frontiers-knowledge-award"},
+      "tags": ["Empirical IO", "Market power", "Competition"]
+    },
+    {
+      "id": "samuel-kortum", "name": "Samuel Kortum", "field": "Trade & geography", "institution": "Yale University",
+      "summary": "Built quantitative trade models connecting technology, geography and specialization, and used them to understand international trade patterns.",
+      "year": 2018, "honors": ["Frisch Medal · 2004", "Onassis Prize in International Trade · 2018"],
+      "profileUrl": "https://economics.yale.edu/people/samuel-kortum",
+      "sources": [
+        {"label": "Yale faculty and award profile", "url": "https://economics.yale.edu/people/samuel-kortum"},
+        {"label": "Forward 2026 trade prediction", "url": "https://nicholasdecker.substack.com/p/berry-hausman-pakes-should-win-the"}
+      ],
+      "papers": [
+        {"title": "Technology, Geography, and Trade", "year": 2002, "url": "https://doi.org/10.1111/1468-0262.00352"},
+        {"title": "Trade and the Global Recession", "year": 2016, "url": "https://doi.org/10.1257/aer.20101557"}
+      ],
+      "group": "established", "reason": "A foundational quantitative-trade case. Decker's 2025 essay explicitly includes Kortum in a forward prediction for a 2026 trade prize; this is one commentator's view, not a consensus.",
+      "evidenceCodes": ["D26"], "award": {"label": "Onassis Prize", "dateLabel": "2018", "url": "https://economics.yale.edu/people/samuel-kortum"},
+      "tags": ["Quantitative trade", "Technology diffusion", "Eaton–Kortum"]
+    },
+    {
+      "id": "whitney-newey", "name": "Whitney Newey", "field": "Econometrics", "institution": "MIT (emeritus)",
+      "summary": "Developed tools for robust inference and semiparametric estimation, including the widely used Newey–West covariance estimator.",
+      "year": 2026, "honors": ["Nemmers Prize in Economics · 2026"],
+      "profileUrl": "https://economics.mit.edu/people/faculty/whitney-newey",
+      "sources": [
+        {"label": "MIT faculty profile", "url": "https://economics.mit.edu/people/faculty/whitney-newey"},
+        {"label": "Northwestern Nemmers Prize", "url": "https://nemmers.northwestern.edu/economics/"}
+      ],
+      "papers": [
+        {"title": "A Simple, Positive Semi-Definite, Heteroskedasticity and Autocorrelation Consistent Covariance Matrix", "year": 1987, "url": "https://doi.org/10.2307/1913610"},
+        {"title": "Large sample estimation and hypothesis testing", "year": 1994, "url": "https://doi.org/10.1016/S1573-4412(05)80005-4"}
+      ],
+      "group": "established", "reason": "A mature, distinctive econometrics contribution, reinforced by the 2026 Nemmers Prize. The award supports inclusion; it is not an annual Nobel forecast.",
+      "evidenceCodes": [], "award": {"label": "Nemmers Prize", "dateLabel": "2026", "url": "https://nemmers.northwestern.edu/economics/"},
+      "tags": ["Robust inference", "Semiparametric estimation", "Newey–West"]
+    },
+    {
+      "id": "drew-fudenberg", "name": "Drew Fudenberg", "field": "Theory & markets", "institution": "MIT",
+      "summary": "Advanced the theory of repeated games, reputation and learning, explaining how strategic behavior evolves over time.",
+      "year": null, "honors": ["Fellow of the Econometric Society", "Member of the National Academy of Sciences"],
+      "profileUrl": "https://economics.mit.edu/people/faculty/drew-fudenberg",
+      "sources": [
+        {"label": "MIT faculty and honors profile", "url": "https://economics.mit.edu/people/faculty/drew-fudenberg"},
+        {"label": "Tol's 2026 forecast", "url": "https://richardtol.substack.com/p/2026-nobel-memorial-prize"}
+      ],
+      "papers": [
+        {"title": "The Folk Theorem in Repeated Games with Discounting or with Incomplete Information", "year": 1986, "url": "https://doi.org/10.2307/1911307"},
+        {"title": "Game Theory", "year": 1991, "url": "https://mitpress.mit.edu/9780262061414/game-theory/"}
+      ],
+      "group": "established", "reason": "A mature dynamic-game and learning case. Fudenberg is on Tol's principal ten-name 2026 list; that is one model-based forecast, not a consensus ranking.",
+      "evidenceCodes": ["T26"], "tags": ["Repeated games", "Learning", "Reputation"]
+    },
+    {
+      "id": "matthew-jackson", "name": "Matthew Jackson", "field": "Theory & markets", "institution": "Stanford University",
+      "summary": "Explained how social and economic networks form, and how their structure shapes incentives, information and economic outcomes.",
+      "year": null, "honors": ["Fellow of the Econometric Society", "Member of the National Academy of Sciences"],
+      "profileUrl": "https://economics.stanford.edu/people/matthew-o-jackson",
+      "sources": [
+        {"label": "Stanford faculty and honors profile", "url": "https://economics.stanford.edu/people/matthew-o-jackson"},
+        {"label": "Possible partner in Tol's 2026 forecast", "url": "https://richardtol.substack.com/p/2026-nobel-memorial-prize"}
+      ],
+      "papers": [
+        {"title": "A Strategic Model of Social and Economic Networks", "year": 1996, "url": "https://doi.org/10.1006/jeth.1996.0108"},
+        {"title": "Social and Economic Networks", "year": 2008, "url": "https://web.stanford.edu/~jacksonm/netbook.pdf"}
+      ],
+      "group": "established", "reason": "A distinctive networks and economic-theory case. Tol mentions Jackson as a possible co-recipient, not as a member of the principal ten-name forecast.",
+      "evidenceCodes": ["T26"], "tolRole": "partner", "tags": ["Social networks", "Network formation", "Information"]
+    },
+    {
+      "id": "andreu-mas-colell", "name": "Andreu Mas-Colell", "field": "Theory & markets", "institution": "Barcelona School of Economics / UPF (emeritus)",
+      "summary": "Developed mathematical foundations for general equilibrium and contributed to adaptive learning and correlated equilibrium in games.",
+      "year": 2009, "honors": ["BBVA Frontiers of Knowledge Award · 2009", "Fellow of the Econometric Society"],
+      "profileUrl": "https://bse.eu/people/mas-colell-andreu",
+      "sources": [
+        {"label": "BSE faculty, honors and research profile", "url": "https://bse.eu/people/mas-colell-andreu"},
+        {"label": "Cambridge book record", "url": "https://www.cambridge.org/core/books/theory-of-general-economic-equilibrium/EC6D76C9FDC0D3558E9479BDE4ABD1C2"}
+      ],
+      "papers": [
+        {"title": "The Theory of General Economic Equilibrium: A Differentiable Approach", "year": 1985, "url": "https://www.cambridge.org/core/books/theory-of-general-economic-equilibrium/EC6D76C9FDC0D3558E9479BDE4ABD1C2"},
+        {"title": "A Simple Adaptive Procedure Leading to Correlated Equilibrium", "year": 2000, "url": "https://doi.org/10.1111/1468-0262.00153"}
+      ],
+      "group": "established", "reason": "A substantial general-equilibrium and theory case, supported by primary research and major-award evidence. Current market listing is additional attention, not expert endorsement.",
+      "evidenceCodes": ["P26"], "award": {"label": "BBVA", "dateLabel": "2009", "url": "https://bse.eu/people/mas-colell-andreu"},
+      "tags": ["General equilibrium", "Correlated equilibrium", "Learning"]
+    },
+    {
+      "id": "victor-chernozhukov", "name": "Victor Chernozhukov", "field": "Econometrics", "institution": "MIT",
+      "summary": "Developed econometric inference methods that combine high-dimensional controls and machine learning with credible causal estimation.",
+      "year": null, "honors": ["Fellow of the Econometric Society"],
+      "profileUrl": "https://economics.mit.edu/people/faculty/victor-chernozhukov",
+      "sources": [
+        {"label": "MIT faculty profile", "url": "https://economics.mit.edu/people/faculty/victor-chernozhukov"},
+        {"label": "MIT IDSS research and honors profile", "url": "https://idss.mit.edu/staff/victor-chernozhukov/"}
+      ],
+      "papers": [
+        {"title": "Double/debiased machine learning for treatment and structural parameters", "year": 2018, "url": "https://doi.org/10.1111/ectj.12097"},
+        {"title": "Inference on Treatment Effects after Selection among High-Dimensional Controls", "year": 2014, "url": "https://doi.org/10.1093/restud/rdt044"}
+      ],
+      "group": "established", "reason": "A distinctive modern-econometrics contribution warrants a place in the mature pool. The additional signals are a public market listing and a broad future longlist, not an independently verified 2026 expert forecast.",
+      "evidenceCodes": ["P26", "DL"], "tags": ["Causal machine learning", "Double machine learning", "High-dimensional inference"]
+    },
+    {
+      "id": "luigi-zingales", "name": "Luigi Zingales", "field": "Finance", "institution": "University of Chicago Booth",
+      "summary": "Studied corporate governance, financing and the value of control, connecting financial institutions with competition and political influence.",
+      "year": 2003, "honors": ["Bernácer Prize · 2003"],
+      "profileUrl": "https://www.chicagobooth.edu/faculty/directory/z/luigi-zingales",
+      "sources": [
+        {"label": "Chicago Booth faculty and honors profile", "url": "https://www.chicagobooth.edu/faculty/directory/z/luigi-zingales"},
+        {"label": "Corporate voting paper: publisher record", "url": "https://academic.oup.com/qje/article-abstract/110/4/1047/1870498"}
+      ],
+      "papers": [
+        {"title": "What Do We Know about Capital Structure? Some Evidence from International Data", "year": 1995, "url": "https://doi.org/10.1111/j.1540-6261.1995.tb05184.x"},
+        {"title": "What Determines the Value of Corporate Votes?", "year": 1995, "url": "https://doi.org/10.2307/2946648"}
+      ],
+      "group": "broad", "reason": "A substantive corporate-finance and governance record supports the broader watchlist. Current prediction-market listing is weak attention evidence and does not on its own justify featured-favorite status.",
+      "evidenceCodes": ["P26"], "award": {"label": "Bernácer Prize", "dateLabel": "2003", "url": "https://www.chicagobooth.edu/faculty/directory/z/luigi-zingales"},
+      "tags": ["Corporate governance", "Capital structure", "Political economy"]
+    },
+    {
+      "id": "john-haltiwanger", "name": "John Haltiwanger", "aliases": ["John C. Haltiwanger"],
+      "field": "Macro & growth", "institution": "University of Maryland",
+      "summary": "Showed how job creation, job destruction and productivity growth emerge from firm entry, exit and reallocation, and helped build the longitudinal data used to study business dynamism.",
+      "year": 2024, "honors": ["AEA Distinguished Fellow · 2024", "Global Award for Entrepreneurship Research · 2020"],
+      "profileUrl": "https://econ.umd.edu/facultyprofile/haltiwanger/john-c",
+      "sources": [
+        {"label": "Maryland faculty and research profile", "url": "https://econ.umd.edu/facultyprofile/haltiwanger/john-c"},
+        {"label": "Maryland: AEA Distinguished Fellow, 2024", "url": "https://bsos.umd.edu/featured-content/john-haltiwanger-honored-american-economic-association"},
+        {"label": "Global Award for Entrepreneurship Research, 2020", "url": "https://www.e-award.org/award-winners/2020-john-haltiwanger/"}
+      ],
+      "papers": [
+        {"title": "Who Creates Jobs? Small versus Large versus Young", "year": 2013, "url": "https://doi.org/10.1162/REST_a_00288"},
+        {"title": "Reallocation, Firm Turnover, and Efficiency: Selection on Productivity or Profitability?", "year": 2008, "url": "https://doi.org/10.1257/aer.98.1.394"}
+      ],
+      "group": "established", "reason": "A mature empirical case in firm dynamics, job flows and productivity, with major research recognition. Cowen and Tabarrok discussed his data-building contribution as deserving Nobel recognition in 2024; that is historical advocacy, not a verified 2026 forecast.",
+      "evidenceCodes": ["H24"], "award": {"label": "Entrepreneurship award", "dateLabel": "2020", "url": "https://www.e-award.org/award-winners/2020-john-haltiwanger/"},
+      "tags": ["Firm dynamics", "Business dynamism", "Job creation", "Job destruction", "Productivity", "Entrepreneurship", "Labor", "Longitudinal Business Database"]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "nobel-exchange", "private": true, "version": "0.1.0", "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4196",
+    "dev:api": "wrangler dev --ip 127.0.0.1 --port 8796 --inspector-port 9296 --persist-to .wrangler/preview-2026.3 --var DEV_AUTH:local-only",
+    "build": "tsc -p tsconfig.json && vite build",
+    "typecheck:worker": "tsc -p tsconfig.worker.json",
+    "test": "vitest run",
+    "check:data": "node --import tsx scripts/check-data.ts",
+    "check:release": "node --import tsx scripts/check-data.ts --release",
+    "check:deployment": "node --import tsx scripts/check-deployment.ts",
+    "test:integration": "node tests/integration.mjs",
+    "enrich": "node --import tsx scripts/enrich.ts",
+    "enrich:articles": "node --import tsx scripts/enrich-articles.ts",
+    "verify:articles": "node --import tsx scripts/verify-articles.ts",
+    "review:editorial": "node --import tsx scripts/apply-editorial-review.ts --draft",
+    "preview": "vite preview --host 127.0.0.1 --port 4196"
+  },
+  "dependencies": {"react":"^19.2.0","react-dom":"^19.2.0","lucide-react":"^0.468.0","jose":"^6.1.0"},
+  "devDependencies": {"@cloudflare/workers-types":"^5.20261008.1","@types/react":"^19.2.0","@types/react-dom":"^19.2.0","@types/node":"^24.0.0","@vitejs/plugin-react":"^5.0.0","typescript":"^5.9.3","vite":"^7.1.0","vitest":"^3.2.4","tsx":"^4.20.0","wrangler":"^4.148.0"}
+}
