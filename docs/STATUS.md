@@ -2,6 +2,14 @@
 
 Updated 8 October 2026. **Public beta open.**
 
+## October 8 iPhone sign-in fix
+
+- Actual user iPhone feedback exposed a popup-only compatibility gap. Added Google's full-page redirect flow on iPhones/iPads and a desktop fallback; preserved desktop popup sign-in. The existing Google identity client has the Worker login origin and both group return addresses configured, without new scopes or credentials.
+- Drafts remain in the initiating browser and are restored after sign-in. An empty draft loads the existing saved entry. Signing in never submits picks or creates cross-group membership.
+- Server checks Google's CSRF cookie, ID-token signature/audience/issuer/expiry and fresh nonce, then uses a two-minute one-use code plus tab-held S256 verifier. Each group's temporary auth records are separate; participant records, pool, revisions, history and scores are not touched.
+- Local checks: 91 unit tests, 78 existing isolated market checks and 46 new isolated sign-in checks pass; Worker typecheck and production build pass. The new runtime suite includes concurrent callback/redemption, wrong nonce/audience, expired Google tokens, CSRF failures, cross-group rejection and restart preservation. Real published redirect and actual iPhone acceptance remain to be observed after the explicitly authorized release.
+- See [mobile sign-in guide](MOBILE-SIGN-IN.md). The existing bundle-size advisory remains non-blocking. No real portfolio was submitted or changed by the assistant.
+
 ## October 8 separate public user group
 
 - Implemented `/nobel-exchange/public/` with the same 102 candidates, rules and October 11 closing time. Simon explicitly approved publishing and opening it. The original URL and persistent object name remain unchanged.
@@ -19,10 +27,10 @@ Updated 8 October 2026. **Public beta open.**
 - Rollback must retain the 102-person roster and its approved migration. Do not redeploy 99-person code after migration: its freeze guard would reject future saves. Export current records before recovery; never replace participant storage with preview data.
 - Published in commit `4b2c61c`; [manual full release 37832480983](https://github.com/sfuchs-de/nobel-exchange/actions/runs/37832480983) succeeded. Public API and Pages both show version 4 / 102 candidates. Post-release backing totals and history match the private pre-release export; the October 11 closing timestamp is unchanged. No production picks were submitted by the assistant. Desktop and 390px preview inspection passed without horizontal overflow. Provider workflow warnings about Node action runtimes are non-blocking, separate from this release.
 
-## Current deployment — supersedes the historical setup notes below
+## Initial deployment ledger — superseded by the October 8 release sections above
 
 - Public interface: [The Nobel Exchange](https://sfuchs-de.github.io/nobel-exchange/). Code and reviewed public data: [GitHub](https://github.com/sfuchs-de/nobel-exchange). Participant records remain in the Cloudflare SQLite Durable Object, not GitHub or either planner.
-- Production API: `https://nobel-exchange-api.sfuchs-de.workers.dev`. HTTPS, allowed-origin enforcement, rejection of invalid/unauthenticated writes, and absence of public individual portfolios are verified. Development identities are disabled. Production currently has no submitted participants; no fictional records were imported.
+- Production API: `https://nobel-exchange-api.sfuchs-de.workers.dev`. HTTPS, allowed-origin enforcement, rejection of invalid/unauthenticated writes, and absence of public individual portfolios are verified. Development identities are disabled. Zero participants described the initial launch only; production entries now exist. No fictional records were imported.
 - Google identity-only sign-in is in production in its separate, no-billing project. Simon's real sign-in and administrator desk are verified. Session signing and administrator identity are encrypted Cloudflare secrets.
 - All 99 candidate checks and 198 landmark publication checks are complete. Fresh comparison with the official economics-laureate inventory found no prior winner in the roster. `launchReady` is true; roster version is `economics-2026.3`. Missing citation matches remain visibly unavailable.
 - Current suite: **54 unit tests and 46 isolated integration checks pass**, along with build, Worker typecheck, data/release and production configuration checks. The eight new save-guidance cases cover incomplete budgets, over-allocation, names, loading, unchanged saves and market state. Phone preview confirmed that a 20-credit draft explains its 80-credit shortfall and that a 100-credit split enables sign-in/save, without submitting test picks. Production dependency audit found no known vulnerabilities. The existing build-size advisory remains non-blocking.

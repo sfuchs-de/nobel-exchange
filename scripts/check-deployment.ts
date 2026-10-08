@@ -14,6 +14,7 @@ if (process.argv.includes("--live")) {
   assert.equal(api, "https://nobel-exchange-api.sfuchs-de.workers.dev", "Wrong production API target");
   const config = await fetch(api + "/api/config").then(r => {assert(r.ok); return r.json();});
   assert(config.authReady && !config.development, "Production sign-in is not ready or development auth is enabled");
+  assert(config.redirectAuthReady, "Mobile redirect sign-in is not configured");
   const market = await fetch(api + "/api/market").then(r => {assert(r.ok); return r.json();});
   assert.equal(market.closesAt, c.vars.MARKET_CLOSE);
   assert.equal(market.announcement, c.vars.ANNOUNCEMENT);
@@ -25,6 +26,7 @@ if (process.argv.includes("--live")) {
   const publicMarket = await fetch(api + "/api/public/market").then(r => {assert(r.ok); return r.json();});
   assert.equal(publicConfig.marketId, "public");
   assert(publicConfig.authReady && !publicConfig.development);
+  assert(publicConfig.redirectAuthReady, "Public mobile sign-in is not configured");
   assert.equal(publicMarket.marketId, "public");
   assert.equal(publicMarket.rosterVersion, market.rosterVersion);
   assert.equal(publicMarket.closesAt, market.closesAt);

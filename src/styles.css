@@ -1530,6 +1530,22 @@ footer p {
   color: var(--muted);
   font-size: 10px;
 }
+.signin-content > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: min(100%, 300px);
+  min-height: 46px;
+  margin-top: 15px;
+}
+.signin-content > button.secondary {
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 12px 15px;
+  border-radius: 5px;
+}
 .setup-note {
   background: #f4eddb;
   padding: 12px;

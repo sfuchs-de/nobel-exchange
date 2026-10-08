@@ -37,6 +37,8 @@ import { projectedPayout, score } from "../shared/rules";
 import { crowdRanking } from "../shared/market";
 import { portfolioSaveState } from "../shared/portfolio";
 import { belongsToMarket, marketForPage } from "../shared/markets";
+import { authDigest, authReturnFragment, prefersRedirectSignIn, randomAuthValue, redirectStorageKey, validRedirectDraft } from "../shared/redirect-auth";
+import type { RedirectDraft } from "../shared/redirect-auth";
 import { MarketPulse } from "./MarketPulse";
 import { catalogCandidates, contenderGroups, groupOrder, evidenceKinds, leadEvidence } from "../shared/catalog";
 
@@ -61,6 +63,18 @@ const apiBase = (import.meta.env.VITE_API_URL || "").replace(/\/$/, "");
 const selectedMarket = marketForPage(location.pathname);
 if (!selectedMarket) throw new Error("Unknown Nobel Exchange market address.");
 const activeMarket = selectedMarket;
+const redirectKey = redirectStorageKey(activeMarket);
+const mobileRedirect = prefersRedirectSignIn(navigator.userAgent, navigator.maxTouchPoints);
+const loginReturn = authReturnFragment(location.hash);
+// Remove the one-use code before Google scripts or any links can observe it.
+if (location.hash.startsWith("#signin=")) history.replaceState(null, "", location.pathname + location.search);
+function storedRedirectDraft(): RedirectDraft | null {
+  try {
+    const value = JSON.parse(sessionStorage.getItem(redirectKey) || "null");
+    return validRedirectDraft(value, activeMarket) ? value : null;
+  } catch { return null; }
+}
+const initialRedirectDraft = storedRedirectDraft();
 const fmt = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 });
 const compact = new Intl.NumberFormat("en-US", {
   notation: "compact",
@@ -225,8 +239,8 @@ function App() {
     }
   });
   const [entry, setEntry] = useState<Entry | null>(null),
-    [draft, setDraft] = useState<Allocation>({}),
-    [name, setName] = useState(""),
+    [draft, setDraft] = useState<Allocation>(initialRedirectDraft?.allocation || {}),
+    [name, setName] = useState(initialRedirectDraft?.displayName || ""),
     [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(""),
     [notice, setNotice] = useState(""),
@@ -240,6 +254,8 @@ function App() {
     [official, setOfficial] = useState(""),
     [reason, setReason] = useState("");
   const googleMount = useRef<HTMLDivElement>(null),
+    redirectHandled = useRef(false),
+    redirectRestore = useRef<RedirectDraft | null>(null),
     pendingSave = useRef<{ body: string; id: string } | null>(null),
     lastRevision = useRef(-1),
     serverOffset = useRef(0);
@@ -312,6 +328,25 @@ function App() {
     };
   }, []);
   useEffect(() => {
+    if (!loginReturn || redirectHandled.current) return;
+    redirectHandled.current = true;
+    const pending = storedRedirectDraft();
+    if (!pending || pending.flowId !== loginReturn.flowId) {
+      setError("This sign-in started in another browser or expired. Open the game directly in Safari and sign in again.");
+      return;
+    }
+    setBusy(true);
+    request("/auth/redeem", {method:"POST",body:JSON.stringify({
+      flowId:pending.flowId, code:loginReturn.code, verifier:pending.verifier,
+    })}).then((s: Session) => {
+      redirectRestore.current = pending;
+      sessionStorage.removeItem(redirectKey);
+      setSession(s);
+      setView("My portfolio");
+      setNotice("Signed in. Your draft is ready; save it to enter this group.");
+    }).catch(e => setError(e.message)).finally(() => setBusy(false));
+  }, []);
+  useEffect(() => {
     setLoaded(false);
     if (!session) {
       setEntry(null);
@@ -322,8 +357,15 @@ function App() {
     request("/me", {}, session.token)
       .then(({ entry: e, admin }) => {
         setEntry(e);
-        if (e) setDraft(e.allocation);
-        setName((n) => e?.displayName || n || session.displayName);
+        const restored = redirectRestore.current;
+        if (restored) {
+          setDraft(Object.keys(restored.allocation).length ? restored.allocation : e?.allocation || {});
+          setName(restored.displayName || e?.displayName || session.displayName);
+          redirectRestore.current = null;
+        } else {
+          if (e) setDraft(e.allocation);
+          setName((n) => e?.displayName || n || session.displayName);
+        }
         setSession((s) => (s && s.admin !== admin ? { ...s, admin } : s));
         setLoaded(true);
       })
@@ -337,7 +379,7 @@ function App() {
       });
   }, [session?.token]);
   useEffect(() => {
-    if (modal !== "signin" || !config.googleClientId) return;
+    if (modal !== "signin" || !config.googleClientId || mobileRedirect) return;
     const render = () => {
       const google = (window as any).google;
       if (!google || !googleMount.current) return;
@@ -377,9 +419,27 @@ function App() {
         document.head.append(script);
       }
       script.addEventListener("load", render, { once: true });
-      return () => script?.removeEventListener("load", render);
+      const failed = () => setError("Google’s login button couldn’t load. Try full-page sign-in below, or open the game directly in Safari.");
+      script.addEventListener("error", failed, {once:true});
+      return () => {script?.removeEventListener("load", render); script?.removeEventListener("error", failed);};
     }
   }, [modal, config.googleClientId]);
+  async function beginRedirectSignIn() {
+    if (busy) return;
+    setBusy(true); setError("");
+    try {
+      const verifier = randomAuthValue();
+      const flow = await request("/auth/redirect", {method:"POST", body:JSON.stringify({challenge:await authDigest(verifier)})});
+      const loginUrl = new URL(flow.loginUrl);
+      // The login page must remain on this configured API, in this exact group.
+      if (loginUrl.origin !== new URL(apiBase || location.origin).origin ||
+          loginUrl.pathname !== activeMarket.apiPrefix + "/auth/login")
+        throw new Error("Invalid sign-in address. Please refresh the game.");
+      sessionStorage.setItem(redirectKey, JSON.stringify({marketId:activeMarket.id, flowId:flow.flowId,
+        verifier, allocation:draft, displayName:name, createdAt:Date.now()} satisfies RedirectDraft));
+      location.assign(loginUrl.href);
+    } catch(e: any) {setError(e.message); setBusy(false);}
+  }
   const total = sums(draft),
     picks = Object.keys(draft).length,
     remaining = 100 - total,
@@ -2053,7 +2113,15 @@ function App() {
               <br />
               Joining the {activeMarket.label.toLowerCase()}. Your display name is up to you.
             </p>
-            <div ref={googleMount} />
+            {!mobileRedirect && <div ref={googleMount} />}
+            {config.redirectAuthReady && (
+              <button className={mobileRedirect ? "primary" : "secondary"} onClick={beginRedirectSignIn} disabled={busy}>
+                {busy ? "Opening secure sign-in…" : mobileRedirect ? "Continue with Google" : "Use full-page sign-in"}
+                <ArrowRight size={17}/>
+              </button>
+            )}
+            {error && <p className="setup-note" role="alert">{error}</p>}
+            {config.redirectAuthReady && <small>Your picks stay in this browser. Keep the same browser open until you return. On iPhone, use Safari rather than an embedded app browser.</small>}
             {!config.authReady && (
               <p className="setup-note">
                 Google sign-in is not connected in this preview. It must be

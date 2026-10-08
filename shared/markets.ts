@@ -18,7 +18,7 @@ export function marketForPage(pathname: string): MarketDefinition | null {
 }
 
 const endpoints = new Set([
-  "/config", "/auth/google", "/market", "/live", "/me", "/portfolio",
+  "/config", "/auth/google", "/auth/redirect", "/auth/login", "/auth/callback", "/auth/redeem", "/market", "/live", "/me", "/portfolio",
   "/admin/state", "/admin/settlement-preview", "/admin/settle", "/admin/export",
 ]);
 export function marketApiRoute(pathname: string): { market: MarketDefinition; path: string } | null {

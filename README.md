@@ -18,6 +18,8 @@ Each has its own portfolios, aggregate backing, point pool, history and leaderbo
 3. Sign in, choose a public display name, and save. Only the saved portfolio counts.
 4. Change it any time before closing. The draft shows conditional payouts before saving. Everyone may back the same economists.
 
+On iPhone/iPad, **Continue with Google** uses full-page sign-in rather than a popup. Keep the same browser/tab open; the game restores your draft when you return. Desktop also offers **Use full-page sign-in** if its popup gets stuck. Open the game directly in Safari/Chrome rather than an unsupported embedded browser. [Mobile sign-in guide](docs/MOBILE-SIGN-IN.md).
+
 If Save is grey, read the explanation directly beneath it. Most often some of the 100 credits remain unallocated; use **Split evenly across my picks** or adjust the amounts. A signed-in player also needs a display name of at least two characters. **All changes saved** plus a saved-version receipt means the server has accepted the portfolio; an unchanged saved portfolio does not need saving again.
 
 Open **Crowd** to see the most-backed economists, their share of saved credits, supporter counts and changes since the previous portfolio update. It shows the top ten by default, with the full ranking available on demand. **Market pulse** adds concentration, backing-band and field-share charts, plus a conditional-payout playground. Backing history stays available below. Individual portfolios remain private until closing; player scores appear in Results after settlement.

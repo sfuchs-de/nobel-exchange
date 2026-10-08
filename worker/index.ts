@@ -9,11 +9,14 @@ import {
   effectivePhase,
   RuleError,
 } from "../shared/rules";
-import type { Entry, Settlement, Snapshot, Winner } from "../shared/types";
+import type { Entry, Settlement, Snapshot, Winner, Session } from "../shared/types";
 import roster from "../public/candidates.json";
 import extensionApproval from "../research/roster-extension-2026-10-08.json";
 import { rosterIdentity as identityOfRoster, planRosterExtension } from "../shared/roster-extension";
 import { marketApiRoute } from "../shared/markets";
+import { AUTH_HANDOFF_MS, authErrorPage, createRedirectFlow, finishRedirectFlow, googleRedirectPage, redeemRedirectFlow, verifyRedirectForm } from "./redirect-auth";
+import type { AuthFlow } from "./redirect-auth";
+import { flowIdValue } from "../shared/redirect-auth";
 
 interface Env extends ProductionBindings {
   ADMIN_SUB: string;
@@ -67,7 +70,7 @@ async function identity(req: Request, env: Env): Promise<Identity> {
     throw new RuleError("Your sign-in expired. Please sign in again.", 401);
   }
 }
-async function readJson(req: Request) {
+async function readText(req: Request) {
   const reader = req.body?.getReader();
   const decoder = new TextDecoder();
   let raw = "",
@@ -85,6 +88,10 @@ async function readJson(req: Request) {
     }
     raw += decoder.decode();
   }
+  return raw;
+}
+async function readJson(req: Request) {
+  const raw = await readText(req);
   try {
     const body = JSON.parse(raw);
     if (!body || typeof body !== "object" || Array.isArray(body))
@@ -93,6 +100,27 @@ async function readJson(req: Request) {
   } catch {
     throw new RuleError("Invalid request.");
   }
+}
+async function googleSession(credential: string, env: Env, nonce?: string): Promise<Session> {
+  if (!env.GOOGLE_CLIENT_ID || !env.SESSION_SECRET)
+    throw new RuleError("Google sign-in is not configured.", 503);
+  let payload;
+  try {
+    payload = (await jwtVerify(credential, keys, {
+      audience: env.GOOGLE_CLIENT_ID,
+      issuer: ["https://accounts.google.com", "accounts.google.com"],
+      algorithms: ["RS256"],
+    })).payload;
+  } catch { throw new RuleError("Google sign-in could not be verified.", 401); }
+  if (!payload.sub || (nonce !== undefined && payload.nonce !== nonce))
+    throw new RuleError("Google sign-in could not be verified for this attempt.", 401);
+  const token = await new SignJWT({ name: String(payload.name || "") })
+    .setProtectedHeader({alg:"HS256"}).setSubject(payload.sub)
+    .setIssuer("nobel-exchange").setAudience("nobel-exchange")
+    .setIssuedAt().setExpirationTime("8h")
+    .sign(new TextEncoder().encode(env.SESSION_SECRET));
+  return {id:payload.sub, displayName:String(payload.given_name || payload.name || ""),
+    admin:payload.sub === env.ADMIN_SUB, token, expiresAt:new Date(Date.now()+8*60*60*1000).toISOString()};
 }
 function checkOrigin(req: Request, env: Env) {
   const origin = req.headers.get("Origin");
@@ -120,7 +148,12 @@ export default {
           },
         });
       }
-      if (req.method !== "GET") checkOrigin(req, env);
+      // Google's full-page form return is secured by its double-submit CSRF
+      // cookie, a verified ID-token nonce and a one-use verifier-bound handoff.
+      const callback = path === "/api/auth/callback" && req.method === "POST";
+      if (req.method !== "GET" && !callback) checkOrigin(req, env);
+      if (callback && origin && !["https://accounts.google.com", url.origin, "null"].includes(origin))
+        throw new RuleError("Invalid Google sign-in origin.", 403);
       let res: Response;
       const room = env.MARKET.get(env.MARKET.idFromName(market.objectName));
       // Simon explicitly approved launching this separate empty edition. This
@@ -134,7 +167,26 @@ export default {
           rosterVersion: roster.version,
           marketId: market.id,
           marketLabel: market.label,
+          redirectAuthReady: Boolean(env.GOOGLE_CLIENT_ID && env.SESSION_SECRET),
         });
+      else if (path === "/api/auth/redirect" && req.method === "POST") {
+        if (!env.GOOGLE_CLIENT_ID || !env.SESSION_SECRET) throw new RuleError("Google sign-in is not configured.", 503);
+        const flow = await createRedirectFlow((await readJson(req)).challenge, origin!, room);
+        res = reply({flowId:flow.id, loginUrl:url.origin+market.apiPrefix+"/auth/login?flow="+flow.id});
+      } else if (path === "/api/auth/login" && req.method === "GET") {
+        const id = url.searchParams.get("flow");
+        const flow = flowIdValue(id) ? await room.readAuthFlow(id) : null;
+        if (!flow || flow.expires <= Date.now() || flow.session)
+          throw new RuleError("This sign-in attempt expired. Return to the game and try again.", 410);
+        if (!env.GOOGLE_CLIENT_ID || !env.SESSION_SECRET) throw new RuleError("Google sign-in is not configured.", 503);
+        res = googleRedirectPage(env.GOOGLE_CLIENT_ID, url.origin+market.apiPrefix+"/auth/callback", flow, market);
+      } else if (callback) {
+        const {flow,credential} = await verifyRedirectForm(req, await readText(req), room);
+        const session = await googleSession(credential, env, flow.nonce);
+        res = await finishRedirectFlow(flow, session, room, market);
+      } else if (path === "/api/auth/redeem" && req.method === "POST") {
+        res = reply(await redeemRedirectFlow(await readJson(req), origin!, room));
+      }
       else if (path === "/api/auth/google" && req.method === "POST") {
         if (!env.GOOGLE_CLIENT_ID || !env.SESSION_SECRET)
           throw new RuleError("Google sign-in is not configured.", 503);
@@ -144,38 +196,7 @@ export default {
             "Google sign-in did not provide a credential.",
             401,
           );
-        let payload;
-        try {
-          payload = (
-            await jwtVerify(body.credential, keys, {
-              audience: env.GOOGLE_CLIENT_ID,
-              issuer: ["https://accounts.google.com", "accounts.google.com"],
-              algorithms: ["RS256"],
-            })
-          ).payload;
-        } catch {
-          throw new RuleError("Google sign-in could not be verified.", 401);
-        }
-        if (!payload.sub)
-          throw new RuleError("Google sign-in could not be verified.", 401);
-        const expiresAt = new Date(
-          Date.now() + 8 * 60 * 60 * 1000,
-        ).toISOString();
-        const token = await new SignJWT({ name: String(payload.name || "") })
-          .setProtectedHeader({ alg: "HS256" })
-          .setSubject(payload.sub)
-          .setIssuer("nobel-exchange")
-          .setAudience("nobel-exchange")
-          .setIssuedAt()
-          .setExpirationTime("8h")
-          .sign(new TextEncoder().encode(env.SESSION_SECRET));
-        res = reply({
-          id: payload.sub,
-          displayName: String(payload.given_name || payload.name || ""),
-          admin: payload.sub === env.ADMIN_SUB,
-          token,
-          expiresAt,
-        });
+        res = reply(await googleSession(body.credential, env));
       } else if (path === "/api/market" && req.method === "GET")
         res = reply(await room.snapshot());
       else if (path === "/api/live" && req.method === "GET") {
@@ -235,6 +256,9 @@ export default {
     } catch (e) {
       const err = e as Error & { status?: number };
       const status = err.status || 500;
+      if (route && ["/api/auth/login", "/api/auth/callback"].includes(route.path))
+        return authErrorPage(status === 500 ? "Sign-in could not finish. Please try again." : err.message,
+          route.market, env.ALLOWED_ORIGINS.split(",")[0], status);
       const headers: Record<string, string> = {};
       if (origin && env.ALLOWED_ORIGINS.split(",").includes(origin))
         headers["Access-Control-Allow-Origin"] = origin;
@@ -274,6 +298,7 @@ export class Market extends DurableObject<Env> {
     ctx.storage.sql.exec(
       "CREATE TABLE IF NOT EXISTS audit (id INTEGER PRIMARY KEY AUTOINCREMENT, at TEXT NOT NULL, actor TEXT NOT NULL, action TEXT NOT NULL, data TEXT NOT NULL)",
     );
+    ctx.storage.sql.exec("CREATE TABLE IF NOT EXISTS auth_flows (id TEXT PRIMARY KEY, expires INTEGER NOT NULL, data TEXT NOT NULL)");
     // Explicitly approved release migration, not a generic roster-unfreeze switch.
     // Pure identity comparison and all writes are synchronous/atomic. Entries,
     // save receipts, history, deadline and settlement are never changed here.
@@ -292,6 +317,35 @@ export class Market extends DurableObject<Env> {
       });
       this.ctx.waitUntil(this.broadcast());
     }
+  }
+  async createAuthFlow(flow: AuthFlow): Promise<void> {
+    this.ctx.storage.sql.exec("DELETE FROM auth_flows WHERE expires<=?", Date.now());
+    const count = this.ctx.storage.sql.exec<{n:number}>("SELECT COUNT(*) AS n FROM auth_flows").toArray()[0].n;
+    if (count >= 1000) throw new RuleError("Sign-in is busy. Please try again shortly.", 429);
+    this.ctx.storage.sql.exec("INSERT INTO auth_flows(id,expires,data) VALUES(?,?,?)", flow.id, flow.expires, JSON.stringify(flow));
+  }
+  async readAuthFlow(id: string): Promise<AuthFlow | null> {
+    const row = this.ctx.storage.sql.exec<{data:string}>("SELECT data FROM auth_flows WHERE id=? AND expires>?", id, Date.now()).toArray()[0];
+    return row ? JSON.parse(row.data) : null;
+  }
+  async completeAuthFlow(id: string, codeHash: string, session: Session): Promise<void> {
+    // No await between lookup and update: duplicate callbacks cannot replace it.
+    const row = this.ctx.storage.sql.exec<{data:string}>("SELECT data FROM auth_flows WHERE id=? AND expires>?", id, Date.now()).toArray()[0];
+    const flow: AuthFlow | null = row ? JSON.parse(row.data) : null;
+    if (!flow || flow.session) throw new RuleError("This sign-in attempt expired or was already used.", 410);
+    flow.codeHash = codeHash; flow.session = session; flow.expires = Date.now()+AUTH_HANDOFF_MS;
+    this.ctx.storage.sql.exec("UPDATE auth_flows SET expires=?,data=? WHERE id=?", flow.expires, JSON.stringify(flow), id);
+  }
+  async redeemAuthFlow(id: string, codeHash: string, challenge: string, origin: string): Promise<Session> {
+    // Hashes have fixed length; Workers offers a constant-time comparison.
+    const row = this.ctx.storage.sql.exec<{data:string}>("SELECT data FROM auth_flows WHERE id=? AND expires>?", id, Date.now()).toArray()[0];
+    const flow: AuthFlow | null = row ? JSON.parse(row.data) : null;
+    const equal = (a: string, b: string) => crypto.subtle.timingSafeEqual(new TextEncoder().encode(a), new TextEncoder().encode(b));
+    if (!flow?.session || !flow.codeHash || flow.origin !== origin ||
+        !equal(flow.codeHash, codeHash) || !equal(flow.challenge, challenge))
+      throw new RuleError("This sign-in return expired, was already used, or belongs to another browser. Please sign in again.", 401);
+    this.ctx.storage.sql.exec("DELETE FROM auth_flows WHERE id=?", id);
+    return flow.session;
   }
   async initializePublicMarket(): Promise<void> {
     if (this.meta("market_id", "") === "public") return;
