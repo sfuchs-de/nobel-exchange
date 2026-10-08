@@ -9,6 +9,7 @@ Updated 8 October 2026. **Public beta open.**
 - Verification: 62 unit tests and 54 isolated Worker checks pass, including an existing 99-person market upgraded to 102 without changing its saved entry, pool or deadline, restart idempotence, and successful saves for each addition. Build, Worker typecheck, release-data and production configuration checks pass. The pre-existing bundle-size advisory remains.
 - Public production entries exist. Earlier zero-participant statements below are historical. Actual signed-in save/reload has been verified; two real Google accounts, actual iPhone/Safari and a timed first-user trial remain separate unverified checks.
 - Rollback must retain the 102-person roster and its approved migration. Do not redeploy 99-person code after migration: its freeze guard would reject future saves. Export current records before recovery; never replace participant storage with preview data.
+- Published in commit `4b2c61c`; [manual full release 37832480983](https://github.com/sfuchs-de/nobel-exchange/actions/runs/37832480983) succeeded. Public API and Pages both show version 4 / 102 candidates. Post-release backing totals and history match the private pre-release export; the October 11 closing timestamp is unchanged. No production picks were submitted by the assistant. Desktop and 390px preview inspection passed without horizontal overflow. Provider workflow warnings about Node action runtimes are non-blocking, separate from this release.
 
 ## Current deployment — supersedes the historical setup notes below
 

@@ -104,7 +104,7 @@ try {
   const migrated = (await request("/market")).body;
   check("Open legacy market records exactly three approved additions", migrated.rosterUpdates?.length === 1 && migrated.rosterUpdates[0].additions.length === 3);
   check("Migration preserves the complete saved entry", JSON.stringify((await request("/me", "GET", undefined, "alice")).body.entry) === JSON.stringify(original.body.entry));
-  check("Migration preserves pool, deadline and participant count", migrated.pool === oldMarket.pool && migrated.closeAt === oldMarket.closeAt && migrated.participants === oldMarket.participants);
+  check("Migration preserves pool, deadline and participant count", migrated.pool === oldMarket.pool && typeof migrated.closesAt === "string" && migrated.closesAt === oldMarket.closesAt && migrated.participants === oldMarket.participants);
   await stop();
   await start();
   check("Restart does not repeat roster migration", (await request("/market")).body.rosterUpdates.length === 1);
