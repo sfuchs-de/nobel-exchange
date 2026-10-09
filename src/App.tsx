@@ -22,6 +22,8 @@ import {
   X,
   WifiOff,
   Download,
+  Copy,
+  KeyRound,
 } from "lucide-react";
 import roster from "virtual:nobel-roster";
 import type {
@@ -39,6 +41,7 @@ import { portfolioSaveState } from "../shared/portfolio";
 import { belongsToMarket, marketForPage } from "../shared/markets";
 import { authDigest, authReturnFragment, prefersRedirectSignIn, randomAuthValue, redirectStorageKey, validRedirectDraft } from "../shared/redirect-auth";
 import type { RedirectDraft } from "../shared/redirect-auth";
+import { quickSessionKey, restoreBrowserSession } from "../shared/quick-auth";
 import { MarketPulse } from "./MarketPulse";
 import { catalogCandidates, contenderGroups, groupOrder, evidenceKinds, leadEvidence } from "../shared/catalog";
 
@@ -233,7 +236,10 @@ function App() {
     [config, setConfig] = useState<any>({});
   const [session, setSession] = useState<Session | null>(() => {
     try {
-      return JSON.parse(sessionStorage.getItem(activeMarket.sessionKey) || "null");
+      let quick = null;
+      try { quick = localStorage.getItem(quickSessionKey(activeMarket)); } catch { /* private browsing may block persistence */ }
+      return restoreBrowserSession(sessionStorage.getItem(activeMarket.sessionKey),
+        quick, activeMarket);
     } catch {
       return null;
     }
@@ -249,6 +255,10 @@ function App() {
     [modal, setModal] = useState(""),
     [tray, setTray] = useState(false),
     [clock, setClock] = useState(Date.now());
+  const [recoveryInput, setRecoveryInput] = useState(""),
+    [recoveryCode, setRecoveryCode] = useState(""),
+    [codeSaved, setCodeSaved] = useState(false),
+    [showCode, setShowCode] = useState(false);
   const [adminPreview, setAdminPreview] = useState<any>(null),
     [winners, setWinners] = useState<Winner[]>([{ candidateId: "", share: 1 }]),
     [official, setOfficial] = useState(""),
@@ -347,15 +357,24 @@ function App() {
     }).catch(e => setError(e.message)).finally(() => setBusy(false));
   }, []);
   useEffect(() => {
+    let cancelled = false;
     setLoaded(false);
     if (!session) {
       setEntry(null);
       setLoaded(true);
       return;
     }
-    sessionStorage.setItem(activeMarket.sessionKey, JSON.stringify(session));
+    try {
+      sessionStorage.setItem(activeMarket.sessionKey, JSON.stringify(session));
+      if (session.authMethod === "quick")
+        localStorage.setItem(quickSessionKey(activeMarket), JSON.stringify(session));
+      else localStorage.removeItem(quickSessionKey(activeMarket));
+    } catch {
+      setNotice("This browser cannot remember your sign-in. Keep your recovery code if you used Quick join.");
+    }
     request("/me", {}, session.token)
       .then(({ entry: e, admin }) => {
+        if (cancelled) return;
         setEntry(e);
         const restored = redirectRestore.current;
         if (restored) {
@@ -370,34 +389,41 @@ function App() {
         setLoaded(true);
       })
       .catch((e) => {
+        if (cancelled) return;
         setError(e.message);
         setLoaded(true);
         if (e.status === 401) {
-          sessionStorage.removeItem(activeMarket.sessionKey);
+          try { sessionStorage.removeItem(activeMarket.sessionKey); } catch {}
+          try { localStorage.removeItem(quickSessionKey(activeMarket)); } catch {}
           setSession(null);
         }
       });
+    return () => { cancelled = true; };
   }, [session?.token]);
   useEffect(() => {
     if (modal !== "signin" || !config.googleClientId || mobileRedirect) return;
+    let active = true;
     const render = () => {
       const google = (window as any).google;
       if (!google || !googleMount.current) return;
       google.accounts.id.initialize({
         client_id: config.googleClientId,
         callback: async (r: any) => {
+          if (!active) return;
           try {
             const s = await request("/auth/google", {
               method: "POST",
               body: JSON.stringify({ credential: r.credential }),
             });
+            if (!active) return;
+            sessionStorage.removeItem(redirectKey);
             setSession(s);
             setModal("");
             setNotice(
               "Signed in. Choose your display name and save when your 100 credits are ready.",
             );
           } catch (e: any) {
-            setError(e.message);
+            if (active) setError(e.message);
           }
         },
       });
@@ -407,7 +433,7 @@ function App() {
         width: 280,
       });
     };
-    if ((window as any).google) render();
+    if ((window as any).google) { render(); return () => { active = false; }; }
     else {
       let script =
         document.querySelector<HTMLScriptElement>("#google-identity");
@@ -419,9 +445,9 @@ function App() {
         document.head.append(script);
       }
       script.addEventListener("load", render, { once: true });
-      const failed = () => setError("Google’s login button couldn’t load. Try full-page sign-in below, or open the game directly in Safari.");
+      const failed = () => {if (active) setError("Google’s login button couldn’t load. Try full-page sign-in below, or open the game directly in Safari.");};
       script.addEventListener("error", failed, {once:true});
-      return () => {script?.removeEventListener("load", render); script?.removeEventListener("error", failed);};
+      return () => {active = false; script?.removeEventListener("load", render); script?.removeEventListener("error", failed);};
     }
   }, [modal, config.googleClientId]);
   async function beginRedirectSignIn() {
@@ -439,6 +465,34 @@ function App() {
         verifier, allocation:draft, displayName:name, createdAt:Date.now()} satisfies RedirectDraft));
       location.assign(loginUrl.href);
     } catch(e: any) {setError(e.message); setBusy(false);}
+  }
+  async function quickSignIn(recover = false) {
+    if (busy) return;
+    setBusy(true); setError(""); setNotice("");
+    try {
+      const result = await request(recover ? "/auth/quick/recover" : "/auth/quick/register", {
+        method:"POST", body:JSON.stringify(recover ? {recoveryCode:recoveryInput} : {displayName:name}),
+      });
+      try { sessionStorage.removeItem(redirectKey); } catch {}
+      pendingSave.current = null;
+      setSession(result.session);
+      setName(result.session.displayName);
+      setView("My portfolio");
+      setRecoveryInput("");
+      if (recover) {
+        setRecoveryCode(""); setModal("");
+        setNotice("Welcome back. Loading your saved portfolio in this group.");
+      } else {
+        setRecoveryCode(result.recoveryCode); setCodeSaved(false); setShowCode(false);
+        setModal("quick-code");
+        setNotice("Joined this group. Your picks count only after you save your portfolio.");
+      }
+    } catch(e: any) { setError(e.message); }
+    finally { setBusy(false); }
+  }
+  async function copyRecoveryCode() {
+    try { await navigator.clipboard.writeText(recoveryCode); setCodeSaved(true); setNotice("Recovery code copied. Keep it somewhere private."); }
+    catch { setError("Copy was unavailable. Use Show code, then select and copy it manually."); }
   }
   const total = sums(draft),
     picks = Object.keys(draft).length,
@@ -1927,8 +1981,8 @@ function App() {
               <li>
                 <b>Split 100 whole credits.</b>
                 <span>
-                  Join with Google, choose a display name, and save. One
-                  portfolio per Google account in this group.
+                  Quick join with a display name, or use Google. Save exactly
+                  100 credits. Please enter once per person in each group.
                 </span>
               </li>
               <li>
@@ -1949,7 +2003,7 @@ function App() {
             <p>
               You’re in the <b>{activeMarket.label.toLowerCase()}</b>. Each group
               has its own portfolios, backing, prize pool and leaderboard. You
-              may join both with the same Google account; entries do not carry over.
+              may join both; entries do not carry over. Quick join codes are group-specific.
             </p>
             <div className="example">
               <span>100 players → 10,000 points</span>
@@ -2073,7 +2127,9 @@ function App() {
         <Modal title="Your picks, your privacy." onClose={() => setModal("")}>
           <div className="rules-content">
             <p>
-              Google verifies your account. The server stores your account’s
+              Google verifies Google accounts. Quick join uses an unverified account
+              and a private recovery code; the server stores only the code’s hash.
+              The server stores your account’s
               stable identifier, chosen display name, allocation, version
               history for saved requests, and administrative audit events. It
               does not publish your Google email or account identifier.
@@ -2084,8 +2140,9 @@ function App() {
               if you prefer.
             </p>
             <p>
-              A temporary app token stays in this browser tab’s session storage.
-              Sign out on shared devices. Google and Cloudflare process sign-in
+              Google sessions stay in this tab for up to eight hours. Quick join
+              sessions are remembered in this browser for up to 30 days. Sign out
+              on shared devices. Google and Cloudflare process sign-in
               and network requests under their own policies.
             </p>
             <p>
@@ -2109,10 +2166,19 @@ function App() {
               <Coins size={34} />
             </div>
             <p>
-              One Google account. One 100-credit portfolio in this group.
-              <br />
-              Joining the {activeMarket.label.toLowerCase()}. Your display name is up to you.
+              Joining the <b>{activeMarket.label.toLowerCase()}</b>.
+              Choose Quick join—no email needed—or continue with Google.
             </p>
+            {config.quickAuthReady && <>
+              <button className="primary" disabled={busy || closed || market.phase !== "open"}
+                onClick={() => {setError(""); setModal("quick-join");}}>
+                Quick join <ArrowRight size={17}/>
+              </button>
+              <button className="text-button" disabled={busy} onClick={() => {
+                setError(""); setRecoveryInput(""); setModal("quick-recover");
+              }}>Already joined? Use recovery code</button>
+              <div className="signin-divider"><span>or use Google</span></div>
+            </>}
             {!mobileRedirect && <div ref={googleMount} />}
             {config.redirectAuthReady && (
               <button className={mobileRedirect ? "primary" : "secondary"} onClick={beginRedirectSignIn} disabled={busy}>
@@ -2162,12 +2228,58 @@ function App() {
           </div>
         </Modal>
       )}
+      {(modal === "quick-join" || modal === "quick-recover") && (
+        <Modal title={modal === "quick-join" ? "Quick join" : "Welcome back"}
+          onClose={() => {if (!busy) {setRecoveryInput(""); setModal("");}}}>
+          <form className="quick-auth-content" onSubmit={e => {e.preventDefault(); void quickSignIn(modal === "quick-recover");}}>
+            <span className="eyebrow">{activeMarket.label}</span>
+            <p>{modal === "quick-join" ? "No email. No password. Choose your public name, then keep the private recovery code we give you." :
+              "Paste the private recovery code from this group. This returns to your existing account—not a new entry."}</p>
+            {modal === "quick-join" ? <label>Public display name
+              <input autoFocus maxLength={36} minLength={2} required autoComplete="nickname"
+                placeholder="e.g. Pareto Pirates" value={name} onChange={e => setName(e.target.value)} disabled={busy}/>
+            </label> : <label>Private recovery code
+              <input autoFocus required type="password" autoComplete="off" autoCapitalize="none" spellCheck={false}
+                placeholder={activeMarket.id === "public" ? "NX-P.…" : "NX-O.…"}
+                value={recoveryInput} onChange={e => setRecoveryInput(e.target.value)} disabled={busy}/>
+            </label>}
+            {error && <p className="setup-note" role="alert">{error}</p>}
+            <button className="primary" type="submit" disabled={busy || (modal === "quick-join" ? name.trim().length < 2 : !recoveryInput.trim())}>
+              {busy ? "Signing in…" : modal === "quick-join" ? "Join this group" : "Recover my account"}<ArrowRight size={17}/>
+            </button>
+            <small>{modal === "quick-join" ? "One entry per person, please. Quick join is unverified. Your picks count only after Save portfolio." :
+              "Codes do not transfer between groups. If you joined with Google, use Google sign-in instead."}</small>
+            <button type="button" className="text-button" disabled={busy} onClick={() => {setError(""); setRecoveryInput(""); setModal("signin");}}>Other sign-in options</button>
+          </form>
+        </Modal>
+      )}
+      {modal === "quick-code" && (
+        <Modal title="Keep your recovery code" onClose={() => {if (codeSaved) {setError(""); setRecoveryCode(""); setModal("");} else setError("Keep your recovery code, then tick the confirmation before continuing.");}}>
+          <div className="quick-auth-content">
+            <span className="eyebrow">{activeMarket.label} · private</span>
+            <p>Your browser will remember you. This code lets you return on another device or after clearing browser data. Anyone with it can edit your picks.</p>
+            <label>Private recovery code
+              <input aria-label="Your private recovery code" type={showCode ? "text" : "password"} value={recoveryCode} readOnly autoComplete="off" spellCheck={false}/>
+            </label>
+            <div className="quick-code-actions">
+              <button className="primary" onClick={() => void copyRecoveryCode()}><Copy size={16}/> Copy code</button>
+              <button onClick={() => setShowCode(s => !s)}>{showCode ? "Hide code" : "Show code"}</button>
+            </div>
+            {error && <p className="setup-note" role="alert">{error}</p>}
+            {codeSaved && <p className="quick-confirmation" role="status"><Check size={16}/> Code saved or copied</p>}
+            <label className="quick-code-check"><input type="checkbox" checked={codeSaved} onChange={e => {setCodeSaved(e.target.checked); setError("");}}/> I’ve kept my code somewhere private</label>
+            <button className="primary" disabled={!codeSaved || !loaded} onClick={() => {setError(""); setRecoveryCode(""); setModal("");}}>Continue to my picks <ArrowRight size={17}/></button>
+            <small>There’s no email reset. Keep the code; don’t post it or share it. This code works only in the {activeMarket.label.toLowerCase()}.</small>
+          </div>
+        </Modal>
+      )}
       {modal === "account" && (
         <Modal title={"Your account · " + activeMarket.label} onClose={() => setModal("")}>
           <div className="rules-content">
             <p>
               Signed in as <b>{name || session?.displayName}</b>.
             </p>
+            {session?.authMethod === "quick" && <p><KeyRound size={16}/> Quick join · remembered on this browser for up to 30 days. Keep your private recovery code for another device; there is no email reset.</p>}
             <details>
               <summary>Private account details</summary>
               <p>Your account ID is used for support and administrator setup. It is never included in public portfolios.</p>
@@ -2187,7 +2299,9 @@ function App() {
             <button
               className="text-button"
               onClick={() => {
-                sessionStorage.removeItem(activeMarket.sessionKey);
+                try { sessionStorage.removeItem(activeMarket.sessionKey); sessionStorage.removeItem(redirectKey); } catch {}
+                try { localStorage.removeItem(quickSessionKey(activeMarket)); } catch {}
+                setRecoveryCode(""); setRecoveryInput("");
                 setSession(null);
                 setDraft({});
                 setName("");

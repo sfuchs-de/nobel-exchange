@@ -36,5 +36,5 @@ export function portfolioSaveState(s: SaveState) {
   if (s.signedIn && !s.dirty) return blocked("Your saved portfolio is up to date.");
   return { disabled: false, message: s.signedIn
     ? "Ready to save. Your picks count only after you press Save portfolio."
-    : "Ready. Sign in with Google to save these picks." };
+    : "Ready. Quick join or sign in with Google to save these picks." };
 }

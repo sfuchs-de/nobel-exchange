@@ -14,9 +14,12 @@ import roster from "../public/candidates.json";
 import extensionApproval from "../research/roster-extension-2026-10-08.json";
 import { rosterIdentity as identityOfRoster, planRosterExtension } from "../shared/roster-extension";
 import { marketApiRoute } from "../shared/markets";
+import type { MarketDefinition } from "../shared/markets";
 import { AUTH_HANDOFF_MS, authErrorPage, createRedirectFlow, finishRedirectFlow, googleRedirectPage, redeemRedirectFlow, verifyRedirectForm } from "./redirect-auth";
 import type { AuthFlow } from "./redirect-auth";
 import { flowIdValue } from "../shared/redirect-auth";
+import { authDigest } from "../shared/redirect-auth";
+import { newQuickCode, validQuickCode, QUICK_SESSION_MS } from "../shared/quick-auth";
 
 interface Env extends ProductionBindings {
   ADMIN_SUB: string;
@@ -39,7 +42,7 @@ function local(req: Request, env: Env) {
     ["localhost", "127.0.0.1", "::1"].includes(new URL(req.url).hostname)
   );
 }
-async function identity(req: Request, env: Env): Promise<Identity> {
+async function identity(req: Request, env: Env, market: MarketDefinition): Promise<Identity> {
   const token = req.headers.get("Authorization")?.replace(/^Bearer /, "");
   if (!token) throw new RuleError("Sign in to save your portfolio.", 401);
   if (local(req, env) && /^dev-[a-z0-9-]{1,40}$/.test(token))
@@ -61,14 +64,38 @@ async function identity(req: Request, env: Env): Promise<Identity> {
       },
     );
     if (!payload.sub) throw Error();
+    const quick = payload.authMethod === "quick";
+    if (quick && (payload.marketId !== market.id || !payload.sub.startsWith("quick:"))) throw Error();
+    if (!quick && payload.sub.startsWith("quick:")) throw Error();
     return {
       sub: payload.sub,
-      admin: payload.sub === env.ADMIN_SUB,
+      admin: !quick && payload.sub === env.ADMIN_SUB,
       name: String(payload.name || ""),
     };
   } catch {
     throw new RuleError("Your sign-in expired. Please sign in again.", 401);
   }
+}
+type QuickAccount = { subject: string; name: string };
+async function quickSession(account: QuickAccount, market: MarketDefinition, env: Env): Promise<Session> {
+  const expiresAt = new Date(Date.now() + QUICK_SESSION_MS).toISOString();
+  const token = await new SignJWT({name:account.name, authMethod:"quick", marketId:market.id})
+    .setProtectedHeader({alg:"HS256"}).setSubject(account.subject)
+    .setIssuer("nobel-exchange").setAudience("nobel-exchange")
+    .setIssuedAt().setExpirationTime(Math.floor(Date.parse(expiresAt)/1000))
+    .sign(new TextEncoder().encode(env.SESSION_SECRET));
+  return {id:account.subject, displayName:account.name, admin:false, token, expiresAt,
+    authMethod:"quick", marketId:market.id};
+}
+async function quickRateKey(req: Request, env: Env, market: MarketDefinition): Promise<string> {
+  // Cloudflare supplies this header. Persist only a keyed, edition-specific digest,
+  // never the address itself; local runtime tests have no network address header.
+  const ip = req.headers.get("CF-Connecting-IP") ||
+    (["localhost","127.0.0.1","::1"].includes(new URL(req.url).hostname) ? "local-runtime" : "unknown");
+  const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(env.SESSION_SECRET),
+    {name:"HMAC",hash:"SHA-256"}, false, ["sign"]);
+  const bytes = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode("quick-rate:"+market.id+":"+ip.slice(0,128)));
+  return btoa(String.fromCharCode(...new Uint8Array(bytes)));
 }
 async function readText(req: Request) {
   const reader = req.body?.getReader();
@@ -168,6 +195,7 @@ export default {
           marketId: market.id,
           marketLabel: market.label,
           redirectAuthReady: Boolean(env.GOOGLE_CLIENT_ID && env.SESSION_SECRET),
+          quickAuthReady: Boolean(env.SESSION_SECRET),
         });
       else if (path === "/api/auth/redirect" && req.method === "POST") {
         if (!env.GOOGLE_CLIENT_ID || !env.SESSION_SECRET) throw new RuleError("Google sign-in is not configured.", 503);
@@ -187,6 +215,23 @@ export default {
       } else if (path === "/api/auth/redeem" && req.method === "POST") {
         res = reply(await redeemRedirectFlow(await readJson(req), origin!, room));
       }
+      else if (["/api/auth/quick/register", "/api/auth/quick/recover"].includes(path) && req.method === "POST") {
+        if (!env.SESSION_SECRET) throw new RuleError("Quick join is not configured.", 503);
+        const body = await readJson(req);
+        const rateKey = await quickRateKey(req, env, market);
+        if (path.endsWith("/register")) {
+          const name = validateName(body.displayName);
+          const recoveryCode = newQuickCode(market);
+          const account = await room.registerQuickAccount(await authDigest(recoveryCode), name, rateKey);
+          res = reply({session:await quickSession(account, market, env), recoveryCode});
+        } else {
+          await room.consumeQuickAttempt(rateKey, "recover");
+          const code = typeof body.recoveryCode === "string" ? body.recoveryCode.trim() : body.recoveryCode;
+          if (!validQuickCode(code, market)) throw new RuleError("That recovery code is invalid or belongs to the other group.", 401);
+          const account = await room.recoverQuickAccount(await authDigest(code));
+          res = reply({session:await quickSession(account, market, env)});
+        }
+      }
       else if (path === "/api/auth/google" && req.method === "POST") {
         if (!env.GOOGLE_CLIENT_ID || !env.SESSION_SECRET)
           throw new RuleError("Google sign-in is not configured.", 503);
@@ -205,17 +250,17 @@ export default {
           throw new RuleError("WebSocket upgrade required.", 426);
         return room.fetch(req);
       } else if (path === "/api/me" && req.method === "GET") {
-        const who = await identity(req, env);
+        const who = await identity(req, env, market);
         res = reply({ entry: await room.entry(who.sub), admin: who.admin });
       } else if (path === "/api/portfolio" && req.method === "PUT") {
-        const who = await identity(req, env);
+        const who = await identity(req, env, market);
         const body = await readJson(req);
         const result = JSON.parse(
           await room.execute("save", JSON.stringify(body), who.sub),
         );
         res = reply(result.body, result.status);
       } else if (path.startsWith("/api/admin/")) {
-        const who = await identity(req, env);
+        const who = await identity(req, env, market);
         if (!who.admin)
           throw new RuleError("Administrator access required.", 403);
         if (path === "/api/admin/export" && req.method === "GET") {
@@ -299,6 +344,8 @@ export class Market extends DurableObject<Env> {
       "CREATE TABLE IF NOT EXISTS audit (id INTEGER PRIMARY KEY AUTOINCREMENT, at TEXT NOT NULL, actor TEXT NOT NULL, action TEXT NOT NULL, data TEXT NOT NULL)",
     );
     ctx.storage.sql.exec("CREATE TABLE IF NOT EXISTS auth_flows (id TEXT PRIMARY KEY, expires INTEGER NOT NULL, data TEXT NOT NULL)");
+    ctx.storage.sql.exec("CREATE TABLE IF NOT EXISTS quick_accounts (subject TEXT PRIMARY KEY, recovery_hash TEXT NOT NULL UNIQUE, name TEXT NOT NULL, created INTEGER NOT NULL)");
+    ctx.storage.sql.exec("CREATE TABLE IF NOT EXISTS quick_limits (key TEXT PRIMARY KEY, count INTEGER NOT NULL, expires INTEGER NOT NULL)");
     // Explicitly approved release migration, not a generic roster-unfreeze switch.
     // Pure identity comparison and all writes are synchronous/atomic. Entries,
     // save receipts, history, deadline and settlement are never changed here.
@@ -317,6 +364,33 @@ export class Market extends DurableObject<Env> {
       });
       this.ctx.waitUntil(this.broadcast());
     }
+  }
+  async consumeQuickAttempt(network: string, kind: "register" | "recover"): Promise<void> {
+    const now = Date.now(), window = 10 * 60 * 1000;
+    this.ctx.storage.sql.exec("DELETE FROM quick_limits WHERE expires<=?", now);
+    const key = kind+":"+network;
+    const row = this.ctx.storage.sql.exec<{count:number}>("SELECT count FROM quick_limits WHERE key=?", key).toArray()[0];
+    const limit = kind === "register" ? 30 : 90;
+    if ((row?.count || 0) >= limit) throw new RuleError("Too many sign-in attempts. Please wait ten minutes and try again.", 429);
+    const count = this.ctx.storage.sql.exec<{n:number}>("SELECT COUNT(*) AS n FROM quick_limits").toArray()[0].n;
+    if (!row && count >= 2000) throw new RuleError("Quick sign-in is busy. Please try again later.", 429);
+    this.ctx.storage.sql.exec("INSERT INTO quick_limits(key,count,expires) VALUES(?,1,?) ON CONFLICT(key) DO UPDATE SET count=count+1", key, now+window);
+  }
+  async registerQuickAccount(hash: string, name: string, network: string): Promise<QuickAccount> {
+    await this.consumeQuickAttempt(network, "register");
+    // Check the server deadline after the only await, then insert synchronously.
+    const phase = effectivePhase(this.meta("phase", "setup") as Snapshot["phase"], this.meta("close", this.env.MARKET_CLOSE), Date.now());
+    if (phase !== "open") throw new RuleError("New entries are not open. Existing players can still use their recovery code.", 403);
+    const n = this.ctx.storage.sql.exec<{n:number}>("SELECT COUNT(*) AS n FROM quick_accounts").toArray()[0].n;
+    if (n >= 10000) throw new RuleError("Quick join is full. Please use Google sign-in.", 429);
+    const subject = "quick:" + crypto.randomUUID();
+    this.ctx.storage.sql.exec("INSERT INTO quick_accounts(subject,recovery_hash,name,created) VALUES(?,?,?,?)", subject, hash, name, Date.now());
+    return {subject, name};
+  }
+  async recoverQuickAccount(hash: string): Promise<QuickAccount> {
+    const row = this.ctx.storage.sql.exec<QuickAccount>("SELECT subject,name FROM quick_accounts WHERE recovery_hash=?", hash).toArray()[0];
+    if (!row) throw new RuleError("That recovery code is invalid or belongs to the other group.", 401);
+    return row;
   }
   async createAuthFlow(flow: AuthFlow): Promise<void> {
     this.ctx.storage.sql.exec("DELETE FROM auth_flows WHERE expires<=?", Date.now());

@@ -1,6 +1,16 @@
 # Implementation and verification status
 
-Updated 8 October 2026. **Public beta open.**
+Updated 9 October 2026. **Public beta open; Quick join release authorized, deployment verification pending.**
+
+## October 9 Quick join — release authorized
+
+- Adds display-name registration and private-code recovery to both groups, without Google/email/password. Google remains available; existing Google portfolios are unchanged.
+- Server-generated 256-bit code, hashed private storage, group-bound 30-day sessions, no administrator privileges, temporary keyed-network throttles. Register/recover never change participants, pool, revision or public history; enrollment remains an explicit valid portfolio save.
+- Codes and sessions cannot cross groups. Existing account recovery remains available after closing without unlocking picks. Browser persistence is per group; no automatic account linking. Quick join is unverified and relies on a one-entry-per-person honor rule.
+- **302 local checks pass**: 105 unit + 78 existing market runtime + 46 existing Google redirect runtime + 73 new Quick join runtime checks. Worker typecheck, frontend build, data/release and deployment-configuration checks and diff whitespace checks pass. The existing bundle-size warning remains.
+- Actual disposable-browser flows checked registration, code acknowledgement/copy, save, reload, account recovery and rejection of a real other-group code. Both markets retain independent saved entries. Inspected desktop 1440px and phone 390/320px screens with masked recovery codes and no page-level horizontal overflow. Actual iPhone/Safari is still unverified. The fixture uses a deliberately invalid Google client; its expected GSI diagnostic is not a production sign-in test.
+- Final rerun initially collided with the temporary UI backend. Separated UI/automated ports and required authenticated fixture readiness, stopped the preview, then passed the complete rerun. Temporary browser credentials and servers were cleaned up; no live accounts or portfolios were used. Screenshots: `/private/tmp/nobel-quick-join-desktop-20261009.jpg` and `/private/tmp/nobel-quick-join-phone-20261009.jpg`.
+- Google popup callback and `/me` responses are guarded against late identity replacement; popup/Quick join/sign-out clear stale redirect state. The earlier near-expiry redirect handoff and receipt-feedback issues still require their own fixes and tests. Simon explicitly authorized publication, deployment and online testing on October 9. The full 302-check suite passed again before release. See [Quick join guide](QUICK-JOIN.md).
 
 ## October 8 iPhone sign-in fix
 

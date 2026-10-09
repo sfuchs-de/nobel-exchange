@@ -21,7 +21,7 @@ describe("Independent market routing", () => {
       expect(marketForPage(path)).toBeNull();
   });
   it("scopes every endpoint including auth, admin and live feeds", () => {
-    for (const endpoint of ["config", "auth/google", "auth/redirect", "auth/login", "auth/callback", "auth/redeem", "market", "live", "me", "portfolio", "admin/state", "admin/settlement-preview", "admin/settle", "admin/export"]) {
+    for (const endpoint of ["config", "auth/google", "auth/redirect", "auth/login", "auth/callback", "auth/redeem", "auth/quick/register", "auth/quick/recover", "market", "live", "me", "portfolio", "admin/state", "admin/settlement-preview", "admin/settle", "admin/export"]) {
       expect(marketApiRoute("/api/" + endpoint)).toEqual({market: markets.original, path: "/api/" + endpoint});
       expect(marketApiRoute("/api/public/" + endpoint)).toEqual({market: markets.public, path: "/api/" + endpoint});
     }

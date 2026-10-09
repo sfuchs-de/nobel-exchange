@@ -1,6 +1,6 @@
 # The Nobel Exchange — Economics 2026
 
-Big ideas. Bragging rights. A friendly, imaginary-credit prediction game: one Google account, 100 credits, up to ten economists, and a continuously updating shared market.
+Big ideas. Bragging rights. A friendly, imaginary-credit prediction game: 100 credits, up to ten economists, and a continuously updating shared market.
 
 **Status: public beta open.** Visit [The Nobel Exchange](https://sfuchs-de.github.io/nobel-exchange/). Google sign-in and Simon's administrator access are verified. The reviewed roster contains 102 candidates following the explicitly approved October 8 addition of Stephen Redding, Esteban Rossi-Hansberg and Costas Arkolakis. A public notice records this narrow additive update; existing portfolios and the closing deadline are unchanged. The roster freeze still prevents unapproved changes. Entries close Sunday, October 11, at 8 p.m. Eastern. See [data review](docs/DATA-REVIEW.md), [deployment](docs/DEPLOYMENT.md) and [status](docs/STATUS.md) for checks and remaining acceptance work.
 
@@ -12,6 +12,8 @@ Two independent groups use the same 102 candidates and rules:
 - [Public group](https://sfuchs-de.github.io/nobel-exchange/public/) — a separate, initially empty market for wider circulation.
 
 Each has its own portfolios, aggregate backing, point pool, history and leaderboard. One Google account can enter both, with a separate 100-credit portfolio in each; nothing is copied automatically. The header identifies the current group. Both close October 11 at 8 p.m. Eastern. Neither URL is membership-restricted: the separate paths separate the data, not access permissions.
+
+**Quick join:** The October 9 release adds a display name and private recovery code, with no Google account, email or password. Google remains available. Each Quick join account/code belongs to one group; to join both, create one account in each. Please enter once per person per group: Quick join is unverified and cannot guarantee this. Registration/recovery alone do not add participants or points—only a successful portfolio save does. See [Quick join](docs/QUICK-JOIN.md) and the [release status](docs/STATUS.md) for verification.
 
 1. Browse the compact market list or search a name/field. Tap a name to see research and sources.
 2. Back 1–10 people. Split exactly 100 whole credits between them; “Split evenly” is a shortcut.

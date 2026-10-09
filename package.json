@@ -9,7 +9,7 @@
     "check:data": "node --import tsx scripts/check-data.ts",
     "check:release": "node --import tsx scripts/check-data.ts --release",
     "check:deployment": "node --import tsx scripts/check-deployment.ts",
-    "test:integration": "node tests/integration.mjs && node tests/auth-integration.mjs",
+    "test:integration": "node tests/integration.mjs && node tests/auth-integration.mjs && node tests/quick-auth-integration.mjs",
     "enrich": "node --import tsx scripts/enrich.ts",
     "enrich:articles": "node --import tsx scripts/enrich-articles.ts",
     "verify:articles": "node --import tsx scripts/verify-articles.ts",

@@ -24,7 +24,7 @@ describe("portfolio saving guidance", () => {
   });
   it("requires a trimmed display name only after signing in", () => {
     expect(portfolioSaveState({...ready,displayName:"  "}).disabled).toBe(true);
-    expect(portfolioSaveState({...ready,signedIn:false,displayName:""})).toMatchObject({disabled:false,message:expect.stringContaining("Sign in with Google")});
+    expect(portfolioSaveState({...ready,signedIn:false,displayName:""})).toMatchObject({disabled:false,message:expect.stringContaining("Quick join or sign in with Google")});
   });
   it("distinguishes already saved from a changed portfolio", () => {
     expect(portfolioSaveState({...ready,dirty:false})).toMatchObject({disabled:true,message:expect.stringContaining("up to date")});

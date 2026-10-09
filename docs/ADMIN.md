@@ -22,7 +22,9 @@ To correct a mistake: preview the corrected winners/shares, explain the correcti
 
 Each submitted person adds 100 points to the pool. A winner's portion is divided proportional to the credits on that winner. A zero-backed portion stays unawarded. Equal scores share ranks (e.g. 1, 1, 3), with a small floating-point comparison tolerance. Display rounding does not change the scoring values. There are no prizes, payouts of money, fees or side bets.
 
-Duplicate display names are allowed: identity is the Google account, not the visible name. One person could control multiple Google accounts; this is a social game, not a verified-one-human system. Do not advertise stronger fraud prevention than is implemented. Investigate abusive participation before closing; this initial version has no hidden score-adjustment or user-deletion control.
+Duplicate display names are allowed: identity is the Google account or private Quick join account, not the visible name. One person could control multiple accounts; this is a social game, not a verified-one-human system. Quick join is unverified and asks for one entry per person per group. Do not advertise stronger fraud prevention than is implemented. Investigate abusive participation before closing; this initial version has no hidden score-adjustment or user-deletion control.
+
+See [the Quick join guide](QUICK-JOIN.md) for recovery-code handling and limits, and [release status](STATUS.md) for deployment verification. Codes cannot grant administrator access. Private authentication tables are excluded from the portfolio/audit export: preserve them through Cloudflare-native recovery. The January 10 account-linked-data removal commitment also covers Quick join account identifiers and recovery verifiers; do not retain these as public archive data.
 
 ## Support
 

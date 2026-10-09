@@ -101,4 +101,6 @@ export type Session = {
   admin: boolean;
   token: string;
   expiresAt: string;
+  authMethod?: "quick";
+  marketId?: "original" | "public";
 };
