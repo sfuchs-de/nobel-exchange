@@ -1,8 +1,13 @@
 # Implementation and verification status
 
-Updated 9 October 2026. **Public beta open; Quick join release authorized, deployment verification pending.**
+Updated 9 October 2026. **Public beta open; Quick join deployed and verified in both groups.**
 
-## October 9 Quick join — release authorized
+## October 9 Quick join — deployed
+
+- Published code `c32740a`; [full manual release 37994396458](https://github.com/sfuchs-de/nobel-exchange/actions/runs/37994396458) passed both Cloudflare deployment and GitHub Pages publication. The complete 302-check suite passed locally and again in the release gate. No provider scopes, secrets or paid services were added.
+- **72 additional live checks passed:** 30 real Quick join/recovery and group-isolation assertions, plus 42 read-only deployment/data checks. With explicit approval, created exactly one unsaved QA authentication account per group; never saved portfolios. Registration and recovery succeeded; other-group codes, modified prefixes and tokens were rejected; administrator exports were denied to Quick join. Test credentials were not retained. Two private QA login records remain until the account-data cleanup.
+- Private pre-release portfolio/audit exports and aggregate snapshots are outside Git in `/private/tmp/nobel-quick-release-20261009/`. Before/after observations matched: original six players/600 points/revision 9; public 22/2,200/revision 28. All pre-release history snapshots, backing totals and supporter counts were unchanged. These are observations, not permanent market counts. Exports are not full authentication backups.
+- Actual deployed Google sessions still loaded the original five-pick portfolio at version 2 and public ten-pick portfolio at version 1, both showing **All changes saved**. No Save was clicked. Quick join and recovery forms were inspected on the live website at desktop and 390/320px without horizontal overflow. The initial cached older page refreshed to the new release; existing visitors may need one refresh. Actual iPhone/Safari engine acceptance remains unverified.
 
 - Adds display-name registration and private-code recovery to both groups, without Google/email/password. Google remains available; existing Google portfolios are unchanged.
 - Server-generated 256-bit code, hashed private storage, group-bound 30-day sessions, no administrator privileges, temporary keyed-network throttles. Register/recover never change participants, pool, revision or public history; enrollment remains an explicit valid portfolio save.
